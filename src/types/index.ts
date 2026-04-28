@@ -5,7 +5,10 @@ export interface Uniform {
   id: string;
   name: string;
   changedType?: MFFType; 
+  changedSpecies?: string;
   changedSide?: MFFSide;
+  changedGender?: string;
+  changedTags?: string[];
 }
 
 export interface MFFCharacter {
@@ -13,13 +16,18 @@ export interface MFFCharacter {
   displayName: string;
   baseType: MFFType;
   baseSide: MFFSide;
+  baseSpecies: string;
+  baseGender: string;
+  baseTags: string[];
+  maxTier: number;
+  transcendent?: boolean;
   uniforms: Uniform[];
 }
 
 export interface TeamMember {
   characterId: string | null;
   skinId: string;
-  equipment: string;
+  gear: string;
 }
 
 export interface Team {
