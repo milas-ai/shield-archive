@@ -20,9 +20,9 @@ export const CharacterCard = ({ character, selectedSkinId, onClick }: Props) => 
   return (
     <div 
       onClick={onClick}
-      className={`relative w-24 h-24 ... border-2 ${typeColors[type]} ...`}
+      className={`relative w-24 h-24 ... border-2 rounded-xl ${typeColors[type]} ...`}
     >
-      <img src={portrait} alt={character.displayName} />
+      <img src={portrait} alt={character.displayName} className='rounded-xl' />
     </div>
   );
 };
