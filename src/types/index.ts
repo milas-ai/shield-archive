@@ -1,5 +1,5 @@
 export type MFFType = 'Combat' | 'Blast' | 'Speed' | 'Universal';
-export type MFFSide = 'Hero' | 'Villain';
+export type MFFSide = 'Hero' | 'Villain' | 'Neutral';
 
 export interface Uniform {
   id: string;
