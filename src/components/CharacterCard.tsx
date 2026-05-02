@@ -12,10 +12,16 @@ const typeGradients = {
   Universal: 'bg-linear-to-b from-purple-800/60 to-slate-950',
 };
 
-export const CharacterCard = ({ character, onClick }: { character: MFFCharacter, onClick?: () => void }) => {
+interface CharacterCardProps {
+  character: MFFCharacter;
+  overrideSkinId?: string;
+  onClick?: () => void;
+}
+
+export const CharacterCard = ({ character, overrideSkinId, onClick }: CharacterCardProps) => {
   const settings = useUserStore((state) => state.characterSettings[character.id]);
   const currentTier = settings?.tier || 1;
-  const currentSkinId = settings?.skinId || '';
+  const currentSkinId = overrideSkinId !== undefined ? overrideSkinId : (settings?.skinId || '');
   const currentEquipment = settings?.equipment || '';
 
   const [isModalOpen, setIsModalOpen] = useState(false);
