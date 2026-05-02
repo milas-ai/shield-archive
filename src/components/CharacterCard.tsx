@@ -1,28 +1,61 @@
 import type { MFFCharacter } from '../types';
 import { getEffectiveStats } from '../utils/mff';
+import { useUserStore } from '../store/useUserStore';
+import { useState } from 'react';
+import { EditCharacterModal } from './EditCharacterModal';
 
-interface Props {
-  character: MFFCharacter;
-  selectedSkinId: string;
-  onClick?: () => void;
-}
 
-export const CharacterCard = ({ character, selectedSkinId, onClick }: Props) => {
-  const { type, portrait } = getEffectiveStats(character, selectedSkinId);
+const typeGradients = {
+  Combat:    'bg-linear-to-b from-red-800/60 to-slate-950',
+  Blast:     'bg-linear-to-b from-blue-800/60 to-slate-950',
+  Speed:     'bg-linear-to-b from-green-800/60 to-slate-950',
+  Universal: 'bg-linear-to-b from-purple-800/60 to-slate-950',
+};
 
-  const typeGradients = {
-    Combat:    'bg-linear-to-b from-red-800/60 to-slate-950',
-    Blast:     'bg-linear-to-b from-blue-800/60 to-slate-950',
-    Speed:     'bg-linear-to-b from-green-800/60 to-slate-950',
-    Universal: 'bg-linear-to-b from-purple-800/60 to-slate-950',
+export const CharacterCard = ({ character, onClick }: { character: MFFCharacter, onClick?: () => void }) => {
+  const settings = useUserStore((state) => state.characterSettings[character.id]);
+  const currentTier = settings?.tier || 1;
+  const currentSkinId = settings?.skinId || '';
+  const currentEquipment = settings?.equipment || '';
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleRightClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsModalOpen(true);
   };
 
+  const getTierFrame = (tier: number) => {
+    if (tier != 1) return `${import.meta.env.BASE_URL}assets/frames/tier${tier}${tier === 3 && character.transcendent ? 'transcendent' : ''}.png`;
+    return null;
+  };
+
+  const { type, portrait } = getEffectiveStats(character, currentSkinId);
+  const tierFrame = getTierFrame(currentTier);
+
   return (
-    <div 
-      onClick={onClick}
-      className={`relative w-24 h-24 cursor-pointer overflow-hidden rounded-lg ${typeGradients[type]} transition-transform hover:scale-105 shadow-xl`}
-    >
-      <img src={portrait} alt={character.displayName} className='h-full w-full object-cover relative z-10 rounded-lg' />
-    </div>
+    <>
+      <div 
+        onClick={onClick}
+        onContextMenu={handleRightClick}
+        className={`relative w-24 h-24 cursor-pointer overflow-hidden rounded-lg ${typeGradients[type]} transition-transform hover:scale-105 shadow-xl`}
+      >
+        <img src={portrait} alt={character.displayName} className='h-full w-full object-cover relative z-10 rounded-lg' />
+
+        {tierFrame && (
+          <img 
+            src={tierFrame} 
+            alt={`Tier ${character.maxTier}`}
+            className="absolute inset-0 w-full h-full z-20 pointer-events-none"
+          />
+        )}
+      </div>
+
+      {isModalOpen && (
+          <EditCharacterModal 
+            character={character} 
+            onClose={() => setIsModalOpen(false)} 
+          />
+      )}
+    </>
   );
 };
