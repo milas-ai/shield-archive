@@ -25,8 +25,7 @@ export const TeamRow = ({ teamId }: { teamId: number }) => {
               {charData ? (
                 <div className="relative group">
                   <CharacterCard 
-                    character={charData} 
-                    selectedSkinId={member.skinId}
+                    character={charData}
                   />
                   <button 
                     onClick={() => removeCharacter(teamId, idx)}

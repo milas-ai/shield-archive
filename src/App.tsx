@@ -40,8 +40,7 @@ function App() {
           {characters.map((char) => (
             <CharacterCard 
               key={char.id} 
-              character={char} 
-              selectedSkinId={char.uniforms[0]?.id || ''}
+              character={char}
               onClick={() => {
                 if (selectedSlot) assignCharacter(char.id);
               }}
