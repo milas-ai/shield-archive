@@ -6,6 +6,6 @@ export const getEffectiveStats = (character: MFFCharacter, uniformId: string) =>
   return {
     type: uniform?.changedType ?? character.baseType,
     side: uniform?.changedSide ?? character.baseSide,
-    portrait: `/assets/portraits/${character.id}${uniformId}.png`
+    portrait: `${import.meta.env.BASE_URL}assets/portraits/${character.id}${uniformId}.png`
   };
 };
