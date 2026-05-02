@@ -31,23 +31,35 @@ export const CharacterCard = ({ character, onClick }: { character: MFFCharacter,
 
   const { type, portrait } = getEffectiveStats(character, currentSkinId);
   const tierFrame = getTierFrame(currentTier);
+  const gearImage = `${import.meta.env.BASE_URL}assets/gear/${currentEquipment}.png`;
 
   return (
     <>
       <div 
         onClick={onClick}
         onContextMenu={handleRightClick}
-        className={`relative w-24 h-24 cursor-pointer overflow-hidden rounded-lg ${typeGradients[type]} transition-transform hover:scale-105 shadow-xl`}
+        className={`relative w-24 h-24 cursor-pointer overflow-hidden rounded-lg ${typeGradients[type]} transition-transform hover:scale-105 shadow-xl border-slate-700 border-2`}
       >
         <img src={portrait} alt={character.displayName} className='h-full w-full object-cover relative z-10 rounded-lg' />
 
         {tierFrame && (
           <img 
             src={tierFrame} 
-            alt={`Tier ${character.maxTier}`}
+            alt={`Tier ${currentTier}`}
             className="absolute inset-0 w-full h-full z-20 pointer-events-none"
           />
         )}
+
+        {currentEquipment !== '' && (
+        <div className="absolute bottom-0.5 right-0.5 w-8 h-8 z-40 border border-slate-700 bg-linear-to-br from-slate-800 to-black rounded-sm overflow-hidden">
+          <img 
+            src={gearImage}
+            alt={currentEquipment}
+            className="w-full h-full object-contain p-0.5"
+            onError={(e) => (e.target as HTMLImageElement).style.display = 'none'}
+          />
+        </div>
+      )}
       </div>
 
       {isModalOpen && (
