@@ -1578,7 +1578,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Phoenix' },
         { id: '1', name: 'X-Men Red' },
         { id: '2', name: 'Marvel Girl' },
-        { id: '3', name: 'Dark Phoenix', changedSide: 'Villain' }
+        { id: '3', name: 'Dark Phoenix', changedType: 'Universal', changedSide: 'Villain' },
     ]
   },
   {
