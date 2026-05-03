@@ -25,6 +25,7 @@ export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSe
       const stats = getEffectiveStats(char, sId);
       if (restrictions.type && stats.type !== restrictions.type) return false;
       if (restrictions.side && stats.side !== restrictions.side) return false;
+      if (restrictions.species && stats.species !== restrictions.species) return false;
       if (restrictions.gender && stats.gender !== restrictions.gender) return false;
       return true;
     };
