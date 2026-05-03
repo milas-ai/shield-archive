@@ -1,0 +1,68 @@
+import { useState } from 'react';
+import { abSchedule } from '../data/abRounds';
+import { ABRoundRow } from '../components/ABRoundRow';
+import { CharacterSelectorModal } from '../components/CharacterSelectorModal';
+import { useABStore } from '../store/useABStore';
+import type { ABPhase } from '../types';
+
+export const AllianceBattlePage = () => {
+  const { selections, setSelection } = useABStore();
+  
+  const [activeModal, setActiveModal] = useState<{
+    dayId: number;
+    phase: ABPhase;
+    slotIdx: number;
+  } | null>(null);
+
+  return (
+    <main className="h-full overflow-y-auto p-6 custom-scrollbar bg-slate-950">
+
+      <header className="max-w-5xl mx-auto mb-10 border-b border-slate-800 pb-6">
+        <h1 className="text-3xl font-black text-cyan-500 tracking-tighter uppercase italic">
+          Alliance Battle Guide
+        </h1>
+        <div className="flex items-center gap-4 mt-2">
+          <p className="text-slate-400 text-sm">
+            Planejamento estratégico para os 28 rounds mensais (ABX / ABL / INF).
+          </p>
+        </div>
+      </header>
+
+      <div className="max-w-5xl mx-auto flex flex-col gap-4 pb-24">
+        {abSchedule.map((round, index) => (
+          <div 
+            key={round.id} 
+            style={{ zIndex: 30 - index }} 
+            className="relative"
+          >
+            <ABRoundRow 
+              day={round} 
+              selections={selections[round.id] || {}} 
+              onOpenSelector={(phase, slotIdx) => setActiveModal({
+                dayId: round.id,
+                phase,
+                slotIdx
+              })}
+            />
+          </div>
+        ))}
+      </div>
+
+      {activeModal && (
+        <CharacterSelectorModal 
+          phase={activeModal.phase}
+          onClose={() => setActiveModal(null)}
+          onSelect={(charId, skinId) => {
+            setSelection(
+              activeModal.dayId, 
+              activeModal.phase.name, 
+              activeModal.slotIdx, 
+              { charId, skinId }
+            );
+            setActiveModal(null);
+          }}
+        />
+      )}
+    </main>
+  );
+};
