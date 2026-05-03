@@ -973,4 +973,425 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Classic' }
     ]
   },
+  {
+    id: 'ebonymaw',
+    displayName: 'Ebony Maw',
+    baseType: 'Universal',
+    baseSide: 'Villain',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Evil', 'Mind Resist', 'Black Order'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Infinity' },
+        { id: '1', name: 'Marvel Studios Avengers: Infinity War' },
+        { id: '2', name: 'Dark Obsidian Armor', changedType: 'Blast' },
+        { id: '3', name: 'Generals Hand', changedType: 'Blast' }
+    ]
+  },
+  {
+    id: 'echo',
+    displayName: 'Echo',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Phoenix Force', 'Agility'],
+    maxTier: 4,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Enter the Phoenix' },
+        { id: '1', name: 'Marvel Studios Hawkeye', changedType: 'Speed', changedTags: ['Agility'] },
+        { id: '2', name: 'Marvel Studios Echo', changedType: 'Speed', changedTags: ['Agility'] }
+    ]
+  },
+  {
+    id: 'electro',
+    displayName: 'Electro',
+    baseType: 'Speed',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Evil', 'Shock', 'Sinister Six'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Spider-Man: No Way Home' }
+    ]
+  },
+  {
+    id: 'elektra',
+    displayName: 'Elektra',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Weapons Master'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Classic' },
+        { id: '1', name: 'Marvel Studios Daredevil' },
+        { id: '2', name: 'Woman Without Fear' },
+        { id: '3', name: 'Elektra' }
+    ]
+  },
+  {
+    id: 'elsabloodstone',
+    displayName: 'Elsa Bloodstone',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Weapons Master'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Secret Wars: Marvel Zombies' },
+        { id: '2', name: 'Monsters Unleashed! (MFF Variant)' }
+    ]
+  },
+  {
+    id: 'emmafrost',
+    displayName: 'Emma Frost',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Female',
+    baseTags: ['Mind Resist', 'Durability'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel NOW!' },
+        { id: '2', name: 'Phoenix Five', changedSide: 'Villain', changedTags: ['Mind Resist', 'Durability', 'Phoenix Force'] },
+        { id: '3', name: 'Hellfire Gala' },
+        { id: '4', name: 'Summer Queen' }
+    ]
+  },
+  {
+    id: 'enchantress',
+    displayName: 'Enchantress',
+    baseType: 'Blast',
+    baseSide: 'Villain',
+    baseSpecies: 'Alien',
+    baseGender: 'Female',
+    baseTags: ['Magic', 'Mind'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Summer Days' },
+        { id: '2', name: 'War of the Realms' }
+    ]
+  },
+  {
+    id: 'exodus',
+    displayName: 'Exodus',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Male',
+    baseTags: ['Energy Projection', 'Command'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' }
+    ]
+  },
+  {
+    id: 'falcon',
+    displayName: 'Falcon',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Fast Movement', 'Leadership'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Marvel Studios Captain America: The Winter Soldier' },
+        { id: '1', name: 'All-New Captain America' },
+        { id: '2', name: 'Marvel Studios Captain America: Civil War' },
+        { id: '3', name: 'Marvel Legacy' },
+        { id: '4', name: 'Marvel Studios The Falcon and the Winter Soldier', changedTags: ['Fast Movement', 'Leadership', 'Command'] },
+        { id: '5', name: 'What If... Zombies?!', changedSide: 'Villain', changedTags: ['Fast Movement', 'Leadership', 'Zombie'] },
+        { id: '6', name: 'Marvel Studios Captain America: Brave New World', changedTags: ['Fast Movement', 'Leadership', 'Command'] }
+    ]
+  },
+  {
+    id: 'fandral',
+    displayName: 'Fandral',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Agility'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' }
+    ]
+  },
+  {
+    id: 'fantomex',
+    displayName: 'Fantomex',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Male',
+    baseTags: ['Agility', 'Weapons Master'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'X-Force' }
+    ]
+  },
+  {
+    id: 'franklinrichards',
+    displayName: 'Franklin Richards',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Energy Projection', 'Mind', 'Fantastic Four'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' }
+    ]
+  },
+  {
+    id: 'gambit',
+    displayName: 'Gambit',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Male',
+    baseTags: ['Agility', 'Mind'],
+    maxTier: 4,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Excalibur' },
+        { id: '2', name: 'X-Men Year-End Party' }
+    ]
+  },
+  {
+    id: 'gamora',
+    displayName: 'Gamora',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Female',
+    baseTags: ['Agility', 'Weapons Master'],
+    maxTier: 4,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Guardians of the Galaxy' },
+        { id: '1', name: 'All-New, All-Different' },
+        { id: '2', name: 'Guardians of the Galaxy 2' },
+        { id: '3', name: 'Requiem', changedSide: 'Villain' },
+        { id: '4', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Agility', 'Weapons Master', 'Guardians of the Galaxy'] },
+        { id: '5', name: 'Wastelanders', changedTags: ['Agility', 'Weapons Master', 'Guardians of the Galaxy'] }
+    ]
+  },
+  {
+    id: 'ghost',
+    displayName: 'Ghost',
+    baseType: 'Speed',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Weapons Master', 'Machine'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel Studios Ant-Man and the Wasp', changedGender: 'Female' },
+        { id: '2', name: 'Marvel Studios Thunderbolts', changedSide: 'Hero', changedGender: 'Female', changedTags: ['Weapons Master', 'Machine', 'Thunderbolts'] }
+    ]
+  },
+  {
+    id: 'ghostpanther',
+    displayName: 'Ghost Panther',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Agility', 'Flame', 'Infinity Warps'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Infinity Warps' }
+    ]
+  },
+  {
+    id: 'ghostrider',
+    displayName: 'Ghost Rider',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Leaderhip', 'Flame'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Classic' },
+        { id: '1', name: '70s Classic' },
+        { id: '2', name: 'Inhumans: Attilan Rising' },
+        { id: '3', name: 'King of Hell' },
+        { id: '4', name: 'Rage Returned' },
+        { id: '5', name: 'Savage Avengers' }
+    ]
+  },
+  {
+    id: 'giantman',
+    displayName: 'Giant-Man',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Strong'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Modern (Goliath)' },
+        { id: '2', name: 'Ultron Pym', changedSide: 'Villain' }
+    ]
+  },
+  {
+    id: 'gilgamesh',
+    displayName: 'Gilgamesh',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Strong', 'Eternals'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel Studios Eternals' }
+    ]
+  },
+  {
+    id: 'gladiator',
+    displayName: 'Gladiator',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Annihilators', 'Strong', 'Leadership'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Thanos: The Infinity Revelation' }
+    ]
+  },
+  {
+    id: 'goliath',
+    displayName: 'Goliath',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Strong', 'Durability'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Classic' }
+    ]
+  },
+  {
+    id: 'gorgon',
+    displayName: 'Gorgon',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Inhuman',
+    baseGender: 'Male',
+    baseTags: ['Strong'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'War of Kings' }
+    ]
+  },
+  {
+    id: 'gorillaman',
+    displayName: 'Gorilla-Man',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Strong', 'Agility', 'Weapons Master'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' }
+    ]
+  },
+  {
+    id: 'gorr',
+    displayName: 'Gorr',
+    baseType: 'Universal',
+    baseSide: 'Villain',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Healing', 'Evil', 'Fast Movement'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Marvel Studios Thor: Love and Thunder' }
+    ]
+  },
+  {
+    id: 'greengoblin',
+    displayName: 'Green Goblin',
+    baseType: 'Speed',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Poison', 'Fast Movement', 'Sinister Six'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Classic' },
+        { id: '1', name: 'Ultimate', changedType: 'Combat', changedTags: ['Flame', 'Fast Movement', 'Sinister Six'] },
+        { id: '2', name: 'Dark Avengers', changedType: 'Blast', changedTags: ['Dark Avengers', 'Machine', 'Energy Projection'] },
+        { id: '3', name: 'Spider-Man: No Way Home' },
+        { id: '4', name: 'Red Goblin', changedTags: ['Flame', 'Fast Movement', 'Sinister Six'] }
+    ]
+  },
+  {
+    id: 'groot',
+    displayName: 'Groot',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Healing'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Guardians of the Galaxy' },
+        { id: '1', name: 'Secret Wars: Thors', changedType: 'Universal' },
+        { id: '2', name: 'Guardians of the Galaxy 2', changedType: 'Speed' },
+        { id: '3', name: 'Marvel Studios Avengers: Infinity War' },
+        { id: '4', name: 'Snowflake Festival', changedType: 'Speed' },
+        { id: '5', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Healing', 'Guardians of the Galaxy'] },
+        { id: '6', name: 'Planet X Palm', changedTags: ['Healing', 'Guardians of the Galaxy'] }
+    ]
+  },
+  {
+    id: 'gwenpool',
+    displayName: 'Gwenpool',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Agility'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'All-New, All-Different' },
+        { id: '1', name: 'Gwen Poole' },
+        { id: '2', name: 'Holiday Party' },
+        { id: '3', name: 'April Pools' },
+        { id: '4', name: 'Dark Gwenpool', changedSide: 'Villain' }
+    ]
+  }
 ];
