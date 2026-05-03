@@ -79,7 +79,7 @@ export const ABRoundRow = ({ day, selections, onOpenSelector, isCurrent }: ABRou
                 {RestrictionIcons({ restrictions: phase.restrictions })}
               </div>
 
-              <div className="flex gap-2">
+              <div className={`flex gap-2 ${day.phases.length > 1 ? 'justify-start' : 'justify-center'}`}>
                 {phaseSelections.map((selection, slotIdx) => (
                   <div 
                     key={slotIdx}
