@@ -1393,5 +1393,796 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'April Pools' },
         { id: '4', name: 'Dark Gwenpool', changedSide: 'Villain' }
     ]
-  }
+  },
+  // {
+  //   id: 'hades',
+  //   displayName: 'Hades',
+  // },
+  // {
+  //   id: 'havok',
+  //   displayName: 'Havok',
+  // },
+  // {
+  //   id: 'hawkeye',
+  //   displayName: 'Hawkeye',
+  // },
+  // {
+  //   id: 'heimdall',
+  //   displayName: 'Heimdall',
+  // },
+  // {
+  //   id: 'hela',
+  //   displayName: 'Hela',
+  // },
+  // {
+  //   id: 'hellcat',
+  //   displayName: 'Hellcat',
+  // },
+  // {
+  //   id: 'hellstorm',
+  //   displayName: 'Hellstorm',
+  // },
+  // {
+  //   id: 'hercules',
+  //   displayName: 'Hercules',
+  // },
+  // {
+  //   id: 'hogun',
+  //   displayName: 'Hogun',
+  // },
+  // {
+  //   id: 'hopesummers',
+  //   displayName: 'Hope Summers',
+  // },
+  // {
+  //   id: 'hulk',
+  //   displayName: 'Hulk',
+  // },
+  // {
+  //   id: 'hulkbuster',
+  //   displayName: 'Hulkbuster',
+  // },
+  // {
+  //   id: 'hulkling',
+  //   displayName: 'Hulkling',
+  // },
+  // {
+  //   id: 'humantorch',
+  //   displayName: 'Human Torch',
+  // },
+  // {
+  //   id: 'hydroman',
+  //   displayName: 'Hydro-Man',
+  // },
+  // {
+  //   id: 'hyperion',
+  //   displayName: 'Hyperion',
+  // },
+  // {
+  //   id: 'iceman',
+  //   displayName: 'Iceman',
+  // },
+  // {
+  //   id: 'ikaris',
+  //   displayName: 'Ikaris',
+  // },
+  // {
+  //   id: 'ikon',
+  //   displayName: 'Ikon',
+  // },
+  // {
+  //   id: 'inferno',
+  //   displayName: 'Inferno',
+  // },
+  // {
+  //   id: 'invisiblewoman',
+  //   displayName: 'Invisible Woman',
+  // },
+  // {
+  //   id: 'ironfist',
+  //   displayName: 'Iron Fist',
+  // },
+  // {
+  //   id: 'ironhammer',
+  //   displayName: 'Iron Hammer',
+  // },
+  // {
+  //   id: 'ironheart',
+  //   displayName: 'Ironheart',
+  // },
+  // {
+  //   id: 'ironman',
+  //   displayName: 'Iron Man',
+  // },
+  // {
+  //   id: 'janefoster',
+  //   displayName: 'Jane Foster',
+  // },
+  // {
+  //   id: 'jeangrey',
+  //   displayName: 'Jean Grey',
+  // },
+  // {
+  //   id: 'jeffthelandshark',
+  //   displayName: 'Jeff the Landshark',
+  // },
+  // {
+  //   id: 'jessicajones',
+  //   displayName: 'Jessica Jones',
+  // },
+  // {
+  //   id: 'joaquintorres',
+  //   displayName: 'Joaquin Torres',
+  // },
+  // {
+  //   id: 'juggernaut',
+  //   displayName: 'Juggernaut',
+  // },
+  // {
+  //   id: 'kaecilius',
+  //   displayName: 'Kaecilius',
+  // },
+  // {
+  //   id: 'kahhori',
+  //   displayName: 'Kahhori',
+  // },
+  // {
+  //   id: 'kamalakhan',
+  //   displayName: 'Kamala Khan',
+  // },
+  // {
+  //   id: 'kang',
+  //   displayName: 'Kang',
+  // },
+  // {
+  //   id: 'karnak',
+  //   displayName: 'Karnak',
+  // },
+  // {
+  //   id: 'katebishop',
+  //   displayName: 'Kate Bishop',
+  // },
+  // {
+  //   id: 'katy',
+  //   displayName: 'Katy',
+  // },
+  // {
+  //   id: 'kidkaiju',
+  //   displayName: 'Kid Kaiju',
+  // },
+  // {
+  //   id: 'kidomega',
+  //   displayName: 'Kid Omega',
+  // },
+  // {
+  //   id: 'killmonger',
+  //   displayName: 'Killmonger',
+  // },
+  // {
+  //   id: 'kingo',
+  //   displayName: 'Kingo',
+  // },
+  // {
+  //   id: 'kingpin',
+  //   displayName: 'Kingpin',
+  // },
+  // {
+  //   id: 'kittypryde',
+  //   displayName: 'Kitty Pryde',
+  // },
+  // {
+  //   id: 'knull',
+  //   displayName: 'Knull',
+  // },
+  // {
+  //   id: 'korath',
+  //   displayName: 'Korath',
+  // },
+  // {
+  //   id: 'kraventhehunter',
+  //   displayName: 'Kraven the Hunter',
+  // },
+  // {
+  //   id: 'lash',
+  //   displayName: 'Lash',
+  // },
+  // {
+  //   id: 'leader',
+  //   displayName: 'Leader',
+  // },
+  // {
+  //   id: 'lincolncampbell',
+  //   displayName: 'Lincoln Campbell',
+  // },
+  // {
+  //   id: 'lizard',
+  //   displayName: 'Lizard',
+  // },
+  // {
+  //   id: 'loki',
+  //   displayName: 'Loki',
+  // },
+  // {
+  //   id: 'lukecage',
+  //   displayName: 'Luke Cage',
+  // },
+  // {
+  //   id: 'lunasnow',
+  //   displayName: 'Luna Snow',
+  // },
+  // {
+  //   id: 'madelynpryor',
+  //   displayName: 'Madelyn Pryor',
+  // },
+  // {
+  //   id: 'magik',
+  //   displayName: 'Magik',
+  // },
+  // {
+  //   id: 'magneto',
+  //   displayName: 'Magneto',
+  // },
+  // {
+  //   id: 'makkari',
+  //   displayName: 'Makkari',
+  // },
+  // {
+  //   id: 'malekith',
+  //   displayName: 'Malekith',
+  // },
+  // {
+  //   id: 'manthing',
+  //   displayName: 'Man-Thing',
+  // },
+  // {
+  //   id: 'mantis',
+  //   displayName: 'Mantis',
+  // },
+  // {
+  //   id: 'marvelboy',
+  //   displayName: 'Marvel Boy',
+  // },
+  // {
+  //   id: 'maximus',
+  //   displayName: 'Maximus',
+  // },
+  // {
+  //   id: 'mbaku',
+  //   displayName: 'M\'Baku',
+  // },
+  // {
+  //   id: 'medusa',
+  //   displayName: 'Medusa',
+  // },
+  // {
+  //   id: 'mephisto',
+  //   displayName: 'Mephisto',
+  // },
+  // {
+  //   id: 'milesmorales',
+  //   displayName: 'Miles Morales',
+  // },
+  // {
+  //   id: 'minn-erva',
+  //   displayName: 'Minn-Erva',
+  // },
+  // {
+  //   id: 'misterfantastic',
+  //   displayName: 'Mister Fantastic',
+  // },
+  // {
+  //   id: 'mistersinister',
+  //   displayName: 'Mister Sinister',
+  // },
+  // {
+  //   id: 'mistyknight',
+  //   displayName: 'Misty Knight',
+  // },
+  // {
+  //   id: 'mockingbird',
+  //   displayName: 'Mockingbird',
+  // },
+  // {
+  //   id: 'modok',
+  //   displayName: 'MODOK',
+  // },
+  // {
+  //   id: 'moleculeman',
+  //   displayName: 'Molecule Man',
+  // },
+  // {
+  //   id: 'moltenman',
+  //   displayName: 'Molten Man',
+  // },
+  // {
+  //   id: 'moongirl',
+  //   displayName: 'Moongirl',
+  // },
+  // {
+  //   id: 'moonknight',
+  //   displayName: 'Moon Knight',
+  // },
+  // {
+  //   id: 'moonstone',
+  //   displayName: 'Moonstone',
+  // },
+  // {
+  //   id: 'morbius',
+  //   displayName: 'Morbius',
+  // },
+  // {
+  //   id: 'morganalefay',
+  //   displayName: 'Morgan le Fay',
+  // },
+  // {
+  //   id: 'mysterio',
+  //   displayName: 'Mysterio',
+  // },
+  // {
+  //   id: 'mystique',
+  //   displayName: 'Mystique',
+  // },
+  // {
+  //   id: 'nadiavandyne',
+  //   displayName: 'Nadia Van Dyne',
+  // },
+  // {
+  //   id: 'namor',
+  //   displayName: 'Namor',
+  // },
+  // {
+  //   id: 'nebula',
+  //   displayName: 'Nebula',
+  // },
+  // {
+  //   id: 'negasonicteenagewarhead',
+  //   displayName: 'Negasonic Teenage Warhead',
+  // },
+  // {
+  //   id: 'nickfury',
+  //   displayName: 'Nick Fury',
+  // },
+  // {
+  //   id: 'nightcrawler',
+  //   displayName: 'Nightcrawler',
+  // },
+  // {
+  //   id: 'nova',
+  //   displayName: 'Nova',
+  // },
+  // {
+  //   id: 'odin',
+  //   displayName: 'Odin',
+  // },
+  // {
+  //   id: 'okoye',
+  //   displayName: 'Okoye',
+  // },
+  // {
+  //   id: 'omegared',
+  //   displayName: 'Omega Red',
+  // },
+  // {
+  //   id: 'philcoulson',
+  //   displayName: 'Phil Coulson',
+  // },
+  // {
+  //   id: 'phylavell',
+  //   displayName: 'Phyla-Vell',
+  // },
+  // {
+  //   id: 'polaris',
+  //   displayName: 'Polaris',
+  // },
+  // {
+  //   id: 'professorx',
+  //   displayName: 'Professor X',
+  // },
+  // {
+  //   id: 'proximamidnight',
+  //   displayName: 'Proxima Midnight',
+  // },
+  // {
+  //   id: 'psylocke',
+  //   displayName: 'Psylocke',
+  // },
+  // {
+  //   id: 'punisher',
+  //   displayName: 'Punisher',
+  // },
+  // {
+  //   id: 'quasar',
+  //   displayName: 'Quasar',
+  // },
+  // {
+  //   id: 'quicksilver',
+  //   displayName: 'Quicksilver',
+  // },
+  // {
+  //   id: 'rachelsummers',
+  //   displayName: 'Rachel Summers',
+  // },
+  // {
+  //   id: 'redguardian',
+  //   displayName: 'Red Guardian',
+  // },
+  // {
+  //   id: 'redhulk',
+  //   displayName: 'Red Hulk',
+  // },
+  // {
+  //   id: 'redshehulk',
+  //   displayName: 'Red She-Hulk',
+  // },
+  // {
+  //   id: 'redskull',
+  //   displayName: 'Red Skull',
+  // },
+  // {
+  //   id: 'rescue',
+  //   displayName: 'Rescue',
+  // },
+  // {
+  //   id: 'rhino',
+  //   displayName: 'Rhino',
+  // },
+  // {
+  //   id: 'robbiereyes',
+  //   displayName: 'Robbie Reyes',
+  // },
+  // {
+  //   id: 'rocketraccoon',
+  //   displayName: 'Rocket Raccoon',
+  // },
+  // {
+  //   id: 'rogue',
+  //   displayName: 'Rogue',
+  // },
+  // {
+  //   id: 'ronan',
+  //   displayName: 'Ronan',
+  // },
+  // {
+  //   id: 'sabretooth',
+  //   displayName: 'Sabretooth',
+  // },
+  // {
+  //   id: 'samalexander',
+  //   displayName: 'Sam Alexander',
+  // },
+  // {
+  //   id: 'sandman',
+  //   displayName: 'Sandman',
+  // },
+  // {
+  //   id: 'satana',
+  //   displayName: 'Satana',
+  // },
+  // {
+  //   id: 'scarletspider',
+  //   displayName: 'Scarlet Spider',
+  // },
+  // {
+  //   id: 'scarletwitch',
+  //   displayName: 'Scarlet Witch',
+  // },
+  // {
+  //   id: 'scorpion',
+  //   displayName: 'Scorpion',
+  // },
+  // {
+  //   id: 'scream',
+  //   displayName: 'Scream',
+  // },
+  // {
+  //   id: 'sentinel',
+  //   displayName: 'Sentinel',
+  // },
+  // {
+  //   id: 'sentry',
+  //   displayName: 'Sentry',
+  // },
+  // {
+  //   id: 'sersi',
+  //   displayName: 'Sersi',
+  // },
+  // {
+  //   id: 'shadowshell',
+  //   displayName: 'Shadow Shell',
+  // },
+  // {
+  //   id: 'shallabal',
+  //   displayName: 'Shalla-Bal',
+  // },
+  // {
+  //   id: 'shangchi',
+  //   displayName: 'Shang-Chi',
+  // },
+  // {
+  //   id: 'sharoncarter',
+  //   displayName: 'Sharon Carter',
+  // },
+  // {
+  //   id: 'sharonrogers',
+  //   displayName: 'Sharon Rogers',
+  // },
+  // {
+  //   id: 'shehulk',
+  //   displayName: 'She-Hulk',
+  // },
+  // {
+  //   id: 'shuri',
+  //   displayName: 'Shuri',
+  // },
+  // {
+  //   id: 'sif',
+  //   displayName: 'Sif',
+  // },
+  // {
+  //   id: 'silk',
+  //   displayName: 'Silk',
+  // },
+  // {
+  //   id: 'silversamurai',
+  //   displayName: 'Silver Samurai',
+  // },
+  // {
+  //   id: 'silversurfer',
+  //   displayName: 'Silver Surfer',
+  // },
+  // {
+  //   id: 'sin',
+  //   displayName: 'Sin',
+  // },
+  // {
+  //   id: 'singularity',
+  //   displayName: 'Singularity',
+  // },
+  // {
+  //   id: 'sistergrimm',
+  //   displayName: 'Sister Grimm',
+  // },
+  // {
+  //   id: 'skurge',
+  //   displayName: 'Skurge',
+  // },
+  // {
+  //   id: 'slapstick',
+  //   displayName: 'Slapstick',
+  // },
+  // {
+  //   id: 'sleeper',
+  //   displayName: 'Sleeper',
+  // },
+  // {
+  //   id: 'songbird',
+  //   displayName: 'Songbird',
+  // },
+  // {
+  //   id: 'spectrum',
+  //   displayName: 'Spectrum',
+  // },
+  // {
+  //   id: 'spidergwen',
+  //   displayName: 'Spider-Gwen',
+  // },
+  // {
+  //   id: 'spiderman',
+  //   displayName: 'Spider-Man',
+  // },
+  // {
+  //   id: 'spiderman2099',
+  //   displayName: 'Spider-Man 2099',
+  // },
+  // {
+  //   id: 'spiderwoman',
+  //   displayName: 'Spider-Woman',
+  // },
+  // {
+  //   id: 'spot',
+  //   displayName: 'Spot',
+  // },
+  // {
+  //   id: 'squirrelgirl',
+  //   displayName: 'Squirrel Girl',
+  // },
+  // {
+  //   id: 'starlord',
+  //   displayName: 'Star-Lord',
+  // },
+  // {
+  //   id: 'storm',
+  //   displayName: 'Storm',
+  // },
+  // {
+  //   id: 'stryfe',
+  //   displayName: 'Stryfe',
+  // },
+  // {
+  //   id: 'sunbird',
+  //   displayName: 'Sunbird',
+  // },
+  // {
+  //   id: 'sunspot',
+  //   displayName: 'Sunspot',
+  // },
+  // {
+  //   id: 'supergiant',
+  //   displayName: 'Supergiant',
+  // },
+  // {
+  //   id: 'swordmaster',
+  //   displayName: 'Sword Master',
+  // },
+  // {
+  //   id: 'sylvie',
+  //   displayName: 'Sylvie',
+  // },
+  // {
+  //   id: 'taskmaster',
+  //   displayName: 'Taskmaster',
+  // },
+  // {
+  //   id: 'thane',
+  //   displayName: 'Thane',
+  // },
+  // {
+  //   id: 'thanos',
+  //   displayName: 'Thanos',
+  // },
+  // {
+  //   id: 'thehood',
+  //   displayName: 'The Hood',
+  // },
+  // {
+  //   id: 'thena',
+  //   displayName: 'Thena',
+  // },
+  // {
+  //   id: 'thing',
+  //   displayName: 'Thing',
+  // },
+  // {
+  //   id: 'thor',
+  //   displayName: 'Thor',
+  // },
+  // {
+  //   id: 'titania',
+  //   displayName: 'Titania',
+  // },
+  // {
+  //   id: 'toxin',
+  //   displayName: 'Toxin',
+  // },
+  // {
+  //   id: 'ulik',
+  //   displayName: 'Ulik',
+  // },
+  // {
+  //   id: 'ultron',
+  //   displayName: 'Ultron',
+  // },
+  // {
+  //   id: 'ulyssesklaue',
+  //   displayName: 'Ulysses Klaue',
+  // },
+  // {
+  //   id: 'usagent',
+  //   displayName: 'US Agent',
+  // },
+  // {
+  //   id: 'valeriarichards',
+  //   displayName: 'Valeria Richards',
+  // },
+  // {
+  //   id: 'valkyrie',
+  //   displayName: 'Valkyrie',
+  // },
+  // {
+  //   id: 'venom',
+  //   displayName: 'Venom',
+  // },
+  // {
+  //   id: 'venus',
+  //   displayName: 'Venus',
+  // },
+  // {
+  //   id: 'victorious',
+  //   displayName: 'Victorious',
+  // },
+  // {
+  //   id: 'viper',
+  //   displayName: 'Viper',
+  // },
+  // {
+  //   id: 'vision',
+  //   displayName: 'Vision',
+  // },
+  // {
+  //   id: 'volstagg',
+  //   displayName: 'Volstagg',
+  // },
+  // {
+  //   id: 'vulture',
+  //   displayName: 'Vulture',
+  // },
+  // {
+  //   id: 'warmachine',
+  //   displayName: 'War Machine',
+  // },
+  // {
+  //   id: 'warpath',
+  //   displayName: 'Warpath',
+  // },
+  // {
+  //   id: 'wartiger',
+  //   displayName: 'War Tiger',
+  // },
+  // {
+  //   id: 'warwolf',
+  //   displayName: 'Warwolf',
+  // },
+  // {
+  //   id: 'wasp',
+  //   displayName: 'Wasp',
+  // },
+  // {
+  //   id: 'wave',
+  //   displayName: 'Wave',
+  // },
+  // {
+  //   id: 'weaponhex',
+  //   displayName: 'Weapon Hex',
+  // },
+  // {
+  //   id: 'wendellvaughn',
+  //   displayName: 'Wendell Vaughn',
+  // },
+  // {
+  //   id: 'wenwu',
+  //   displayName: 'Wenwu',
+  // },
+  // {
+  //   id: 'whiplash',
+  //   displayName: 'Whiplash',
+  // },
+  // {
+  //   id: 'whitefox',
+  //   displayName: 'White Fox',
+  // },
+  // {
+  //   id: 'whitetiger',
+  //   displayName: 'White Tiger',
+  // },
+  // {
+  //   id: 'wiccan',
+  //   displayName: 'Wiccan',
+  // },
+  // {
+  //   id: 'wintersoldier',
+  //   displayName: 'Winter Soldier',
+  // },
+  // {
+  //   id: 'wolverine',
+  //   displayName: 'Wolverine',
+  // },
+  // {
+  //   id: 'wong',
+  //   displayName: 'Wong',
+  // },
+  // {
+  //   id: 'x-23',
+  //   displayName: 'X-23',
+  // },
+  // {
+  //   id: 'yelenabelova',
+  //   displayName: 'Yelena Belova',
+  // },
+  // {
+  //   id: 'yondu',
+  //   displayName: 'Yondu',
+  // },
+  // {
+  //   id: 'zeus
+  // }
 ];
