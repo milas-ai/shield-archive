@@ -1,12 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { abSchedule } from '../data/abRounds';
 import { ABRoundRow } from '../components/ABRoundRow';
 import { CharacterSelectorModal } from '../components/CharacterSelectorModal';
 import { useABStore } from '../store/useABStore';
 import type { ABPhase } from '../types';
+import { getCurrentABDayId } from '../utils/timeCycle';
 
 export const AllianceBattlePage = () => {
   const { selections, setSelection } = useABStore();
+  const currentDayId = getCurrentABDayId();
+  const activeRowRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (activeRowRef.current) {
+      activeRowRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, []);
   
   const [activeModal, setActiveModal] = useState<{
     dayId: number;
@@ -29,14 +38,18 @@ export const AllianceBattlePage = () => {
       </header>
 
       <div className="max-w-5xl mx-auto flex flex-col gap-4 pb-24">
-        {abSchedule.map((round, index) => (
+        {abSchedule.map((round, index) => {
+          const isCurrent = round.id === currentDayId;
+          return (
           <div 
             key={round.id} 
+            ref={isCurrent ? activeRowRef : null}
             style={{ zIndex: 30 - index }} 
             className="relative"
           >
             <ABRoundRow 
               day={round} 
+              isCurrent={isCurrent}
               selections={selections[round.id] || {}} 
               onOpenSelector={(phase, slotIdx) => setActiveModal({
                 dayId: round.id,
@@ -45,7 +58,7 @@ export const AllianceBattlePage = () => {
               })}
             />
           </div>
-        ))}
+        )})}
       </div>
 
       {activeModal && (

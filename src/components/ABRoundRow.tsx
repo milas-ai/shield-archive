@@ -50,11 +50,23 @@ interface ABRoundRowProps {
   day: ABDay;
   selections: Record<string, (ABSelection | null)[]>; 
   onOpenSelector: (phase: ABPhase, slotIdx: number) => void;
+  isCurrent?: boolean;
 }
 
-export const ABRoundRow = ({ day, selections, onOpenSelector }: ABRoundRowProps) => {
+export const ABRoundRow = ({ day, selections, onOpenSelector, isCurrent }: ABRoundRowProps) => {
   return (
-    <div className="mb-4 bg-slate-900/40 border border-slate-800 rounded-xl relative">
+    <div 
+      className={`transition-all duration-500 rounded-xl border-2 ${
+        isCurrent 
+          ? 'border-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.3)] bg-slate-900/80 scale-[1.02]' 
+          : 'border-slate-800 bg-slate-900/40 opacity-70 hover:opacity-100'
+      }`}
+    >
+      {isCurrent && (
+        <div className="absolute -left-2 -top-2 bg-cyan-500 text-black text-[10px] font-black px-2 py-0.5 rounded-sm uppercase tracking-tighter z-10">
+          Current Round
+        </div>
+      )}
 
       <div className={`grid gap-4 p-4 ${day.phases.length > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
         {day.phases.map((phase) => {
