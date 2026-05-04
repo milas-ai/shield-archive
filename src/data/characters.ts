@@ -1394,10 +1394,19 @@ export const characters: MFFCharacter[] = [
         { id: '4', name: 'Dark Gwenpool', changedSide: 'Villain' }
     ]
   },
-  // {
-  //   id: 'hades',
-  //   displayName: 'Hades',
-  // },
+  {
+    id: 'hades',
+    displayName: 'Hades (Pluto)',
+    baseType: 'Universal',
+    baseSide: 'Villain',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Hellfire', 'Evil', 'Olympus'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' }
+    ]
+  },
   // {
   //   id: 'havok',
   //   displayName: 'Havok',
@@ -1446,10 +1455,27 @@ export const characters: MFFCharacter[] = [
   //   id: 'hopesummers',
   //   displayName: 'Hope Summers',
   // },
-  // {
-  //   id: 'hulk',
-  //   displayName: 'Hulk',
-  // },
+  {
+    id: 'hulk',
+    displayName: 'Hulk',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Gamma Radiation', 'Durability'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'The Avengers' },
+        { id: '1', name: 'Secret Wars: Future Imperfect', changedSide: 'Villain' },
+        { id: '2', name: 'World War Hulk', changedSide: 'Villain' },
+        { id: '3', name: 'Marvel Studios Thor: Ragnarok' },
+        { id: '4', name: 'Marvel Studios Avengers: Endgame' },
+        { id: '5', name: 'Team Suit' },
+        { id: '6', name: 'Immortal Hulk', changedSide: 'Villain' },
+        { id: '7', name: 'Fear Itself', changedSide: 'Villain' },
+        { id: '8', name: 'Titan', changedSide: 'Villain' }
+    ]
+  },
   // {
   //   id: 'hulkbuster',
   //   displayName: 'Hulkbuster',
@@ -2139,14 +2165,35 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Marvel Cosmic Invasion' }
     ]
   },
-  // {
-  //   id: 'polaris',
-  //   displayName: 'Polaris',
-  // },
-  // {
-  //   id: 'professorx',
-  //   displayName: 'Professor X',
-  // },
+  {
+    id: 'polaris',
+    displayName: 'Polaris',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Female',
+    baseTags: ['Energy Projection', 'Fast Movement'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Uncanny X-Men', changedSide: 'Villain' }
+    ]
+  },
+  {
+    id: 'professorx',
+    displayName: 'Professor X',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Male',
+    baseTags: ['Leadership', 'Mind', 'Mind Resist'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Classic' },
+        { id: '2', name: 'Quiet Council' }
+    ]
+  },
   {
     id: 'proximamidnight',
     displayName: 'Proxima Midnight',
@@ -2166,10 +2213,26 @@ export const characters: MFFCharacter[] = [
   //   id: 'psylocke',
   //   displayName: 'Psylocke',
   // },
-  // {
-  //   id: 'punisher',
-  //   displayName: 'Punisher',
-  // },
+  {
+    id: 'punisher',
+    displayName: 'Punisher',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Leaderhip', 'Weapons Master'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Noir' },
+        { id: '2', name: 'War Journal' },
+        { id: '3', name: 'Marvel Studios Daredevil' },
+        { id: '4', name: 'Marvel Legacy', changedTags: ['Leaderhip', 'Weapons Master', 'Machine'] },
+        { id: '5', name: 'Cosmic Ghost Rider', changedType: 'Universal', changedSide: 'Villain', changedTags: ['Power Cosmic', 'Flame'] },
+        { id: '6', name: 'Fist of the Beast' },
+        { id: '7', name: 'Marvel Televisions Daredevil: Born Again' }
+    ]
+  },
   // {
   //   id: 'quasar',
   //   displayName: 'Quasar',
@@ -2211,10 +2274,22 @@ export const characters: MFFCharacter[] = [
   //   id: 'redskull',
   //   displayName: 'Red Skull',
   // },
-  // {
-  //   id: 'rescue',
-  //   displayName: 'Rescue',
-  // },
+  {
+    id: 'rescue',
+    displayName: 'Rescue',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Machine', 'Leadership'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Marvel Studios Avengers: Endgame' },
+        { id: '1', name: '3099' },
+        { id: '2', name: 'Invincible Iron Man' }
+    ]
+  },
   // {
   //   id: 'rhino',
   //   displayName: 'Rhino',
@@ -2416,10 +2491,23 @@ export const characters: MFFCharacter[] = [
         { id: '6', name: 'Arctic Warrior' }
     ]
   },
-  // {
-  //   id: 'shehulk',
-  //   displayName: 'She-Hulk',
-  // },
+  {
+    id: 'shehulk',
+    displayName: 'She-Hulk',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Gamma Radiation', 'Durability'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Secret Wars: A-Force' },
+        { id: '1', name: 'All-New' },
+        { id: '2', name: 'Fantastic Four', changedTags: ['Gamma Radiation', 'Durability', 'Fantastic Four'] },
+        { id: '3', name: 'Avengers' },
+        { id: '4', name: 'Marvel Studios She-Hulk: Attorney at Law' }
+    ]
+  },
   {
     id: 'shuri',
     displayName: 'Shuri',
@@ -2654,10 +2742,20 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedGender: 'Female', changedTags: ['Weapons Master', 'Evil', 'Thunderbolts'] }
     ]
   },
-  // {
-  //   id: 'thane',
-  //   displayName: 'Thane',
-  // },
+  {
+    id: 'thane',
+    displayName: 'Thane',
+    baseType: 'Universal',
+    baseSide: 'Villain',
+    baseSpecies: 'Inhuman',
+    baseGender: 'Male',
+    baseTags: ['Strong', 'Durability', 'Evil'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Phoenix Force', changedTags: ['Phoenix Force', 'Durability', 'Evil'] }
+    ]
+  },
   {
     id: 'thanos',
     displayName: 'Thanos',
@@ -2677,10 +2775,19 @@ export const characters: MFFCharacter[] = [
         { id: '6', name: 'Thanos Wins' }
     ]
   },
-  // {
-  //   id: 'thehood',
-  //   displayName: 'The Hood',
-  // },
+  {
+    id: 'thehood',
+    displayName: 'The Hood',
+    baseType: 'Blast',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Evil', 'Fast Movement'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Marvel Televisions Ironheart' }
+    ]
+  },
   // {
   //   id: 'thena',
   //   displayName: 'Thena',
