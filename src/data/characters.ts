@@ -2380,7 +2380,7 @@ export const characters: MFFCharacter[] = [
     displayName: 'Scarlet Witch',
     baseType: 'Blast',
     baseSide: 'Hero',
-    baseSpecies: 'Mutant',
+    baseSpecies: 'Human',
     baseGender: 'Female',
     baseTags: ['Chaos Magic', 'Fast Movement'],
     maxTier: 4,
