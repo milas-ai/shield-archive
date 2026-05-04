@@ -2420,10 +2420,22 @@ export const characters: MFFCharacter[] = [
   //   id: 'shehulk',
   //   displayName: 'She-Hulk',
   // },
-  // {
-  //   id: 'shuri',
-  //   displayName: 'Shuri',
-  // },
+  {
+    id: 'shuri',
+    displayName: 'Shuri',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Heightened Senses', 'Leadership'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Marvel Legacy' },
+        { id: '1', name: 'Marvel Studios Black Panther' },
+        { id: '2', name: 'Black Panther: Wakanda Forever' },
+        { id: '3', name: 'Marvel Studios Black Panther: Wakanda Forever' }
+    ]
+  },
   {
     id: 'sif',
     displayName: 'Sif',
