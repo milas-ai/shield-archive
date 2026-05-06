@@ -32,7 +32,7 @@ export const AllianceBattlePage = () => {
         </h1>
         <div className="flex items-center gap-4 mt-2">
           <p className="text-slate-400 text-sm">
-            Planejamento estratégico para os 28 rounds mensais (ABX / ABL / INF).
+            Organize your teams for each ABX/ABL round.
           </p>
         </div>
       </header>
