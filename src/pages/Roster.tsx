@@ -3,7 +3,7 @@ import { characters } from '../data/characters';
 import { CharacterCard } from '../components/CharacterCard';
 import { TeamRow } from '../components/TeamRow';
 
-export const HomePage = () => {
+export const RosterPage = () => {
   const { assignCharacter, selectedSlot } = useTeamStore();
 
   return (
@@ -11,8 +11,9 @@ export const HomePage = () => {
       
       <aside className="w-full max-w-md min-w-130 border-r border-slate-800 bg-slate-900/30 p-6 overflow-y-auto flex flex-col gap-6 no-scrollbar">
         <header>
-          <h1 className="text-2xl font-bold text-yellow-500">MFF Organizer</h1>
-          <p className="text-sm text-slate-400">Team Assignments</p>
+          <h1 className="text-3xl font-black text-yellow-500 tracking-tighter uppercase italic">
+            Team Assignments
+          </h1>
         </header>
 
         <section className="space-y-4">

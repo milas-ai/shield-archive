@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { HomePage } from './pages/Home';
+import { RosterPage } from './pages/Roster';
 import { AllianceBattlePage } from './pages/AllianceBattle';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
 
         <div className="flex-1 overflow-hidden">
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<RosterPage />} />
             <Route path="/ab-guide" element={<AllianceBattlePage />} />
           </Routes>
         </div>
