@@ -71,11 +71,11 @@ export const ABRoundRow = ({ day, selections, onOpenSelector, isCurrent }: ABRou
       <div className={`grid gap-4 p-4 ${day.phases.length > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
         {day.phases.map((phase) => {
           const phaseSelections = selections[phase.name] || [null, null, null];
-
+          const phaseNameColor = phase.name === 'Infinite' ? 'text-amber-700' : phase.name === 'Legend' ? 'text-yellow-600' : 'text-cyan-700';
           return (
             <div key={phase.name} className="flex flex-col gap-3">
               <div className="flex justify-between items-center">
-                <h4 className="text-sm font-bold uppercase">{phase.name}</h4>
+                <h4 className={`text-sm font-bold uppercase ${phaseNameColor}`}>{phase.name}</h4>
                 {RestrictionIcons({ restrictions: phase.restrictions })}
               </div>
 
