@@ -2221,8 +2221,8 @@ export const characters: MFFCharacter[] = [
     ]
   },
   {
-    id: 'madelynpryor',
-    displayName: 'Madelyn Pryor',
+    id: 'madelynepryor',
+    displayName: 'Madelyne Pryor',
     baseType: 'Blast',
     baseSide: 'Villain',
     baseSpecies: 'Mutant',
@@ -2934,26 +2934,84 @@ export const characters: MFFCharacter[] = [
         { id: '4', name: 'Mighty Avengers' }
     ]
   },
-  // {
-  //   id: 'rachelsummers',
-  //   displayName: 'Rachel Summers',
-  // },
-  // {
-  //   id: 'redguardian',
-  //   displayName: 'Red Guardian',
-  // },
-  // {
-  //   id: 'redhulk',
-  //   displayName: 'Red Hulk',
-  // },
-  // {
-  //   id: 'redshehulk',
-  //   displayName: 'Red She-Hulk',
-  // },
-  // {
-  //   id: 'redskull',
-  //   displayName: 'Red Skull',
-  // },
+  {
+    id: 'rachelsummers',
+    displayName: 'Rachel Summers',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Female',
+    baseTags: ['Phoenix Force', 'Fast Movement'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'X-Men: Days of Future Past' }
+    ]
+  },
+  {
+    id: 'redguardian',
+    displayName: 'Red Guardian',
+    baseType: 'Combat',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Strong', 'Agility'],
+    maxTier: 4,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel Studios Black Widow', changedSide: 'Hero' },
+        { id: '2', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedTags: ['Strong', 'Agility', 'Thunderbolts'] }
+    ]
+  },
+  {
+    id: 'redhulk',
+    displayName: 'Red Hulk',
+    baseType: 'Combat',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Flame', 'Gamma Radiation'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel NOW!', changedSide: 'Hero' },
+        { id: '2', name: 'Symbiote of Vengeance', changedSide: 'Hero', changedTags: ['Flame', 'Gamma Radiation', 'Symbiote'] },
+        { id: '3', name: 'Marvel Studios Captain America: Brave New World', changedTags: ['Flame', 'Gamma Radiation', 'Durability'] }
+    ]
+  },
+  {
+    id: 'redshehulk',
+    displayName: 'Red She-Hulk',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Gamma Radiation', 'Durability', 'Flame'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' }
+    ]
+  },
+  {
+    id: 'redskull',
+    displayName: 'Red Skull',
+    baseType: 'Blast',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Evil', 'Command'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Captain America: The First Avenger' },
+        { id: '1', name: 'Secret Wars: Red Skull', changedType: 'Speed' },
+        { id: '2', name: 'Hydra Armor', changedTags: ['Evil', 'Command', 'Cosmic Cube'] }
+    ]
+  },
   {
     id: 'rescue',
     displayName: 'Rescue',
@@ -2970,22 +3028,71 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Invincible Iron Man' }
     ]
   },
-  // {
-  //   id: 'rhino',
-  //   displayName: 'Rhino',
-  // },
-  // {
-  //   id: 'robbiereyes',
-  //   displayName: 'Robbie Reyes',
-  // },
-  // {
-  //   id: 'rocketraccoon',
-  //   displayName: 'Rocket Raccoon',
-  // },
-  // {
-  //   id: 'rogue',
-  //   displayName: 'Rogue',
-  // },
+  {
+    id: 'rhino',
+    displayName: 'Rhino',
+    baseType: 'Combat',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Strong', 'Durability', 'Sinister Six'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Classic' }
+    ]
+  },
+  {
+    id: 'robbiereyes',
+    displayName: 'Ghost Rider (Robbie Reyes)',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Fast Movement', 'Flame'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Marvel NOW!' },
+        { id: '1', name: 'Lord of Vengeance' }
+    ]
+  },
+  {
+    id: 'rocketraccoon',
+    displayName: 'Rocket Raccoon',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Weapons Master'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Guardians of the Galaxy' },
+        { id: '1', name: 'All-New, All-Different' },
+        { id: '2', name: 'Guardians of the Galaxy 2' },
+        { id: '3', name: 'Marvel Studios Avengers: Infinity War' },
+        { id: '4', name: 'Marvel Studios Avengers: Endgame' },
+        { id: '5', name: 'Team Suit' },
+        { id: '6', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Weapons Master', 'Guardians of the Galaxy'] }
+    ]
+  },
+  {
+    id: 'rogue',
+    displayName: 'Rogue',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Female',
+    baseTags: ['Healing', 'Fast Movement'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Classic' },
+        { id: '1', name: 'Age of Apocalypse' },
+        { id: '2', name: 'Uncanny Avengers' },
+        { id: '3', name: 'Excalibur' },
+        { id: '4', name: 'Winter Ops' }
+    ]
+  },
   {
     id: 'ronan',
     displayName: 'Ronan',
@@ -3002,10 +3109,21 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Annihilators', changedSide: 'Hero' }
     ]
   },
-  // {
-  //   id: 'sabretooth',
-  //   displayName: 'Sabretooth',
-  // },
+  {
+    id: 'sabretooth',
+    displayName: 'Sabretooth',
+    baseType: 'Combat',
+    baseSide: 'Villain',
+    baseSpecies: 'Mutant',
+    baseGender: 'Male',
+    baseTags: ['Evil', 'Agility'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Brotherhood of Mutants' },
+        { id: '1', name: 'Uncanny Avengers' },
+        { id: '2', name: 'Ultimate' }
+    ]
+  },
   {
     id: 'samalexander',
     displayName: 'Nova (Sam Alexander)',
@@ -3020,10 +3138,20 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'All-New, All-Different' }
     ]
   },
-  // {
-  //   id: 'sandman',
-  //   displayName: 'Sandman',
-  // },
+  {
+    id: 'sandman',
+    displayName: 'Sandman',
+    baseType: 'Combat',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Durability', 'Sinister Six'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Classic' }
+    ]
+  },
   {
     id: 'satana',
     displayName: 'Satana',
@@ -3089,14 +3217,36 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' }
     ]
   },
-  // {
-  //   id: 'scream',
-  //   displayName: 'Scream',
-  // },
-  // {
-  //   id: 'sentinel',
-  //   displayName: 'Sentinel',
-  // },
+  {
+    id: 'scream',
+    displayName: 'Scream',
+    baseType: 'Combat',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Strong', 'Evil', 'Symbiote'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Silence', changedSide: 'Hero', changedTags: ['Strong', 'Leadership', 'Symbiote'] }
+    ]
+  },
+  {
+    id: 'sentinel',
+    displayName: 'Sentinel',
+    baseType: 'Universal',
+    baseSide: 'Villain',
+    baseSpecies: 'Other',
+    baseGender: 'None',
+    baseTags: ['Machine', 'Evil'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Nimrod the Lesser' },
+        { id: '2', name: 'Stark Sentinels MK II' }
+    ]
+  },
   {
     id: 'sentry',
     displayName: 'Sentry',
@@ -3127,10 +3277,21 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Marvel Studios Eternals' }
     ]
   },
-  // {
-  //   id: 'shadowshell',
-  //   displayName: 'Shadow Shell',
-  // },
+  {
+    id: 'shadowshell',
+    displayName: 'Shadow Shell',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Warriors of the Sky', 'Agility', 'Poison'],
+    maxTier: 4,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Moon Temple Defenders', changedType: 'Speed' }
+    ]
+  },
   {
     id: 'shallabal',
     displayName: 'Silver Surfer (Shalla-Bal)',
@@ -3144,14 +3305,36 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Marvel Studios The Fantastic Four: First Steps' }
     ]
   },
-  // {
-  //   id: 'shangchi',
-  //   displayName: 'Shang-Chi',
-  // },
-  // {
-  //   id: 'sharoncarter',
-  //   displayName: 'Sharon Carter',
-  // },
+  {
+    id: 'shangchi',
+    displayName: 'Shang-Chi',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Agility', 'Leadership'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel Studios Shang-Chi' },
+        { id: '2', name: 'Marvel Animations Marvel Zombies' }
+    ]
+  },
+  {
+    id: 'sharoncarter',
+    displayName: 'Agent 13',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Agent'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel Studios Captain America: Civil War' }
+    ]
+  },
   {
     id: 'sharonrogers',
     displayName: 'Captain America (Sharon Rogers)',
@@ -3220,10 +3403,22 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Asgard Invasion' }
     ]
   },
-  // {
-  //   id: 'silk',
-  //   displayName: 'Silk',
-  // },
+  {
+    id: 'silk',
+    displayName: 'Silk',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Spider-Sense', 'Agility'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'All-New, All-Different' },
+        { id: '1', name: 'Web Suit' },
+        { id: '2', name: 'Summer Days' }
+    ]
+  },
   {
     id: 'silversamurai',
     displayName: 'Silver Samurai',
@@ -3252,26 +3447,77 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Void Knight', changedSide: 'Villain', changedTags: ['Power Cosmic', 'Symbiote', 'Annihilators'] }
     ]
   },
-  // {
-  //   id: 'sin',
-  //   displayName: 'Sin',
-  // },
-  // {
-  //   id: 'singularity',
-  //   displayName: 'Singularity',
-  // },
-  // {
-  //   id: 'sistergrimm',
-  //   displayName: 'Sister Grimm',
-  // },
-  // {
-  //   id: 'skurge',
-  //   displayName: 'Skurge',
-  // },
-  // {
-  //   id: 'slapstick',
-  //   displayName: 'Slapstick',
-  // },
+  {
+    id: 'sin',
+    displayName: 'Sin',
+    baseType: 'Speed',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Weapons Master', 'Evil'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'All-New, All-Different' },
+        { id: '1', name: 'Rage Returned' }
+    ]
+  },
+  {
+    id: 'singularity',
+    displayName: 'Singularity',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Female',
+    baseTags: ['Fast Movement', 'Energy Projection'],
+    maxTier: 2,
+    uniforms: [
+        { id: '' , name: 'Secret Wars: A-Force' },
+        { id: 'special', name: 'Special' }
+    ]
+  },
+  {
+    id: 'sistergrimm',
+    displayName: 'Sister Grimm',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Magic'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Secret Wars: A-Force' },
+        { id: '1', name: 'All-New, All-Different' },
+        { id: '2', name: 'Runaways' }
+    ]
+  },
+  {
+    id: 'skurge',
+    displayName: 'Skurge',
+    baseType: 'Combat',
+    baseSide: 'Villain',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Strong', 'Durability'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Marvel Studios Thor: Ragnarok' }
+    ]
+  },
+  {
+    id: 'slapstick',
+    displayName: 'Slapstick',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Agility'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' }
+    ]
+  },
   {
     id: 'sleeper',
     displayName: 'Sleeper',
@@ -3285,18 +3531,51 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' }
     ]
   },
-  // {
-  //   id: 'songbird',
-  //   displayName: 'Songbird',
-  // },
-  // {
-  //   id: 'spectrum',
-  //   displayName: 'Spectrum',
-  // },
-  // {
-  //   id: 'spidergwen',
-  //   displayName: 'Spider-Gwen',
-  // },
+  {
+    id: 'songbird',
+    displayName: 'Songbird',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Fast Movement', 'Agent'],
+    maxTier: 2,
+    uniforms: [
+        { id: '' , name: 'New Avengers' }
+    ]
+  },
+  {
+    id: 'spectrum',
+    displayName: 'Spectrum',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Leadership', 'Energy Projection'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel Studios The Marvels' }
+    ]
+  },
+  {
+    id: 'spidergwen',
+    displayName: 'Spider-Gwen',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Spider-Sense', 'Agility', 'Leadership'],
+    maxTier: 4,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'All-New, All-Different' },
+        { id: '1', name: 'Gwendolyne Stacy' },
+        { id: '2', name: 'Gwenom', changedSide: 'Villain', changedTags: ['Spider-Sense', 'Agility', 'Symbiote'] },
+        { id: '3', name: 'Spider-Man: Across the Spider-Verse' }
+    ]
+  },
   {
     id: 'spiderman',
     displayName: 'Spider-Man',
@@ -3321,14 +3600,36 @@ export const characters: MFFCharacter[] = [
         { id: '11', name: 'The Symbiote Suit', changedTags: ['Spider-Sense', 'Leadership', 'Symbiote'] }
     ]
   },
-  // {
-  //   id: 'spiderman2099',
-  //   displayName: 'Spider-Man 2099',
-  // },
-  // {
-  //   id: 'spiderwoman',
-  //   displayName: 'Spider-Woman',
-  // },
+  {
+    id: 'spiderman2099',
+    displayName: 'Spider-Man 2099',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Spider-Sense', 'Leadership', 'Agility'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'All-New, All-Different' },
+        { id: '2', name: 'Spider-Man: Across the Spider-Verse' }
+    ]
+  },
+  {
+    id: 'spiderwoman',
+    displayName: 'Spider-Woman',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Spider-Sense', 'Leadership', 'Agility'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Spider-Man: Across the Spider-Verse' }
+    ]
+  },
   {
     id: 'spot',
     displayName: 'Spot',
@@ -3343,10 +3644,21 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Spider-Man: Across the Spider-Verse' }
     ]
   },
-  // {
-  //   id: 'squirrelgirl',
-  //   displayName: 'Squirrel Girl',
-  // },
+  {
+    id: 'squirrelgirl',
+    displayName: 'Squirrel Girl',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Agility'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'New Avengers' },
+        { id: '1', name: 'Marvel NOW!' },
+        { id: '2', name: 'Nutty Titan', changedSide: 'Villain', changedTags: ['Agility', 'Evil', 'Power Cosmic'] }
+    ]
+  },
   {
     id: 'starlord',
     displayName: 'Star-Lord',
@@ -3383,30 +3695,92 @@ export const characters: MFFCharacter[] = [
         { id: '4', name: 'Marvel Animations X-Men 97' }
     ]
   },
-  // {
-  //   id: 'stryfe',
-  //   displayName: 'Stryfe',
-  // },
-  // {
-  //   id: 'sunbird',
-  //   displayName: 'Sunbird',
-  // },
-  // {
-  //   id: 'sunspot',
-  //   displayName: 'Sunspot',
-  // },
-  // {
-  //   id: 'supergiant',
-  //   displayName: 'Supergiant',
-  // },
-  // {
-  //   id: 'swordmaster',
-  //   displayName: 'Sword Master',
-  // },
-  // {
-  //   id: 'sylvie',
-  //   displayName: 'Sylvie',
-  // },
+  {
+    id: 'stryfe',
+    displayName: 'Stryfe',
+    baseType: 'Blast',
+    baseSide: 'Villain',
+    baseSpecies: 'Mutant',
+    baseGender: 'Male',
+    baseTags: ['Evil', 'Energy Projection'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Classic' },
+        { id: '2', name: 'The Tyrant of Spring' }
+    ]
+  },
+  {
+    id: 'sunbird',
+    displayName: 'Sun Bird',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Warriors of the Sky', 'Agility', 'Flame'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Moon Temple Defenders' }
+    ]
+  },
+  {
+    id: 'sunspot',
+    displayName: 'Sunspot',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Male',
+    baseTags: ['Flame', 'Fast Movement'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Marvel Animations X-Men 97' }
+    ]
+  },
+  {
+    id: 'supergiant',
+    displayName: 'Supergiant',
+    baseType: 'Universal',
+    baseSide: 'Villain',
+    baseSpecies: 'Alien',
+    baseGender: 'Female',
+    baseTags: ['Mind', 'Mind Resist', 'Black Order'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Infinity' },
+        { id: '1', name: 'Dark Obsidian Armor' }
+    ]
+  },
+  {
+    id: 'swordmaster',
+    displayName: 'Sword Master',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Leadership', 'Weapons Master'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Classic' }
+    ]
+  },
+  {
+    id: 'sylvie',
+    displayName: 'Sylvie',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Female',
+    baseTags: ['Mind', 'Chill'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Marvel Studios Loki' }
+    ]
+  },
   {
     id: 'taskmaster',
     displayName: 'Taskmaster',
@@ -3468,10 +3842,20 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Marvel Televisions Ironheart' }
     ]
   },
-  // {
-  //   id: 'thena',
-  //   displayName: 'Thena',
-  // },
+  {
+    id: 'thena',
+    displayName: 'Thena',
+    baseType: 'Universal',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Female',
+    baseTags: ['Leadership', 'Eternals'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel Studios Eternals' }
+    ]
+  },
   {
     id: 'thing',
     displayName: 'The Thing',
@@ -3512,14 +3896,35 @@ export const characters: MFFCharacter[] = [
         { id: '9', name: 'All-Father Reborn' }
     ]
   },
-  // {
-  //   id: 'titania',
-  //   displayName: 'Titania',
-  // },
-  // {
-  //   id: 'toxin',
-  //   displayName: 'Toxin',
-  // },
+  {
+    id: 'titania',
+    displayName: 'Titania',
+    baseType: 'Combat',
+    baseSide: 'Villain',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Strong'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Fear Itself' }
+    ]
+  },
+  {
+    id: 'toxin',
+    displayName: 'Toxin',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Human',
+    baseGender: 'Male',
+    baseTags: ['Agility', 'Symbiote', 'Strong'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' }
+    ]
+  },
   // {
   //   id: 'ulik',
   //   displayName: 'Ulik',
