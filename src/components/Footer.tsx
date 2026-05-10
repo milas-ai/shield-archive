@@ -38,7 +38,7 @@ export const Footer = () => {
             href="https://github.com/milas-ai/shield-archive" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-slate-400 hover:text-cyan-500 transition-colors text-sm font-bold uppercase tracking-tighter"
+            className="flex items-center gap-2 text-slate-400 hover:text-cyan-600 transition-colors text-sm font-bold uppercase tracking-tighter"
           >
             <svg // Github Icon
               width="18" 

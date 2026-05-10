@@ -8,7 +8,6 @@ export const Header = () => {
   return (
     <header className="p-4 bg-slate-950 border-b border-slate-800 flex items-center px-8 shadow-2xl relative z-50 gap-10">
       
-      {/* SEÇÃO DA LOGO */}
       <div className="flex items-center gap-3">
         <div className="relative">
           <img 
@@ -28,7 +27,6 @@ export const Header = () => {
         </Link>
       </div>
 
-      {/* NAVEGAÇÃO À ESQUERDA (SEM CONTORNOS) */}
       <nav className="flex gap-2">
         <Link 
           to="/" 
@@ -53,10 +51,8 @@ export const Header = () => {
         </Link>
       </nav>
 
-      {/* ESPAÇADOR PARA EMPURRAR O DETALHE PARA A DIREITA */}
       <div className="flex-1" />
 
-      {/* DETALHE TÉCNICO NA DIREITA */}
       <div className="hidden md:flex items-center gap-3 text-[10px] font-mono text-slate-700 tracking-tighter">
         SECURE_CONNECTION://ESTABLISHED
       </div>
