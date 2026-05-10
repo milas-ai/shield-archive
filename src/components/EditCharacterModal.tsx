@@ -1,3 +1,4 @@
+import { createPortal } from 'react-dom';
 import type { MFFCharacter } from '../types';
 import { useUserStore } from '../store/useUserStore';
 
@@ -5,12 +6,19 @@ export const EditCharacterModal = ({ character, onClose }: { character: MFFChara
   const { characterSettings, updateCharacter } = useUserStore();
   const settings = characterSettings[character.id] || { tier: 1, skinId: '', equipment: 'Option A' };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
-      <div className="w-full max-w-sm bg-slate-900 border border-slate-700 rounded-2xl p-6 shadow-2xl">
+  return createPortal(
+    <div className="fixed inset-0 z-999 flex items-center justify-center p-4">
+      <div 
+        className="fixed inset-0 bg-black/80 backdrop-blur-sm" 
+        onClick={onClose} 
+      />
+      
+      <div className="relative w-full max-w-sm bg-slate-900 border border-slate-700 rounded-2xl p-6 shadow-2xl">
         <header className="flex justify-between items-center mb-6">
-          <h3 className="text-xl font-bold text-yellow-500">{character.displayName}</h3>
-          <button onClick={onClose} className="text-slate-400 hover:text-white">✕</button>
+          <h3 className="text-xl font-bold text-yellow-500 italic uppercase tracking-tighter">
+            {character.displayName}
+          </h3>
+          <button onClick={onClose} className="text-slate-400 hover:text-white transition-colors">✕</button>
         </header>
 
         <div className="space-y-6">
@@ -73,6 +81,7 @@ export const EditCharacterModal = ({ character, onClose }: { character: MFFChara
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };

@@ -1,9 +1,10 @@
+import type { ABPhase } from '../types';
+import { createPortal } from 'react-dom';
 import { useState, useMemo } from 'react';
 import { characters } from '../data/characters';
 import { CharacterCard } from './CharacterCard';
-import { useUserStore } from '../store/useUserStore';
 import { getEffectiveStats } from '../utils/mff';
-import type { ABPhase } from '../types';
+import { useUserStore } from '../store/useUserStore';
 
 interface CharacterSelectorModalProps {
   phase: ABPhase;
@@ -54,10 +55,14 @@ export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSe
     return results;
   }, [phase, includeUniforms, search, characterSettings]);
 
-  return (
-    <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/90 backdrop-blur-md p-4">
-      <div className="w-full max-w-5xl bg-slate-900 border border-slate-700 rounded-2xl flex flex-col max-h-[90vh] shadow-2xl">
-        
+  return createPortal(
+    <div className="fixed inset-0 z-999 flex items-center justify-center p-4">
+      <div 
+        className="fixed inset-0 bg-black/90 backdrop-blur-md" 
+        onClick={onClose} 
+      />
+      
+      <div className="relative w-full max-w-5xl bg-slate-900 border border-slate-700 rounded-2xl flex flex-col max-h-[90vh] shadow-2xl overflow-hidden">
         <header className="p-6 border-b border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex flex-col">
             <h2 className="text-xl font-bold text-white uppercase tracking-tight">
@@ -112,6 +117,7 @@ export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSe
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
