@@ -21,7 +21,7 @@ const RestrictionIcons = ({ restrictions }: { restrictions: any }) => {
             <img 
               src={`assets/attributes/nores.png`}
               alt={'No Restrictions'}
-              className="w-7 h-7 opacity-90 transition-all group-hover:scale-110 group-hover:opacity-100"
+              className="w-6 h-6 md:w-7 md:h-7 opacity-90 transition-all group-hover:scale-110 group-hover:opacity-100"
             />
             <Tooltip value={'No Restrictions'} />
           </div>
@@ -35,7 +35,7 @@ const RestrictionIcons = ({ restrictions }: { restrictions: any }) => {
               <img
                 src={`assets/attributes/${value.toLowerCase()}.png`}
                 alt={value}
-                className="w-7 h-7 opacity-90 transition-all group-hover:scale-110 group-hover:opacity-100"
+                className="w-6 h-6 md:w-7 md:h-7 opacity-90 transition-all group-hover:scale-110 group-hover:opacity-100"
               />
               <Tooltip value={value} />
             </div>
@@ -68,10 +68,11 @@ export const ABRoundRow = ({ day, selections, onOpenSelector, isCurrent }: ABRou
         </div>
       )}
 
-      <div className={`grid gap-4 p-4 ${day.phases.length > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+      <div className={`grid gap-4 p-4 ${day.phases.length > 1 ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'}`}>
         {day.phases.map((phase) => {
           const phaseSelections = selections[phase.name] || [null, null, null];
           const phaseNameColor = phase.name === 'Infinite' ? 'text-amber-700' : phase.name === 'Legend' ? 'text-yellow-600' : 'text-cyan-700';
+          
           return (
             <div key={phase.name} className="flex flex-col gap-3">
               <div className="flex justify-between items-center">
@@ -79,12 +80,12 @@ export const ABRoundRow = ({ day, selections, onOpenSelector, isCurrent }: ABRou
                 {RestrictionIcons({ restrictions: phase.restrictions })}
               </div>
 
-              <div className={`flex gap-2 ${day.phases.length > 1 ? 'justify-start' : 'justify-center'}`}>
+              <div className={`flex gap-2 overflow-x-auto pb-2 sm:pb-0 sm:overflow-visible justify-center ${day.phases.length > 1 ? 'md:justify-start' : 'md:justify-center'}`}>
                 {phaseSelections.map((selection, slotIdx) => (
                   <div 
                     key={slotIdx}
                     onClick={() => onOpenSelector(phase, slotIdx)}
-                    className={`w-24 h-24 rounded-lg flex items-center justify-center cursor-pointer transition-all ${
+                    className={`shrink-0 aspect-square w-20 h-20 sm:w-24 sm:h-24 rounded-lg flex items-center justify-center cursor-pointer transition-all ${
                       selection 
                         ? 'border-0'
                         : 'border-2 border-dashed border-slate-800 hover:border-slate-600'
@@ -96,7 +97,7 @@ export const ABRoundRow = ({ day, selections, onOpenSelector, isCurrent }: ABRou
                         overrideSkinId={selection.skinId}
                       />
                     ) : (
-                      <span className="text-slate-700 text-[10px] font-bold uppercase tracking-tighter">
+                      <span className="text-slate-700 text-[9px] sm:text-[10px] font-bold uppercase tracking-tighter text-center px-1">
                         Slot {slotIdx + 1}
                       </span>
                     )}

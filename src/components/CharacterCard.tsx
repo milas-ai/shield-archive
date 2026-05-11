@@ -55,15 +55,23 @@ export const CharacterCard = ({ character, overrideSkinId, onClick, isUsed }: Ch
       <div 
         onClick={handleCardClick}
         onContextMenu={handleRightClick}
-        className={`relative w-24 h-24 ${isUsed ? '' : 'cursor-pointer transition-transform hover:scale-105'} overflow-hidden rounded-lg ${typeGradients[type]} shadow-xl border-slate-700 border-2`}
+        className={`relative w-full h-full overflow-hidden rounded-lg ${typeGradients[type]} shadow-xl border-2 ${
+          isUsed
+            ? 'grayscale opacity-60 border-slate-700'
+            : 'cursor-pointer transition-transform hover:scale-105 border-slate-700'
+        }`}
       >
-        <img src={portrait} alt={character.displayName} className='h-full w-full object-cover relative z-10 rounded-lg' />
+        <img
+          src={portrait}
+          alt={character.displayName}
+          className='absolute inset-0 h-full w-full object-cover z-10 rounded-lg'
+        />
 
         {tierFrame && (
           <img 
             src={tierFrame} 
             alt={`Tier ${currentTier}`}
-            className="absolute inset-0 w-full h-full z-20 pointer-events-none"
+            className="absolute inset-0 w-full h-full z-20 pointer-events-none object-contain"
           />
         )}
 

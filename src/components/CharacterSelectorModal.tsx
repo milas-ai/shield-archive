@@ -134,7 +134,7 @@ export const CharacterSelectorModal = ({ dayId, phase, onSelect, onClose }: Char
 
         <div className="flex-1 overflow-y-auto p-6 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 custom-scrollbar bg-black/20">
           {displayList.map((item, idx) => (
-            <div key={`${item.char.id}-${item.skinId}-${idx}`} className="flex flex-col items-center">
+            <div key={`${item.char.id}-${item.skinId}-${idx}`} className="w-20 h-20 sm:w-24 sm:h-24 flex flex-col items-center">
               <CharacterCard 
                 character={item.char} 
                 overrideSkinId={item.skinId}

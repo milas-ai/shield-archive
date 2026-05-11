@@ -38,13 +38,14 @@ export const HomePage = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-20 gap-3">
           {characters.map((char) => (
-            <CharacterCard 
-              key={char.id} 
-              character={char}
-              onClick={() => {
-                if (selectedSlot) assignCharacter(char.id);
-              }}
-            />
+            <div key={char.id} className="w-20 h-20 sm:w-24 sm:h-24">
+              <CharacterCard
+                character={char}
+                onClick={() => {
+                  if (selectedSlot) assignCharacter(char.id);
+                }}
+              />
+            </div>
           ))}
         </div>
       </main>
