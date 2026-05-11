@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useTeamStore } from '../store/useTeamStore';
 import { characters } from '../data/characters';
 import { CharacterCard } from '../components/CharacterCard';
@@ -9,6 +9,7 @@ import { TagSelectorModal } from '../components/TagSelectorModal';
 import { DndContext, DragOverlay, useDraggable, defaultDropAnimationSideEffects, useSensor, useSensors, PointerSensor } from '@dnd-kit/core';
 import { EditCharacterModal } from '../components/EditCharacterModal';
 import type { MFFCharacter } from '../types';
+import { Funnel, ChevronUp } from 'lucide-react';
 
 const FILTER_CONFIG = {
   type: ['Combat', 'Blast', 'Speed', 'Universal'],
@@ -51,6 +52,7 @@ export const RosterPage = () => {
   const [isOverSlot, setIsOverSlot] = useState(false);
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
   const isModalOpen = isTagModalOpen || Boolean(editingCharacter);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -125,9 +127,19 @@ export const RosterPage = () => {
     setIsOverSlot(false);
   };
 
+  useEffect(() => {
+    const handleWindowScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      setShowScrollTop(scrollTop > 600);
+    };
+    window.addEventListener('scroll', handleWindowScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleWindowScroll);
+  }, []);
+
   return (
     <DndContext sensors={isModalOpen ? [] : sensors} onDragStart={handleDragStart} onDragOver={handleDragOver} onDragEnd={handleDragEnd} onDragCancel={handleDragCancel}>
-      <div className="flex flex-col lg:flex-row h-full bg-slate-950 text-slate-100 overflow-hidden">
+      <div className="flex flex-col lg:flex-row lg:h-full bg-slate-950 text-slate-100 overflow-x-hidden">
         <aside className="w-full md:max-w-md md:min-w-130 border-r md:border-r-0 border-slate-800 bg-slate-900/30 p-4 md:p-6 overflow-y-auto shrink-0 max-h-[45vh] md:max-h-full flex flex-col gap-6 no-scrollbar">
           <header>
             <h1 className="text-xl md:text-3xl font-black text-yellow-500 tracking-tighter uppercase italic">
@@ -184,9 +196,7 @@ export const RosterPage = () => {
                       isMobileFiltersOpen ? 'border-cyan-500 text-cyan-400' : 'border-slate-600 text-slate-400'
                     }`}
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
-                    </svg>
+                    <Funnel size={16} />
                   </button>
                 </div>
 
@@ -262,12 +272,12 @@ export const RosterPage = () => {
               </div>
             </div>
           </div>
-
-          <div className="flex-1 p-8 overflow-y-auto no-scrollbar">
+            
+          <div className="flex-1 p-8 lg:overflow-y-auto no-scrollbar">
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 min-[125rem]:grid-cols-12 min-[170rem]:grid-cols-20 gap-4">
               {filteredRoster.map((item, idx) => (
                 <DraggableCharacter
-                  key={`${item.char.id}-${idx}`}
+                  key={`${item.char.id}-${item.skinId}-${idx}`}
                   item={item}
                   onClick={() => {
                     if (selectedSlot) assignCharacter(item.char.id);
@@ -277,6 +287,21 @@ export const RosterPage = () => {
               ))}
             </div>
           </div>
+
+          <button
+            onClick={(e) => {
+              e.stopPropagation(); 
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className={`lg:hidden fixed bottom-8 right-8 w-12 h-12 z-100 rounded-full bg-slate-900/80 border border-slate-700 text-slate-400 flex items-center justify-center hover:bg-slate-800 hover:text-white shadow-xl backdrop-blur-md transition-all duration-300 ease-in-out ${
+              showScrollTop 
+                ? 'opacity-100 translate-y-0 pointer-events-auto' 
+                : 'opacity-0 translate-y-4 pointer-events-none'
+            }`}
+            style={{ WebkitBackfaceVisibility: 'hidden' }}
+          >
+            <ChevronUp size={24} />
+          </button>
         </main>
 
         <DragOverlay zIndex={1000} dropAnimation={
