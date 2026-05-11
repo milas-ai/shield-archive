@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  A high-performance tactical management engine for optimizing rosters and monthly rotations within <strong>MARVEL Future Fight</strong>.
+  A high-performance tactical management engine for optimizing rosters and<br>monthly rotations within <strong>MARVEL Future Fight</strong>.
 </p>
 
 <p align="center">
@@ -29,8 +29,12 @@ Access the Archive here: **[milas-ai.github.io/shield-archive](https://milas-ai.
 
 ## 🔥 Key Features `(v1.0.0)`
 
-* **Database Backup System**: Integrated export/import system using `.json` files to sync your teams and roster data across Desktop and Mobile terminals.
-* **Alliance Battle Planning**: Dedicated page for 28-day ABX/ABL rotations with automatic scroll and round-specific team structuring.
+* **Database Backup System**:
+
+    Integrated export/import system using `.json` files to sync your teams and roster data across Desktop and Mobile terminals.
+* **Alliance Battle Planning**:
+
+    Dedicated page for 28-day ABX/ABL rotations with automatic scroll and round-specific team structuring.
 * **Advanced Roster Management**:
     * **Drag & Drop**: Rapid squad deployment utilizing `@dnd-kit`.
     * **Variant Tracking**: Full support for uniforms and skins per character.
