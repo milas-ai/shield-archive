@@ -130,7 +130,7 @@ export const RosterPage = () => {
   useEffect(() => {
     const handleWindowScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      setShowScrollTop(scrollTop > 600);
+      setShowScrollTop(scrollTop > 600 && (window.innerHeight + scrollTop) < (document.documentElement.scrollHeight - 200));
     };
     window.addEventListener('scroll', handleWindowScroll, { passive: true });
 
