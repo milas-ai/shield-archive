@@ -11,7 +11,7 @@ export const Header = () => {
       <div className="flex items-center gap-3">
         <div className="relative shrink-0 object-contain">
           <img 
-            src={`${import.meta.env.BASE_URL}assets/icon/icon_alt.svg`}
+            src={`${import.meta.env.BASE_URL}assets/icon/icon.svg`}
             alt="SHIELD Archive Logo" 
             className="w-7 h-7 md:w-10 md:h-10 opacity-90"
             style={{ filter: 'invert(1)' }} 
