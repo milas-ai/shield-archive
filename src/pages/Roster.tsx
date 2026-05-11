@@ -5,6 +5,7 @@ import { CharacterCard } from '../components/CharacterCard';
 import { TeamRow } from '../components/TeamRow';
 import { getEffectiveStats } from '../utils/mff';
 import { useUserStore } from '../store/useUserStore';
+import { TagSelectorModal } from '../components/TagSelectorModal';
 
 const FILTER_CONFIG = {
   type: ['Combat', 'Blast', 'Speed', 'Universal'],
@@ -19,6 +20,8 @@ export const RosterPage = () => {
   
   const [search, setSearch] = useState('');
   const [includeUniforms, setIncludeUniforms] = useState(false);
+  const [isTagModalOpen, setIsTagModalOpen] = useState(false);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [activeFilters, setActiveFilters] = useState<{ [key: string]: string | null }>({
     type: null,
     side: null,
@@ -39,27 +42,28 @@ export const RosterPage = () => {
     characters.forEach(char => {
       const variants = includeUniforms 
         ? [...char.uniforms] 
-        : [{ id: characterSettings[char.id]?.skinId || '' }];
+        : [{ id: characterSettings[char.id]?.skinId || '', name: '', changedTags: [] }];
 
       variants.forEach(variant => {
         const skinId = variant.id;
         const stats = getEffectiveStats(char, skinId);
 
         const matchesText = char.displayName.toLowerCase().includes(search.toLowerCase());
-        
         const matchesAttrs = Object.entries(activeFilters).every(([key, value]) => {
           if (!value) return true;
           return stats[key as keyof typeof stats] === value;
         });
 
-        if (matchesText && matchesAttrs) {
+        const matchesTags = selectedTags.length === 0 || selectedTags.every(tag => stats.tags.includes(tag));
+
+        if (matchesText && matchesAttrs && matchesTags) {
           results.push({ char, skinId });
         }
       });
     });
 
     return results;
-  }, [search, activeFilters, includeUniforms, characterSettings]);
+  }, [search, activeFilters, includeUniforms, characterSettings, selectedTags]);
 
   return (
     <div className="flex h-screen bg-slate-950 text-slate-100 overflow-hidden">
@@ -86,6 +90,22 @@ export const RosterPage = () => {
               </h2>
               
               <div className="flex items-center gap-6">
+                <div className="flex gap-2 max-w-75 overflow-x-auto no-scrollbar py-1">
+                  {selectedTags.map(tag => (
+                    <div key={tag} className="flex items-center gap-1.5 bg-cyan-950/40 border border-cyan-500/50 px-2 py-1 rounded shrink-0">
+                      <img src={`assets/tags/${tag.toLowerCase().replace(/\s+/g, '_')}.png`} className="w-3.5 h-3.5 object-contain" alt="" />
+                      <span className="text-[9px] font-black text-cyan-400 uppercase whitespace-nowrap">{tag}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <button 
+                  onClick={() => setIsTagModalOpen(true)}
+                  className="bg-slate-800 hover:bg-slate-700 border border-slate-600 px-3 py-2 rounded text-[10px] font-black uppercase tracking-widest transition-all shrink-0"
+                >
+                  Select Tags
+                </button>
+
                 <input 
                   type="text"
                   placeholder="Search agent name..."
@@ -161,6 +181,17 @@ export const RosterPage = () => {
           </div>
         </div>
       </main>
+
+      {isTagModalOpen && (
+        <TagSelectorModal 
+          selected={selectedTags}
+          onConfirm={(list) => {
+            setSelectedTags(list);
+            setIsTagModalOpen(false);
+          }}
+          onClose={() => setIsTagModalOpen(false)}
+        />
+      )}
     </div>
   );
 };
