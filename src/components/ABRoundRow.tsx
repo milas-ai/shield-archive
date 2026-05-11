@@ -107,7 +107,7 @@ export const ABRoundRow = ({ day, selections, onOpenSelector, isCurrent }: ABRou
                         />
                         <button 
                           onClick={(e) => handleRemove(e, phase.name, slotIdx)}
-                          className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full w-6 h-6 text-[12px] z-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center border-2 border-slate-900 shadow-lg cursor-pointer"
+                          className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full w-6 h-6 text-[12px] z-50 opacity-0 group-hover:opacity-90 transition-opacity flex items-center justify-center border-2 border-slate-900 shadow-lg cursor-pointer"
                         >
                           ✕
                         </button>
