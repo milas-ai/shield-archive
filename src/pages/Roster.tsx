@@ -126,7 +126,7 @@ export const RosterPage = () => {
 
   return (
     <DndContext sensors={isModalOpen ? [] : sensors} onDragStart={handleDragStart} onDragOver={handleDragOver} onDragEnd={handleDragEnd} onDragCancel={handleDragCancel}>
-      <div className="flex h-screen bg-slate-950 text-slate-100 overflow-hidden">
+      <div className="flex h-full bg-slate-950 text-slate-100 overflow-hidden">
         <aside className="w-full max-w-md min-w-130 border-r border-slate-800 bg-slate-900/30 p-6 overflow-y-auto flex flex-col gap-6 no-scrollbar">
           <header>
             <h1 className="text-3xl font-black text-yellow-500 tracking-tighter uppercase italic">
