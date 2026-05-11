@@ -5,6 +5,7 @@ import { CharacterSelectorModal } from '../components/CharacterSelectorModal';
 import { useABStore } from '../store/useABStore';
 import type { ABPhase } from '../types';
 import { getCurrentABDayId } from '../utils/timeCycle';
+import { CharacterRanking } from '../components/CharacterRanking';
 
 export const AllianceBattlePage = () => {
   const { selections, setSelection } = useABStore();
@@ -60,6 +61,8 @@ export const AllianceBattlePage = () => {
           </div>
         )})}
       </div>
+
+      <CharacterRanking />
 
       {activeModal && (
         <CharacterSelectorModal 
