@@ -226,7 +226,7 @@ export const RosterPage = () => {
           </div>
 
           <div className="flex-1 p-8 overflow-y-auto no-scrollbar">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-10 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 min-[125rem]:grid-cols-12 min-[170rem]:grid-cols-20 gap-4">
               {filteredRoster.map((item, idx) => (
                 <DraggableCharacter
                   key={`${item.char.id}-${idx}`}
