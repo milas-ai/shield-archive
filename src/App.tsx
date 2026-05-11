@@ -7,7 +7,7 @@ import { AllianceBattlePage } from './pages/AllianceBattle';
 function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <div className="flex flex-col min-h-screen md:h-screen bg-slate-950 text-slate-100">
+      <div className="flex flex-col min-h-screen lg:h-screen bg-slate-950 text-slate-100">
         
         <Header />
 

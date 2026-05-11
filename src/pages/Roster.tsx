@@ -49,6 +49,7 @@ export const RosterPage = () => {
   });
   const [activeItem, setActiveItem] = useState<any>(null);
   const [isOverSlot, setIsOverSlot] = useState(false);
+  const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
   const isModalOpen = isTagModalOpen || Boolean(editingCharacter);
   
   const sensors = useSensors(
@@ -126,10 +127,10 @@ export const RosterPage = () => {
 
   return (
     <DndContext sensors={isModalOpen ? [] : sensors} onDragStart={handleDragStart} onDragOver={handleDragOver} onDragEnd={handleDragEnd} onDragCancel={handleDragCancel}>
-      <div className="flex h-full bg-slate-950 text-slate-100 overflow-hidden">
-        <aside className="w-full max-w-md min-w-130 border-r border-slate-800 bg-slate-900/30 p-6 overflow-y-auto flex flex-col gap-6 no-scrollbar">
+      <div className="flex flex-col lg:flex-row h-full bg-slate-950 text-slate-100 overflow-hidden">
+        <aside className="w-full md:max-w-md md:min-w-130 border-r md:border-r-0 border-slate-800 bg-slate-900/30 p-4 md:p-6 overflow-y-auto shrink-0 max-h-[45vh] md:max-h-full flex flex-col gap-6 no-scrollbar">
           <header>
-            <h1 className="text-3xl font-black text-yellow-500 tracking-tighter uppercase italic">
+            <h1 className="text-xl md:text-3xl font-black text-yellow-500 tracking-tighter uppercase italic">
               Team Assignments
             </h1>
           </header>
@@ -142,54 +143,88 @@ export const RosterPage = () => {
         </aside>
 
         <main className="flex-1 flex flex-col overflow-hidden">
-          <div className="p-8 pb-4 border-b border-slate-800 bg-slate-900/20">
-            <div className="flex flex-col gap-6">
-              <div className="flex items-center justify-between">
-                <h2 className="text-xl font-black uppercase tracking-tighter italic border-l-4 border-cyan-500 pl-3">
+          <div className="p-4 md:p-8 md:pb-4 border-b border-slate-800 bg-slate-900/20 flex flex-col gap-4">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div className="flex items-center justify-between gap-4">
+                <h2 className="text-lg md:text-xl font-black uppercase tracking-tighter italic border-l-4 border-cyan-500 pl-3">
                   Characters <span className="text-slate-500 text-sm ml-2">({filteredRoster.length})</span>
                 </h2>
-                
-                <div className="flex items-center gap-6">
-                  <div className="flex gap-2 max-w-75 overflow-x-auto no-scrollbar py-1">
-                    {selectedTags.map(tag => (
-                      <div key={tag} className="flex items-center gap-1.5 bg-cyan-950/40 border border-cyan-500/50 px-2 py-1 rounded shrink-0">
-                        <img src={`assets/tags/${tag.toLowerCase().replace(/\s+/g, '_')}.png`} className="w-3.5 h-3.5 object-contain" alt="" />
-                        <span className="text-[9px] font-black text-cyan-400 uppercase whitespace-nowrap">{tag}</span>
-                      </div>
-                    ))}
+                <label className="flex md:hidden items-center gap-3 cursor-pointer select-none shrink-0">
+                  <div className="relative">
+                    <input 
+                      type="checkbox" 
+                      className="sr-only peer"
+                      checked={includeUniforms}
+                      onChange={() => setIncludeUniforms(!includeUniforms)}
+                    />
+                    <div className="w-10 h-5 bg-slate-800 rounded-full peer peer-checked:bg-cyan-600 after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-5"></div>
                   </div>
+                </label>
+              </div>
 
-                  <button 
-                    onClick={() => setIsTagModalOpen(true)}
-                    className="bg-slate-800 hover:bg-slate-700 border border-slate-600 px-3 py-2 rounded text-[10px] font-bold uppercase tracking-widest transition-all shrink-0"
-                  >
-                    Select Tags
-                  </button>
+              <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4 w-full md:w-auto">
+                <button 
+                  onClick={() => setIsTagModalOpen(true)}
+                  className="hidden md:block bg-slate-800 hover:bg-slate-700 border border-slate-600 px-4 py-2 rounded text-[10px] font-bold uppercase tracking-widest transition-all shrink-0"
+                >
+                  Select Tags
+                </button>
 
+                <div className="flex gap-2 w-full md:w-auto">
                   <input 
                     type="text"
                     placeholder="Search agent name..."
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    className="bg-black/40 border border-slate-700 rounded-lg px-4 py-2 text-sm text-white focus:border-cyan-500 outline-none w-64 transition-all"
+                    className="bg-black/40 border border-slate-700 rounded-lg px-4 py-2 text-sm text-white focus:border-cyan-500 outline-none w-full md:w-64 lg:w-80 transition-all min-w-0"
                   />
-
-                  <label className="flex items-center gap-3 cursor-pointer select-none">
-                    <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">All Uniforms</span>
-                    <div className="relative">
-                      <input 
-                        type="checkbox" 
-                        className="sr-only peer"
-                        checked={includeUniforms}
-                        onChange={() => setIncludeUniforms(!includeUniforms)}
-                      />
-                      <div className="w-10 h-5 bg-slate-800 rounded-full peer peer-checked:bg-cyan-600 after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-5"></div>
-                    </div>
-                  </label>
+                  <button
+                    onClick={() => setIsMobileFiltersOpen(!isMobileFiltersOpen)}
+                    className={`md:hidden shrink-0 bg-slate-800 hover:bg-slate-700 border transition-all px-3 py-2 rounded-lg flex items-center justify-center ${
+                      isMobileFiltersOpen ? 'border-cyan-500 text-cyan-400' : 'border-slate-600 text-slate-400'
+                    }`}
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                    </svg>
+                  </button>
                 </div>
+
+                <label className="hidden md:flex items-center gap-3 cursor-pointer select-none shrink-0">
+                  <span className="text-[9px] lg:text-[10px] font-black text-slate-500 uppercase tracking-widest">All Uniforms</span>
+                  <div className="relative">
+                    <input 
+                      type="checkbox" 
+                      className="sr-only peer"
+                      checked={includeUniforms}
+                      onChange={() => setIncludeUniforms(!includeUniforms)}
+                    />
+                    <div className="w-10 h-5 bg-slate-800 rounded-full peer peer-checked:bg-cyan-600 after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:after:translate-x-5"></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div className={`${isMobileFiltersOpen ? 'flex' : 'hidden'} md:flex flex-col gap-4`}>
+              <div className={`flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${selectedTags.length === 0 ? 'md:hidden' : ''}`}>
+                <div className="flex gap-2 max-w-full sm:max-w-[70%] overflow-x-auto no-scrollbar py-1">
+                  {selectedTags.map(tag => (
+                    <div key={tag} className="flex items-center gap-1.5 bg-cyan-950/40 border border-cyan-500/50 px-2 py-1 rounded shrink-0">
+                      <img src={`assets/tags/${tag.toLowerCase().replace(/\s+/g, '_')}.png`} className="w-3.5 h-3.5 object-contain" alt="" />
+                      <span className="text-[9px] font-black text-cyan-400 uppercase whitespace-nowrap">{tag}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <button 
+                  onClick={() => setIsTagModalOpen(true)}
+                  className="md:hidden bg-slate-800 hover:bg-slate-700 border border-slate-600 px-3 py-2 rounded text-[10px] font-bold uppercase tracking-widest transition-all shrink-0 w-full sm:w-auto"
+                >
+                  Select Tags
+                </button>
               </div>
 
-              <div className="flex flex-wrap gap-8 items-center bg-black/20 p-4 rounded-xl border border-slate-800/50">
+              <div className="flex flex-wrap gap-8 items-center bg-black/20 p-4 rounded-xl border border-slate-800/50 mt-2">
                 {Object.entries(FILTER_CONFIG).map(([category, options]) => (
                   <div key={category} className="flex flex-col gap-2">
                     <span className="text-[9px] font-black text-slate-600 uppercase tracking-[0.2em]">{category}</span>
@@ -216,8 +251,11 @@ export const RosterPage = () => {
                 ))}
                 
                 <button 
-                  onClick={() => setActiveFilters({ type: null, side: null, gender: null, species: null })}
-                  className="text-[10px] font-black text-red-500 uppercase hover:text-red-400 transition-colors ml-auto"
+                  onClick={() => {
+                    setActiveFilters({ type: null, side: null, gender: null, species: null });
+                    setSelectedTags([]);
+                  }}
+                  className="text-[10px] font-black text-red-500 uppercase hover:text-red-400 transition-colors ml-auto mt-2 sm:mt-0"
                 >
                   Clear Filters
                 </button>
@@ -226,7 +264,7 @@ export const RosterPage = () => {
           </div>
 
           <div className="flex-1 p-8 overflow-y-auto no-scrollbar">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 min-[125rem]:grid-cols-12 min-[170rem]:grid-cols-20 gap-4">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 min-[125rem]:grid-cols-12 min-[170rem]:grid-cols-20 gap-4">
               {filteredRoster.map((item, idx) => (
                 <DraggableCharacter
                   key={`${item.char.id}-${idx}`}

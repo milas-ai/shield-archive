@@ -27,7 +27,7 @@ export const TeamRow = ({ teamId }: { teamId: number }) => {
 
   return (
     <div className="flex items-center gap-4 p-4 bg-slate-900/50 rounded-xl border border-slate-800">
-      <span className="text-slate-500 font-bold w-12 text-sm uppercase">Team {teamId}</span>
+      <span className="text-slate-500 font-bold w-12 text-sm uppercase text-center">Team {teamId}</span>
       
       <div className="flex gap-3">
         {team?.members.map((member, idx) => {
