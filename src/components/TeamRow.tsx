@@ -1,6 +1,25 @@
 import { useTeamStore } from '../store/useTeamStore';
 import { characters } from '../data/characters';
 import { CharacterCard } from './CharacterCard';
+import { useDroppable } from '@dnd-kit/core';
+
+const DroppableSlot = ({ teamId, idx, children, isSelected }: any) => {
+  const { setNodeRef, isOver } = useDroppable({
+    id: `slot-${teamId}-${idx}`,
+  });
+
+  return (
+    <div 
+      ref={setNodeRef}
+      className={`relative p-1 rounded-lg border-2 transition-all ${
+        isOver ? 'border-cyan-500 bg-cyan-500/20 scale-110' : 
+        isSelected ? 'border-yellow-500 bg-yellow-500/10 scale-105' : 'border-transparent'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
 
 export const TeamRow = ({ teamId }: { teamId: number }) => {
   const { teams, selectedSlot, setSelectedSlot, removeCharacter } = useTeamStore();
@@ -16,12 +35,7 @@ export const TeamRow = ({ teamId }: { teamId: number }) => {
           const isSelected = selectedSlot?.teamId === teamId && selectedSlot?.memberIndex === idx;
 
           return (
-            <div 
-              key={idx}
-              className={`relative p-1 rounded-lg border-2 transition-all ${
-                isSelected ? 'border-yellow-500 bg-yellow-500/10 scale-105' : 'border-transparent'
-              }`}
-            >
+            <DroppableSlot teamId={teamId} idx={idx} isSelected={isSelected}>
               {charData ? (
                 <div className="relative group w-20 h-20 sm:w-24 sm:h-24">
                   <CharacterCard 
@@ -42,7 +56,7 @@ export const TeamRow = ({ teamId }: { teamId: number }) => {
                   {isSelected ? 'Selecting...' : '+ Add'}
                 </button>
               )}
-            </div>
+            </DroppableSlot>
           );
         })}
       </div>

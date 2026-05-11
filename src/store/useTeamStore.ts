@@ -7,7 +7,7 @@ interface TeamState {
   selectedSlot: { teamId: number; memberIndex: number } | null;
   
   setSelectedSlot: (slot: { teamId: number; memberIndex: number } | null) => void;
-  assignCharacter: (characterId: string) => void;
+  assignCharacter: (characterId: string, targetTeamId?: number, targetMemberIndex?: number) => void;
   removeCharacter: (teamId: number, memberIndex: number) => void;
 }
 
@@ -27,10 +27,12 @@ export const useTeamStore = create<TeamState>()(
 
       setSelectedSlot: (slot) => set({ selectedSlot: slot }),
 
-      assignCharacter: (characterId) => set((state) => {
-        if (!state.selectedSlot) return state;
+      assignCharacter: (characterId, targetTeamId?, targetMemberIndex?) => set((state) => {
+        const teamId = targetTeamId ?? state.selectedSlot?.teamId;
+        const memberIndex = targetMemberIndex ?? state.selectedSlot?.memberIndex;
 
-        const { teamId, memberIndex } = state.selectedSlot;
+        if (!teamId || memberIndex === undefined) return state;
+
         const newTeams = state.teams.map((team) => {
           if (team.id !== teamId) return team;
 

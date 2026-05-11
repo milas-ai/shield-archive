@@ -17,9 +17,10 @@ interface CharacterCardProps {
   overrideSkinId?: string;
   onClick?: () => void;
   isUsed?: boolean;
+  onEdit?: () => void;
 }
 
-export const CharacterCard = ({ character, overrideSkinId, onClick, isUsed }: CharacterCardProps) => {
+export const CharacterCard = ({ character, overrideSkinId, onClick, isUsed, onEdit }: CharacterCardProps) => {
   const settings = useUserStore((state) => state.characterSettings[character.id]);
   const currentTier = settings?.tier || 1;
   const currentSkinId = overrideSkinId !== undefined ? overrideSkinId : (settings?.skinId || '');
@@ -38,7 +39,11 @@ export const CharacterCard = ({ character, overrideSkinId, onClick, isUsed }: Ch
   const handleRightClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    setIsModalOpen(true);
+    if (onEdit) {
+      onEdit();
+    } else {
+      setIsModalOpen(true);
+    }
   };
 
   const getTierFrame = (tier: number) => {
@@ -93,7 +98,7 @@ export const CharacterCard = ({ character, overrideSkinId, onClick, isUsed }: Ch
       )}
       </div>
 
-      {isModalOpen && (
+      {isModalOpen && !onEdit && (
           <EditCharacterModal 
             character={character} 
             onClose={() => setIsModalOpen(false)} 
