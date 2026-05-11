@@ -121,7 +121,7 @@ export const CharacterSelectorModal = ({ dayId, phase, onSelect, onClose }: Char
             </label>
             
             <button 
-              className="ml-4 text-slate-400 hover:text-white transition-colors"
+              className="ml-4 text-slate-400 hover:text-white transition-colors max-md:top-6 max-md:right-7 max-md:absolute"
               onClick={(e) => {
                 e.stopPropagation();
                 onClose();
