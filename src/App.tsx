@@ -25,7 +25,7 @@ function AppLayout() {
         )}
       </div>
 
-      {isRoster && <Footer />}
+      {isRoster && <div className="mt-auto shrink-0 relative z-40"><Footer /></div>}
     </div>
   );
 }
