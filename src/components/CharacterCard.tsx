@@ -57,14 +57,14 @@ export const CharacterCard = ({ character, overrideSkinId, onClick, isUsed }: Ch
         onContextMenu={handleRightClick}
         className={`relative w-full h-full overflow-hidden rounded-lg ${typeGradients[type]} shadow-xl border-2 ${
           isUsed
-            ? 'grayscale opacity-60 border-slate-700'
+            ? 'opacity-70 border-slate-700'
             : 'cursor-pointer transition-transform hover:scale-105 border-slate-700'
         }`}
       >
         <img
           src={portrait}
           alt={character.displayName}
-          className='absolute inset-0 h-full w-full object-cover z-10 rounded-lg'
+          className={`absolute inset-0 h-full w-full object-cover z-10 rounded-lg ${isUsed ? 'grayscale' : ''}`}
         />
 
         {tierFrame && (
@@ -76,7 +76,7 @@ export const CharacterCard = ({ character, overrideSkinId, onClick, isUsed }: Ch
         )}
 
         {isUsed && (
-          <div className="absolute top-0 w-full bg-rose-800/70 p-1 text-center font-bold text-[0.65rem] z-25 uppercase text-slate-200">
+          <div className="absolute top-0 w-full bg-red-800/70 p-1 text-center font-bold text-[0.65rem] z-25 uppercase text-white">
             in use
           </div>
         )}
