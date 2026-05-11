@@ -140,18 +140,18 @@ export const RosterPage = () => {
   return (
     <DndContext sensors={isModalOpen ? [] : sensors} onDragStart={handleDragStart} onDragOver={handleDragOver} onDragEnd={handleDragEnd} onDragCancel={handleDragCancel}>
       <div className="flex flex-col lg:flex-row lg:h-full bg-slate-950 text-slate-100 overflow-x-hidden">
-        <aside className="w-full md:max-w-md md:min-w-130 border-r md:border-r-0 border-slate-800 bg-slate-900/30 p-4 md:p-6 overflow-y-auto shrink-0 max-h-[45vh] md:max-h-full flex flex-col gap-6 no-scrollbar">
-          <header>
-            <h1 className="text-xl md:text-3xl font-black text-yellow-500 tracking-tighter uppercase italic">
+        <aside className="w-full lg:w-124 bg-slate-900/50 border-b lg:border-b-0 lg:border-r border-slate-800 flex flex-col h-100 md:h-65 lg:h-full">
+          <header className="p-6">
+            <h1 className="text-xl md:text-2xl font-black text-yellow-500 tracking-tighter uppercase italic">
               Team Assignments
             </h1>
           </header>
 
-          <section className="space-y-4">
+          <div className="space-y-4 flex flex-col items-center lg:items-start p-6 pt-0 overflow-y-auto no-scrollbar">
             {[1, 2, 3, 4, 5].map(id => (
               <TeamRow key={id} teamId={id} />
             ))}
-          </section>
+          </div>
         </aside>
 
         <main className="flex-1 flex flex-col overflow-hidden">
