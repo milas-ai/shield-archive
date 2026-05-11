@@ -16,17 +16,28 @@ interface CharacterCardProps {
   character: MFFCharacter;
   overrideSkinId?: string;
   onClick?: () => void;
+  isUsed?: boolean;
 }
 
-export const CharacterCard = ({ character, overrideSkinId, onClick }: CharacterCardProps) => {
+export const CharacterCard = ({ character, overrideSkinId, onClick, isUsed }: CharacterCardProps) => {
   const settings = useUserStore((state) => state.characterSettings[character.id]);
   const currentTier = settings?.tier || 1;
   const currentSkinId = overrideSkinId !== undefined ? overrideSkinId : (settings?.skinId || '');
   const currentEquipment = settings?.equipment || '';
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleCardClick = (e: React.MouseEvent) => {
+    if (isModalOpen || isUsed) {
+      e.stopPropagation();
+      return;
+    }
+    if (onClick) onClick();
+  };
+
   const handleRightClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     setIsModalOpen(true);
   };
 
@@ -42,18 +53,32 @@ export const CharacterCard = ({ character, overrideSkinId, onClick }: CharacterC
   return (
     <>
       <div 
-        onClick={onClick}
+        onClick={handleCardClick}
         onContextMenu={handleRightClick}
-        className={`relative w-24 h-24 cursor-pointer overflow-hidden rounded-lg ${typeGradients[type]} transition-transform hover:scale-105 shadow-xl border-slate-700 border-2`}
+        className={`relative w-full h-full overflow-hidden rounded-lg ${typeGradients[type]} shadow-xl border-2 ${
+          isUsed
+            ? 'opacity-70 border-slate-700'
+            : 'cursor-pointer transition-transform hover:scale-105 border-slate-700'
+        }`}
       >
-        <img src={portrait} alt={character.displayName} className='h-full w-full object-cover relative z-10 rounded-lg' />
+        <img
+          src={portrait}
+          alt={character.displayName}
+          className={`absolute inset-0 h-full w-full object-cover z-10 rounded-lg ${isUsed ? 'grayscale' : ''}`}
+        />
 
         {tierFrame && (
           <img 
             src={tierFrame} 
             alt={`Tier ${currentTier}`}
-            className="absolute inset-0 w-full h-full z-20 pointer-events-none"
+            className="absolute inset-0 w-full h-full z-20 pointer-events-none object-contain"
           />
+        )}
+
+        {isUsed && (
+          <div className="absolute top-0 w-full bg-red-800/70 p-1 text-center font-bold text-[0.65rem] z-25 uppercase text-white">
+            in use
+          </div>
         )}
 
         {currentEquipment !== '' && (
