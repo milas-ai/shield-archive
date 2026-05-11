@@ -5,7 +5,7 @@ const ALL_TAGS = [
   "Strong", "Heightened Senses", "Mind", "Healing", "Fast Movement", "Leadership", "Agility", "Poison",
   "Flame", "Chill", "Shock", "Magic", "Machine", "Weapons Master", "Command", "Durability", "Agent",
   "Evil", "Mind Resist", "Symbiote", "Energy Projection", "Phoenix Force", "Chaos Magic",
-  "Spider-Sense", "Cold-Blooded", "Time Freezing Immunity", "Fantastic Four", "Sinister Six", "Power Cosmic",
+  "Spider-Sense", "Cold Blooded", "Time Freezing Immunity", "Fantastic Four", "Sinister Six", "Power Cosmic",
   "Warriors of the Sky", "Cosmic Cube", "Gamma Radiation", "Dark Avengers", "Eternals", "Defenders",
   "Hellfire", "Black Order", "Infinity Warps", "Guardians of the Galaxy", "Annihilators", "Zombie",
   "Thunderbolts", "Olympus", "Young Avengers"
@@ -41,7 +41,7 @@ export const TagSelectorModal = ({ selected, onConfirm, onClose }: {
               }`}
             >
               <img 
-                src={`assets/tags/${tag.toLowerCase().replace(/\s+/g, '_')}.png`} 
+                src={`assets/tags/${tag.toLowerCase().replace(/\s+/g, '')}.png`} 
                 className="w-6 h-6 object-contain" 
                 alt=""
               />
