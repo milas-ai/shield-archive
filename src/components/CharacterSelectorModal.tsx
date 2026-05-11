@@ -5,21 +5,36 @@ import { characters } from '../data/characters';
 import { CharacterCard } from './CharacterCard';
 import { getEffectiveStats } from '../utils/mff';
 import { useUserStore } from '../store/useUserStore';
+import { useABStore } from '../store/useABStore';
 
 interface CharacterSelectorModalProps {
+  dayId: number;
   phase: ABPhase;
   onSelect: (charId: string, skinId: string) => void;
   onClose: () => void;
 }
 
-export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSelectorModalProps) => {
+export const CharacterSelectorModal = ({ dayId, phase, onSelect, onClose }: CharacterSelectorModalProps) => {
   const [includeUniforms, setIncludeUniforms] = useState(false);
   const [search, setSearch] = useState('');
 
   const characterSettings = useUserStore((state) => state.characterSettings);
+  const selections = useABStore((state) => state.selections);
+
+  const usedCharIds = useMemo(() => {
+    const ids = new Set<string>();
+    const daySelections = selections[dayId] || {};
+    
+    Object.values(daySelections).forEach(phaseSlots => {
+      phaseSlots.forEach(slot => {
+        if (slot) ids.add(slot.charId);
+      });
+    });
+    return ids;
+  }, [selections, dayId]);
 
   const displayList = useMemo(() => {
-    const results: { char: any; skinId: string }[] = [];
+    const results: { char: any; skinId: string; isUsed: boolean }[] = [];
     const { restrictions = {} } = phase;
 
     const checkValidity = (char: any, sId: string) => {
@@ -35,28 +50,29 @@ export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSe
       if (!char.displayName.toLowerCase().includes(search.toLowerCase())) return;
 
       const equippedSkinId = characterSettings[char.id]?.skinId || '';
+      const isUsed = usedCharIds.has(char.id);
 
       if (!includeUniforms) {
         if (checkValidity(char, equippedSkinId)) {
-          results.push({ char, skinId: equippedSkinId });
+          results.push({ char, skinId: equippedSkinId, isUsed });
         } 
         else if (equippedSkinId !== '' && checkValidity(char, '')) {
-          results.push({ char, skinId: '' });
+          results.push({ char, skinId: '', isUsed });
         }
       } else {
         char.uniforms.forEach((uni: any) => {
           if (checkValidity(char, uni.id)) {
-            results.push({ char, skinId: uni.id });
+            results.push({ char, skinId: uni.id, isUsed });
           }
         });
       }
     });
 
     return results;
-  }, [phase, includeUniforms, search, characterSettings]);
+  }, [phase, includeUniforms, search, characterSettings, usedCharIds]);
 
   return createPortal(
-    <div
+    <div 
       className="fixed inset-0 z-999 flex items-center justify-center p-4"
       onClick={(e) => e.stopPropagation()}
     >
@@ -68,7 +84,7 @@ export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSe
         }} 
       />
       
-      <div
+      <div 
         className="relative w-full max-w-5xl bg-slate-900 border border-slate-700 rounded-2xl flex flex-col max-h-[90vh] shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
@@ -104,12 +120,12 @@ export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSe
               </div>
             </label>
             
-            <button
+            <button 
               className="ml-4 text-slate-400 hover:text-white transition-colors"
               onClick={(e) => {
                 e.stopPropagation();
                 onClose();
-              }}
+              }} 
             >
               ✕
             </button>
@@ -122,7 +138,8 @@ export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSe
               <CharacterCard 
                 character={item.char} 
                 overrideSkinId={item.skinId}
-                onClick={() => onSelect(item.char.id, item.skinId)} 
+                isUsed={item.isUsed}
+                onClick={() => !item.isUsed && onSelect(item.char.id, item.skinId)} 
               />
             </div>
           ))}

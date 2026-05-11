@@ -16,9 +16,10 @@ interface CharacterCardProps {
   character: MFFCharacter;
   overrideSkinId?: string;
   onClick?: () => void;
+  isUsed?: boolean;
 }
 
-export const CharacterCard = ({ character, overrideSkinId, onClick }: CharacterCardProps) => {
+export const CharacterCard = ({ character, overrideSkinId, onClick, isUsed }: CharacterCardProps) => {
   const settings = useUserStore((state) => state.characterSettings[character.id]);
   const currentTier = settings?.tier || 1;
   const currentSkinId = overrideSkinId !== undefined ? overrideSkinId : (settings?.skinId || '');
@@ -27,7 +28,7 @@ export const CharacterCard = ({ character, overrideSkinId, onClick }: CharacterC
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleCardClick = (e: React.MouseEvent) => {
-    if (isModalOpen) {
+    if (isModalOpen || isUsed) {
       e.stopPropagation();
       return;
     }
@@ -54,7 +55,7 @@ export const CharacterCard = ({ character, overrideSkinId, onClick }: CharacterC
       <div 
         onClick={handleCardClick}
         onContextMenu={handleRightClick}
-        className={`relative w-24 h-24 cursor-pointer overflow-hidden rounded-lg ${typeGradients[type]} transition-transform hover:scale-105 shadow-xl border-slate-700 border-2`}
+        className={`relative w-24 h-24 ${isUsed ? '' : 'cursor-pointer transition-transform hover:scale-105'} overflow-hidden rounded-lg ${typeGradients[type]} shadow-xl border-slate-700 border-2`}
       >
         <img src={portrait} alt={character.displayName} className='h-full w-full object-cover relative z-10 rounded-lg' />
 
@@ -64,6 +65,12 @@ export const CharacterCard = ({ character, overrideSkinId, onClick }: CharacterC
             alt={`Tier ${currentTier}`}
             className="absolute inset-0 w-full h-full z-20 pointer-events-none"
           />
+        )}
+
+        {isUsed && (
+          <div className="absolute top-0 w-full bg-rose-800/70 p-1 text-center font-bold text-[0.65rem] z-25 uppercase text-slate-200">
+            in use
+          </div>
         )}
 
         {currentEquipment !== '' && (

@@ -63,6 +63,7 @@ export const AllianceBattlePage = () => {
 
       {activeModal && (
         <CharacterSelectorModal 
+          dayId={activeModal.dayId}
           phase={activeModal.phase}
           onClose={() => setActiveModal(null)}
           onSelect={(charId, skinId) => {
