@@ -35,7 +35,7 @@ export const TeamRow = ({ teamId }: { teamId: number }) => {
           const isSelected = selectedSlot?.teamId === teamId && selectedSlot?.memberIndex === idx;
 
           return (
-            <DroppableSlot teamId={teamId} idx={idx} isSelected={isSelected}>
+            <DroppableSlot key={`team-${teamId}-member-${idx}`} teamId={teamId} idx={idx} isSelected={isSelected}>
               {charData ? (
                 <div className="relative group w-20 h-20 sm:w-24 sm:h-24">
                   <CharacterCard 
