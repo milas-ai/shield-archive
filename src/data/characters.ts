@@ -1422,18 +1422,21 @@ export const characters: MFFCharacter[] = [
   },
   {
     id: 'hawkeye',
-    displayName: 'Hawkeye (Kate Bishop)',
+    displayName: 'Hawkeye',
     baseType: 'Speed',
     baseSide: 'Hero',
     baseSpecies: 'Human',
-    baseGender: 'Female',
-    baseTags: ['Agility', 'Agent'],
+    baseGender: 'Male',
+    baseTags: ['Weapons Master', 'Agent'],
     maxTier: 4,
-    transcendent: true,
     uniforms: [
-        { id: '' , name: 'Marvel NOW!' },
-        { id: '1', name: 'Marvel Studios Hawkeye' },
-        { id: '2', name: 'Young Avengers', changedTags: ['Agility', 'Agent', 'Young Avengers'] }
+        { id: '' , name: 'The Avengers' },
+        { id: '1', name: 'Avengers: Age of Ultron' },
+        { id: '2', name: 'Marvel Studios Captain America: Civil War' },
+        { id: '3', name: 'Classic' },
+        { id: '4', name: 'Marvel Studios Avengers: Endgame' },
+        { id: '5', name: 'Marvel Studios Hawkeye (Hero Suit)' },
+        { id: '6', name: 'Wastelanders' }
     ]
   },
   {
@@ -1852,6 +1855,20 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Marvel Studios Captain America: Brave New World' }
+    ]
+  },
+  {
+    id: 'jubilee',
+    displayName: 'Jubilee',
+    baseType: 'Blast',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'Female',
+    baseTags: ['Energy Projection'],
+    maxTier: 3,
+    transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Classic' }
     ]
   },
   {
@@ -2877,9 +2894,9 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'X-Force' },
-        { id: '1', name: 'Disassembled' },
-        { id: '2', name: 'Hellfire Gala' },
-        { id: '3', name: 'Summer Vacation' }
+        { id: '2', name: 'Disassembled' },
+        { id: '3', name: 'Hellfire Gala' },
+        { id: '4', name: 'Summer Vacation' }
     ]
   },
   {
