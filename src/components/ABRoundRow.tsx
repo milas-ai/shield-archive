@@ -1,6 +1,7 @@
 import type { ABSelection, ABDay, ABPhase } from '../types';
 import { characters } from '../data/characters';
 import { CharacterCard } from './CharacterCard';
+import { useABStore } from '../store/useABStore';
 
 const RestrictionIcons = ({ restrictions }: { restrictions: any }) => {
   const keys = ['type', 'side', 'gender', 'species'];
@@ -54,6 +55,13 @@ interface ABRoundRowProps {
 }
 
 export const ABRoundRow = ({ day, selections, onOpenSelector, isCurrent }: ABRoundRowProps) => {
+  const { setSelection } = useABStore();
+
+  const handleRemove = (e: React.MouseEvent, phaseName: string, slotIdx: number) => {
+    e.stopPropagation();
+    setSelection(day.id, phaseName, slotIdx, null);
+  };
+  
   return (
     <div 
       className={`transition-all duration-500 rounded-xl border-2 ${
@@ -92,10 +100,18 @@ export const ABRoundRow = ({ day, selections, onOpenSelector, isCurrent }: ABRou
                     }`}
                   >
                     {selection ? (
-                      <CharacterCard 
-                        character={characters.find(c => c.id === selection.charId)!} 
-                        overrideSkinId={selection.skinId}
-                      />
+                      <div className="relative w-full h-full group">
+                        <CharacterCard 
+                          character={characters.find(c => c.id === selection.charId)!} 
+                          overrideSkinId={selection.skinId}
+                        />
+                        <button 
+                          onClick={(e) => handleRemove(e, phase.name, slotIdx)}
+                          className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full w-6 h-6 text-[12px] z-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center border-2 border-slate-900 shadow-lg cursor-pointer"
+                        >
+                          ✕
+                        </button>
+                      </div>
                     ) : (
                       <span className="text-slate-700 text-[9px] sm:text-[10px] font-bold uppercase tracking-tighter text-center px-1">
                         Slot {slotIdx + 1}
