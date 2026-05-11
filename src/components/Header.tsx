@@ -9,28 +9,28 @@ export const Header = () => {
     <header className="p-4 bg-slate-950 border-b border-slate-800 flex items-center px-8 shadow-2xl relative z-50 gap-10">
       
       <div className="flex items-center gap-3">
-        <div className="relative">
+        <div className="relative shrink-0 object-contain">
           <img 
             src={`${import.meta.env.BASE_URL}assets/icon/icon_alt.svg`}
             alt="SHIELD Archive Logo" 
-            className="w-10 h-10 opacity-90"
+            className="w-7 h-7 md:w-10 md:h-10 opacity-90"
             style={{ filter: 'invert(1)' }} 
           />
           <div className="absolute inset-0 bg-cyan-500/10 blur-xl rounded-full -z-10" />
         </div>
 
         <Link to="/" className="flex flex-col leading-none">
-          <h1 className="text-xl font-black text-slate-100 tracking-tighter uppercase italic">
+          <h1 className="text-[16px] md:text-xl font-black text-slate-100 tracking-tighter uppercase italic">
             SHIELD
           </h1>
-          <span className="text-[10px] font-black tracking-[0.3em] text-slate-500 uppercase">Archive</span>
+          <span className="text-[8px] md:text-[10px] font-black tracking-[0.3em] text-slate-500 uppercase">Archive</span>
         </Link>
       </div>
 
-      <nav className="flex gap-2">
+      <nav className="flex gap-2 md:gap-6 items-center">
         <Link 
           to="/" 
-          className={`px-3 py-2 rounded text-xs font-bold uppercase tracking-widest transition-all ${
+          className={`px-3 py-2 rounded text-[0.7rem] md:text-xs whitespace-nowrap font-bold uppercase tracking-widest transition-all ${
             isActive('/') 
               ? 'text-slate-100 bg-slate-900/50' 
               : 'text-slate-500 hover:text-slate-300'
@@ -41,7 +41,7 @@ export const Header = () => {
 
         <Link 
           to="/ab-guide" 
-          className={`px-3 py-2 rounded text-xs font-bold uppercase tracking-widest transition-all ${
+          className={`px-3 py-2 rounded text-[0.7rem] md:text-xs whitespace-nowrap font-bold uppercase tracking-widest transition-all ${
             isActive('/ab-guide') 
               ? 'text-slate-100 bg-slate-900/50' 
               : 'text-slate-500 hover:text-slate-300'
