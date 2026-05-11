@@ -1,6 +1,25 @@
 import { useTeamStore } from '../store/useTeamStore';
 import { characters } from '../data/characters';
 import { CharacterCard } from './CharacterCard';
+import { useDroppable } from '@dnd-kit/core';
+
+const DroppableSlot = ({ teamId, idx, children, isSelected }: any) => {
+  const { setNodeRef, isOver } = useDroppable({
+    id: `slot-${teamId}-${idx}`,
+  });
+
+  return (
+    <div 
+      ref={setNodeRef}
+      className={`relative p-1 rounded-lg border-2 transition-all ${
+        isOver ? 'border-cyan-500 bg-cyan-500/20 scale-110' : 
+        isSelected ? 'border-yellow-500 bg-yellow-500/10 scale-105' : 'border-transparent'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
 
 export const TeamRow = ({ teamId }: { teamId: number }) => {
   const { teams, selectedSlot, setSelectedSlot, removeCharacter } = useTeamStore();
@@ -8,7 +27,7 @@ export const TeamRow = ({ teamId }: { teamId: number }) => {
 
   return (
     <div className="flex items-center gap-4 p-4 bg-slate-900/50 rounded-xl border border-slate-800">
-      <span className="text-slate-500 font-bold w-12 text-sm uppercase">Team {teamId}</span>
+      <span className="text-slate-500 font-bold w-12 text-sm uppercase text-center">Team {teamId}</span>
       
       <div className="flex gap-3">
         {team?.members.map((member, idx) => {
@@ -16,12 +35,7 @@ export const TeamRow = ({ teamId }: { teamId: number }) => {
           const isSelected = selectedSlot?.teamId === teamId && selectedSlot?.memberIndex === idx;
 
           return (
-            <div 
-              key={idx}
-              className={`relative p-1 rounded-lg border-2 transition-all ${
-                isSelected ? 'border-yellow-500 bg-yellow-500/10 scale-105' : 'border-transparent'
-              }`}
-            >
+            <DroppableSlot teamId={teamId} idx={idx} isSelected={isSelected}>
               {charData ? (
                 <div className="relative group w-20 h-20 sm:w-24 sm:h-24">
                   <CharacterCard 
@@ -29,7 +43,7 @@ export const TeamRow = ({ teamId }: { teamId: number }) => {
                   />
                   <button 
                     onClick={() => removeCharacter(teamId, idx)}
-                    className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full w-6 h-6 text-[12px] z-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center border-2 border-slate-900 shadow-lg cursor-pointer"
+                    className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full w-6 h-6 text-[12px] z-50 opacity-40 lg:opacity-0 group-hover:opacity-90 transition-opacity flex items-center justify-center border-2 border-slate-900 shadow-lg cursor-pointer"
                   >
                     ✕
                   </button>
@@ -42,7 +56,7 @@ export const TeamRow = ({ teamId }: { teamId: number }) => {
                   {isSelected ? 'Selecting...' : '+ Add'}
                 </button>
               )}
-            </div>
+            </DroppableSlot>
           );
         })}
       </div>
