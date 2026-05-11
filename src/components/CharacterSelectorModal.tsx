@@ -56,13 +56,22 @@ export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSe
   }, [phase, includeUniforms, search, characterSettings]);
 
   return createPortal(
-    <div className="fixed inset-0 z-999 flex items-center justify-center p-4">
+    <div
+      className="fixed inset-0 z-999 flex items-center justify-center p-4"
+      onClick={(e) => e.stopPropagation()}
+    >
       <div 
         className="fixed inset-0 bg-black/90 backdrop-blur-md" 
-        onClick={onClose} 
+        onClick={(e) => {
+          e.stopPropagation();
+          onClose();
+        }} 
       />
       
-      <div className="relative w-full max-w-5xl bg-slate-900 border border-slate-700 rounded-2xl flex flex-col max-h-[90vh] shadow-2xl overflow-hidden">
+      <div
+        className="relative w-full max-w-5xl bg-slate-900 border border-slate-700 rounded-2xl flex flex-col max-h-[90vh] shadow-2xl overflow-hidden"
+        onClick={(e) => e.stopPropagation()}
+      >
         <header className="p-6 border-b border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex flex-col">
             <h2 className="text-xl font-bold text-white uppercase tracking-tight">
@@ -95,7 +104,15 @@ export const CharacterSelectorModal = ({ phase, onSelect, onClose }: CharacterSe
               </div>
             </label>
             
-            <button onClick={onClose} className="ml-4 text-slate-400 hover:text-white transition-colors">✕</button>
+            <button
+              className="ml-4 text-slate-400 hover:text-white transition-colors"
+              onClick={(e) => {
+                e.stopPropagation();
+                onClose();
+              }}
+            >
+              ✕
+            </button>
           </div>
         </header>
 

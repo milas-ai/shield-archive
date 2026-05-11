@@ -25,8 +25,18 @@ export const CharacterCard = ({ character, overrideSkinId, onClick }: CharacterC
   const currentEquipment = settings?.equipment || '';
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleCardClick = (e: React.MouseEvent) => {
+    if (isModalOpen) {
+      e.stopPropagation();
+      return;
+    }
+    if (onClick) onClick();
+  };
+
   const handleRightClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     setIsModalOpen(true);
   };
 
@@ -42,7 +52,7 @@ export const CharacterCard = ({ character, overrideSkinId, onClick }: CharacterC
   return (
     <>
       <div 
-        onClick={onClick}
+        onClick={handleCardClick}
         onContextMenu={handleRightClick}
         className={`relative w-24 h-24 cursor-pointer overflow-hidden rounded-lg ${typeGradients[type]} transition-transform hover:scale-105 shadow-xl border-slate-700 border-2`}
       >

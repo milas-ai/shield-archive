@@ -7,18 +7,31 @@ export const EditCharacterModal = ({ character, onClose }: { character: MFFChara
   const settings = characterSettings[character.id] || { tier: 1, skinId: '', equipment: 'Option A' };
 
   return createPortal(
-    <div className="fixed inset-0 z-999 flex items-center justify-center p-4">
+    <div
+      className="fixed inset-0 z-999 flex items-center justify-center p-4"
+      onClick={(e) => e.stopPropagation()}
+    >
       <div 
         className="fixed inset-0 bg-black/80 backdrop-blur-sm" 
-        onClick={onClose} 
+        onClick={(e) => {
+          e.stopPropagation();
+          onClose();
+        }} 
       />
-      
       <div className="relative w-full max-w-sm bg-slate-900 border border-slate-700 rounded-2xl p-6 shadow-2xl">
         <header className="flex justify-between items-center mb-6">
           <h3 className="text-xl font-bold text-yellow-500 italic uppercase tracking-tighter">
             {character.displayName}
           </h3>
-          <button onClick={onClose} className="text-slate-400 hover:text-white transition-colors">✕</button>
+          <button
+            className="text-slate-400 hover:text-white transition-colors"
+            onClick={(e) => {
+              e.stopPropagation();
+              onClose();
+            }}
+          >
+            ✕
+          </button>
         </header>
 
         <div className="space-y-6">
