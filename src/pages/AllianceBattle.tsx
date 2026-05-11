@@ -32,7 +32,7 @@ export const AllianceBattlePage = () => {
   } | null>(null);
 
   return (
-    <main className="h-full overflow-y-auto p-6 custom-scrollbar bg-slate-950">
+    <main className="p-6 no-scrollbar bg-slate-950">
       <div ref={topRef} />
 
       <header className="max-w-5xl mx-auto mb-10 border-b border-slate-800 pb-6">

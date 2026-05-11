@@ -29,7 +29,7 @@ export const CharacterRanking = () => {
   if (ranking.length === 0) return null;
 
   return (
-    <section className="max-w-5xl mx-auto mb-20 bg-slate-900/40 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+    <section className="max-w-5xl mx-auto mb-10 bg-slate-900/40 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
       <header className="bg-slate-900/60 p-6 border-b border-slate-800 flex justify-center">
         <h2 className="text-2xl font-black text-cyan-500 tracking-widest uppercase italic">
           Character Ranking
