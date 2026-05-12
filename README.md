@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/milas-ai/shield-archive?style=flat-for-the-badge&color=cyan" alt="License" />
+  <img src="https://img.shields.io/github/license/milas-ai/shield-archive" alt="License" />
   <img src="https://img.shields.io/github/last-commit/milas-ai/shield-archive?style=flat-for-the-badge&color=cyan" alt="Last Commit" />
   <img src="https://img.shields.io/badge/Status-Active_Duty-brightgreen?style=flat-for-the-badge" alt="Status" />
 </p>
