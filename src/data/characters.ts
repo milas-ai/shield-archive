@@ -206,7 +206,8 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Age of Apocalypse' },
         { id: '1', name: 'Messiah Complex' },
-        { id: '2', name: 'Heralds of Apocalypse' }
+        { id: '2', name: 'Heralds of Apocalypse' },
+        { id: '3', name: 'Marvel Animations X-Men 97' }
     ]
   },
   {
@@ -1814,8 +1815,9 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Phoenix' },
         { id: '1', name: 'X-Men Red' },
-        { id: '2', name: 'Marvel Girl' },
+        { id: '2', name: 'Marvel Girl', changedType: 'Universal' },
         { id: '3', name: 'Dark Phoenix', changedType: 'Universal', changedSide: 'Villain' },
+        { id: '4', name: 'Summer Flare Phoenix', changedType: 'Universal' }
     ]
   },
   {
@@ -1867,10 +1869,11 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Mutant',
     baseGender: 'Female',
     baseTags: ['Energy Projection'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Classic' }
+        { id: '' , name: 'Classic' },
+        { id: '1', name: 'Marvel Animations X-Men 97' }
     ]
   },
   {
@@ -2282,7 +2285,8 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'Marvel NOW!' },
         { id: '2', name: 'House of X' },
-        { id: '3', name: 'Krakoan Winter' }
+        { id: '3', name: 'Krakoan Winter' },
+        { id: '4', name: 'Marvel Animations X-Men 97', changedSide: 'Hero' }
     ]
   },
   {
@@ -2628,6 +2632,19 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Fallen Soul' }
+    ]
+  },
+  {
+    id: 'morph',
+    displayName: 'Morph',
+    baseType: 'Combat',
+    baseSide: 'Hero',
+    baseSpecies: 'Mutant',
+    baseGender: 'None',
+    baseTags: ['Weapons Master', 'Agility'],
+    maxTier: 3,
+    uniforms: [
+        { id: '' , name: 'Marvel Animations X-Men 97' }
     ]
   },
   {
@@ -3166,10 +3183,11 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Male',
     baseTags: ['Durability', 'Sinister Six'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Classic' }
+        { id: '' , name: 'Classic' },
+        { id: '1', name: 'Beach Fortress' }
     ]
   },
   {
