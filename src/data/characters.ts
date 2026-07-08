@@ -357,13 +357,14 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Female',
     baseTags: ['Agility'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Claws' },
         { id: '2', name: 'All-New, All-Different' },
-        { id: '3', name: 'Winter Criminal' }
+        { id: '3', name: 'Winter Criminal' },
+        { id: '4', name: 'Queen in Black', changedType: 'Universal', changedSide: 'Hero' }
     ]
   },
   {
@@ -1336,9 +1337,10 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Alien',
     baseGender: 'Male',
     baseTags: ['Healing', 'Evil', 'Fast Movement'],
-    maxTier: 3,
+    maxTier: 4,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Thor: Love and Thunder' }
+        { id: '' , name: 'Marvel Studios Thor: Love and Thunder' },
+        { id: '1', name: 'The God Butcher', changedTags: ['Healing', 'Evil', 'Symbiote'] }
     ]
   },
   {
@@ -2779,7 +2781,8 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'All-Father' },
-        { id: '2', name: 'Avengers 1,000,000 BC' }
+        { id: '2', name: 'Avengers 1,000,000 BC' },
+        { id: '3', name: 'Lord of Asgard' }
     ]
   },
   {
@@ -4022,12 +4025,13 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Alien',
     baseGender: 'Female',
     baseTags: ['Strong'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Marvel Studios Thor: Ragnarok' },
         { id: '1', name: 'Fearless Defenders' },
-        { id: '2', name: 'Marvel Studios Thor: Love and Thunder' }
+        { id: '2', name: 'Marvel Studios Thor: Love and Thunder' },
+        { id: '3', name: 'Asgardians of the Galaxy' }
     ]
   },
   {
@@ -4296,11 +4300,12 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Female',
     baseTags: ['Agility', 'Agent', 'Leadership'],
-    maxTier: 3,
+    maxTier: 4,
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Lifestyle Series 1' },
-        { id: '2', name: 'Lifestyle Series 2' }
+        { id: '2', name: 'Lifestyle Series 2' },
+        { id: '3', name: 'Agent F-One' }
     ]
   },
   {
