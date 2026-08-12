@@ -1352,13 +1352,14 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Male',
     baseTags: ['Poison', 'Fast Movement', 'Sinister Six'],
-    maxTier: 3,
+    maxTier: 4,
     uniforms: [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'Ultimate', changedType: 'Combat', changedTags: ['Flame', 'Fast Movement', 'Sinister Six'] },
         { id: '2', name: 'Dark Avengers', changedType: 'Blast', changedTags: ['Dark Avengers', 'Machine', 'Energy Projection'] },
         { id: '3', name: 'Spider-Man: No Way Home' },
-        { id: '4', name: 'Red Goblin', changedTags: ['Flame', 'Fast Movement', 'Sinister Six'] }
+        { id: '4', name: 'Red Goblin', changedTags: ['Flame', 'Fast Movement', 'Sinister Six'] },
+        { id: '5', name: 'Gold Goblin', changedSide: 'Hero' }
     ]
   },
   {
@@ -1560,7 +1561,8 @@ export const characters: MFFCharacter[] = [
         { id: '5', name: 'Team Suit' },
         { id: '6', name: 'Immortal Hulk', changedSide: 'Villain' },
         { id: '7', name: 'Fear Itself', changedSide: 'Villain' },
-        { id: '8', name: 'Titan', changedSide: 'Villain' }
+        { id: '8', name: 'Titan', changedSide: 'Villain' },
+        { id: '9', name: 'Marvel Studios Spider-Man: Brand New Day' }
     ]
   },
   {
@@ -3073,10 +3075,11 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Male',
     baseTags: ['Strong', 'Durability', 'Sinister Six'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Classic' }
+        { id: '' , name: 'Classic' },
+        { id: '1', name: 'Uncanny Spider-Man' }
     ]
   },
   {
@@ -3249,10 +3252,11 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Male',
     baseTags: ['Evil', 'Durability', 'Poison'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
+        { id: '1', name: 'Marvel Studios Spider-Man: Brand New Day' }
     ]
   },
   {
@@ -3635,7 +3639,8 @@ export const characters: MFFCharacter[] = [
         { id: '8', name: 'Spider-Man: No Way Home (Integrated Suit)' },
         { id: '9', name: 'Spider-Man: No Way Home (Black & Gold Suit)' },
         { id: '10', name: 'Back to Basics' },
-        { id: '11', name: 'The Symbiote Suit', changedTags: ['Spider-Sense', 'Leadership', 'Symbiote'] }
+        { id: '11', name: 'The Symbiote Suit', changedTags: ['Spider-Sense', 'Leadership', 'Symbiote'] },
+        { id: '12', name: 'Marvel Studios Spider-Man: Brand New Day' }
     ]
   },
   {
