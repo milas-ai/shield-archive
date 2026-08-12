@@ -91,7 +91,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Totally Awesome Hulk' },
         { id: '1', name: 'Monsters Unleashed! (MFF Variant)' },
         { id: '2', name: 'Brawn' },
-        { id: '3', name: 'Heroic Age' }
+        { id: '3', name: 'Heroic Age', changedType: 'Speed' }
     ]
   },
   {
