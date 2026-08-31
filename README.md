@@ -18,16 +18,16 @@
 
 <hr />
 
-## 🎯 Overview
+## Overview
 
 **SHIELD Archive** is a fan-made tactical engine designed for players of **MARVEL Future Fight (MFF)**. It addresses the complexity of managing large rosters across a variety of game modes with cyclical restrictions, specifically focusing on data control and logistical planning.
 
-### 🔭 Live Terminal
+### Live Terminal
 Access the Archive here: **[milas-ai.github.io/shield-archive](https://milas-ai.github.io/shield-archive)**
 
 ---
 
-## 🔥 Key Features `(v1.0.0)`
+## Key Features `(v1.0.0)`
 
 * **Database Backup System**:
 
@@ -46,7 +46,7 @@ Access the Archive here: **[milas-ai.github.io/shield-archive](https://milas-ai.
 
 ---
 
-## 🛠️ Technical Specifications
+## Technical Specifications
 
 * **Framework**: [React 19](https://reactjs.org/) + [TypeScript](https://www.typescript.org/)
 * **Build Tool**: [Vite](https://vitejs.dev/)
@@ -57,7 +57,7 @@ Access the Archive here: **[milas-ai.github.io/shield-archive](https://milas-ai.
 
 ---
 
-## 🗺️ Operations Roadmap
+## Operations Roadmap
 
 Tracking future logistical protocols and upcoming modules.
 
@@ -79,7 +79,7 @@ Tracking future logistical protocols and upcoming modules.
 
 ---
 
-## 💻 Local Installation
+## Local Installation
 
 To deploy a local copy of the Archive:
 
@@ -100,7 +100,7 @@ To deploy a local copy of the Archive:
 
 ---
 
-## ⚖️ License & Intellectual Property
+## License & Intellectual Property
 
 ### Code License
 The **SHIELD Archive** code is licensed under the **GPL-3.0 License**. You are free to modify and distribute the code, provided it remains under the same open-source protocol.
