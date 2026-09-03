@@ -162,6 +162,19 @@ export const characters: MFFCharacter[] = [
     ]
   },
   {
+    id: 'annihilus',
+    displayName: 'Annihilus',
+    baseType: 'Blast',
+    baseSide: 'Villain',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Poison', 'Evil'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Annihilation' }
+    ]
+  },
+  {
     id: 'antiman',
     displayName: 'Anti-Man',
     baseType: 'Universal',
@@ -967,12 +980,13 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Alien',
     baseGender: 'Male',
     baseTags: ['Healing'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Guardians of the Galaxy' },
         { id: '1', name: 'All-New, All-Different' },
-        { id: '2', name: 'Classic' }
+        { id: '2', name: 'Classic' },
+        { id: '3', name: 'Annihilation' }
     ]
   },
   {
@@ -1157,6 +1171,19 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Energy Projection', 'Mind', 'Fantastic Four'],
     maxTier: 3,
     transcendent: true,
+    uniforms: [
+        { id: '' , name: 'Modern' }
+    ]
+  },
+  {
+    id: 'galactus',
+    displayName: 'Galactus',
+    baseType: 'Universal',
+    baseSide: 'Villain',
+    baseSpecies: 'Alien',
+    baseGender: 'Male',
+    baseTags: ['Power Cosmic', 'Evil'],
+    maxTier: 4,
     uniforms: [
         { id: '' , name: 'Modern' }
     ]
@@ -3869,7 +3896,8 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Marvel Studios Avengers: Endgame' },
         { id: '4', name: 'Obsidian King' },
         { id: '5', name: 'Wise Harvester' },
-        { id: '6', name: 'Thanos Wins' }
+        { id: '6', name: 'Thanos Wins' },
+        { id: '7', name: 'Annihilation' }
     ]
   },
   {
