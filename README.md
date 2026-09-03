@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  A high-performance tactical management engine for optimizing rosters<br>and monthly rotations within <strong>MARVEL Future Fight</strong>.
+  A high-performance tactical management platform for optimizing rosters<br>and monthly rotations within <strong>MARVEL Future Fight</strong>.
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 
 ## Overview
 
-**SHIELD Archive** is a fan-made tactical engine designed for players of **MARVEL Future Fight (MFF)**. It addresses the complexity of managing large rosters across a variety of game modes with cyclical restrictions, specifically focusing on data control and logistical planning.
+**SHIELD Archive** is a fan-made webapp designed for players of **MARVEL Future Fight (MFF)**. It addresses the complexity of managing large rosters across a variety of game modes with cyclical restrictions, specifically focusing on Alliance Battle (ABX) and Alliance Battle League (ABL). The platform provides a centralized hub for roster management, team planning, and data synchronization across devices.
 
 ### Live Terminal
 Access the Archive here: **[milas-ai.github.io/shield-archive](https://milas-ai.github.io/shield-archive)**
