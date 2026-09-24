@@ -3070,12 +3070,13 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Male',
     baseTags: ['Evil', 'Command'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Captain America: The First Avenger' },
         { id: '1', name: 'Secret Wars: Red Skull', changedType: 'Speed' },
-        { id: '2', name: 'Hydra Armor', changedTags: ['Evil', 'Command', 'Cosmic Cube'] }
+        { id: '2', name: 'Hydra Armor', changedTags: ['Evil', 'Command', 'Cosmic Cube'] },
+        { id: '3', name: 'The Crimson Fall', changedTags: ['Evil', 'Command', 'Cosmic Cube'] }
     ]
   },
   {
@@ -3552,11 +3553,12 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Female',
     baseTags: ['Magic'],
-    maxTier: 3,
+    maxTier: 4,
     uniforms: [
         { id: '' , name: 'Secret Wars: A-Force' },
         { id: '1', name: 'All-New, All-Different' },
-        { id: '2', name: 'Runaways' }
+        { id: '2', name: 'Runaways' },
+        { id: '3', name: 'Princess Tsukimi' }
     ]
   },
   {
