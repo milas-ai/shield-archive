@@ -4036,7 +4036,8 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Male',
     baseTags: ['Weapons Master'],
-    maxTier: 2,
+    maxTier: 3,
+    transcendent: true,
     uniforms: [
         { id: '' , name: 'Marvel Studios Black Panther' }
     ]
@@ -4338,7 +4339,8 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Male',
     baseTags: ['Shock', 'Machine'],
-    maxTier: 2,
+    maxTier: 3,
+    transcendent: true,
     uniforms: [
         { id: '' , name: 'Marvel Studios Iron Man 2' }
     ]
