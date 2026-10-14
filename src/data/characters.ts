@@ -12,7 +12,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Infected Bioweapon', changedTags: ['Gamma Radiation', 'Durability', 'Zombie'] }
+        { id: '1', name: 'Infected Bioweapon', changedTags: ['Gamma Radiation', 'Durability', 'Zombie'] },
     ]
   },
   {
@@ -27,7 +27,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Fear Itself' }
+        { id: '1', name: 'Fear Itself' },
     ]
   },
   {
@@ -42,7 +42,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Infinity Countdown' },
-        { id: '2', name: 'Marvel Studios Guardians of the Galaxy 3' }
+        { id: '2', name: 'Marvel Studios Guardians of the Galaxy 3' },
     ]
   },
   {
@@ -57,7 +57,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Classic' }
+        { id: '1', name: 'Classic' },
     ]
   },
   {
@@ -87,7 +87,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'All-New, All-Different' },
         { id: '1', name: 'Agent Anti-Venom' },
         { id: '2', name: 'Classic' },
-        { id: '3', name: 'Guardians of the Galaxy' }
+        { id: '3', name: 'Guardians of the Galaxy' },
     ]
   },
   {
@@ -104,7 +104,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Totally Awesome Hulk' },
         { id: '1', name: 'Monsters Unleashed! (MFF Variant)' },
         { id: '2', name: 'Brawn' },
-        { id: '3', name: 'Heroic Age', changedType: 'Speed' }
+        { id: '3', name: 'Heroic Age', changedType: 'Speed' },
     ]
   },
   {
@@ -121,7 +121,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Ultimates' },
         { id: '1', name: 'Classic' },
         { id: '2', name: 'Marvel Studios Doctor Strange 2' },
-        { id: '3', name: 'Young Avengers', changedTags: ['Strong', 'Fast Movement', 'Young Avengers'] }
+        { id: '3', name: 'Young Avengers', changedTags: ['Strong', 'Fast Movement', 'Young Avengers'] },
     ]
   },
   {
@@ -137,7 +137,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel Studios Doctor Strange', changedGender: 'Female' },
         { id: '2', name: 'Unleashed Mystic', changedGender: 'Female' },
-        { id: '3', name: 'The Monk of Kamar-Taj' }
+        { id: '3', name: 'The Monk of Kamar-Taj' },
     ]
   },
   {
@@ -154,7 +154,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'X-Force' },
         { id: '2', name: 'All-New X-Men' },
-        { id: '3', name: 'Fallen One' }
+        { id: '3', name: 'Fallen One' },
     ]
   },
   {
@@ -171,7 +171,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Secret Wars: 1602 Witch Hunter Angela' },
         { id: '2', name: 'All-New, All-Different', changedTags: ['Weapons Master', 'Flame'] },
-        { id: '3', name: 'Asgards Assassin' }
+        { id: '3', name: 'Asgards Assassin' },
     ]
   },
   {
@@ -184,7 +184,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Poison', 'Evil'],
     maxTier: 4,
     uniforms: [
-        { id: '' , name: 'Annihilation' }
+        { id: '' , name: 'Annihilation' },
     ]
   },
   {
@@ -198,7 +198,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'All-New, All-Different' },
-        { id: '1', name: 'Ultimates' }
+        { id: '1', name: 'Ultimates' },
     ]
   },
   {
@@ -217,7 +217,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Marvel Studios Ant-Man and the Wasp' },
         { id: '4', name: 'Marvel Studios Avengers: Endgame' },
         { id: '5', name: 'Team Suit' },
-        { id: '6', name: 'Ant-Man and the Wasp: Quantumania' }
+        { id: '6', name: 'Ant-Man and the Wasp: Quantumania' },
     ]
   },
   {
@@ -233,7 +233,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Age of Apocalypse' },
         { id: '1', name: 'Messiah Complex' },
         { id: '2', name: 'Heralds of Apocalypse' },
-        { id: '3', name: 'Marvel Animations X-Men 97' }
+        { id: '3', name: 'Marvel Animations X-Men 97' },
     ]
   },
   {
@@ -248,7 +248,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Infinity Warps' },
-        { id: '1', name: 'Arachknight 2099' }
+        { id: '1', name: 'Arachknight 2099' },
     ]
   },
   {
@@ -263,7 +263,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Punisher', changedSide: 'Villain', changedTags: ['Weapons Master', 'Strong', 'Olympus'] }
+        { id: '1', name: 'Punisher', changedSide: 'Villain', changedTags: ['Weapons Master', 'Strong', 'Olympus'] },
     ]
   },
   {
@@ -277,7 +277,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Incredible Hercules' }
+        { id: '' , name: 'Incredible Hercules' },
     ]
   },
   {
@@ -293,7 +293,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'Marvel Studios Doctor Strange', changedType: 'Speed', changedSide: 'Hero', changedTags: ['Agility', 'Heightened Senses', 'Magic'] },
-        { id: '2', name: 'Marvel Studios Doctor Strange 2', changedType: 'Speed', changedSide: 'Hero', changedTags: ['Agility', 'Heightened Senses', 'Magic'] }
+        { id: '2', name: 'Marvel Studios Doctor Strange 2', changedType: 'Speed', changedSide: 'Hero', changedTags: ['Agility', 'Heightened Senses', 'Magic'] },
     ]
   },
   {
@@ -308,7 +308,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios The Falcon and the Winter Soldier' }
+        { id: '1', name: 'Marvel Studios The Falcon and the Winter Soldier' },
     ]
   },
   {
@@ -326,7 +326,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Age of Apocalypse', changedSide: 'Villain' },
         { id: '2', name: 'Uncanny X-Men' },
         { id: '3', name: 'All-New X-Men' },
-        { id: '4', name: 'Marvel Animations X-Men 97' }
+        { id: '4', name: 'Marvel Animations X-Men 97' },
     ]
   },
   {
@@ -341,7 +341,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Beta Ray Bill', changedTags: ['Flame', 'Leadership', 'Annihilators'] }
+        { id: '1', name: 'Beta Ray Bill', changedTags: ['Flame', 'Leadership', 'Annihilators'] },
     ]
   },
   {
@@ -356,7 +356,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Disassembled' },
-        { id: '1', name: 'Marvel Animations X-Men 97' }
+        { id: '1', name: 'Marvel Animations X-Men 97' },
     ]
   },
   {
@@ -373,7 +373,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'All-New, All-Different' },
         { id: '2', name: 'Inhumans: Attilan Rising' },
         { id: '3', name: 'Marvels X' },
-        { id: '4', name: 'Fallen Soul', changedSide: 'Villain' }
+        { id: '4', name: 'Fallen Soul', changedSide: 'Villain' },
     ]
   },
   {
@@ -391,7 +391,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Claws' },
         { id: '2', name: 'All-New, All-Different' },
         { id: '3', name: 'Winter Criminal' },
-        { id: '4', name: 'Queen in Black', changedType: 'Universal', changedSide: 'Hero' }
+        { id: '4', name: 'Queen in Black', changedType: 'Universal', changedSide: 'Hero' },
     ]
   },
   {
@@ -407,7 +407,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Infinity' },
         { id: '1', name: 'Marvel Studios Avengers: Infinity War' },
-        { id: '2', name: 'Dark Obsidian Armor' }
+        { id: '2', name: 'Dark Obsidian Armor' },
     ]
   },
   {
@@ -420,7 +420,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Weapons Master'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Savage Avengers' }
+        { id: '' , name: 'Savage Avengers' },
     ]
   },
   {
@@ -437,7 +437,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Marvel Studios Captain America: Civil War' },
         { id: '2', name: 'Marvel Studios Black Panther' },
         { id: '3', name: '3099' },
-        { id: '4', name: 'King Without a Crown' }
+        { id: '4', name: 'King Without a Crown' },
     ]
   },
   {
@@ -450,7 +450,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Evil', 'Black Order'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Black Order' }
+        { id: '' , name: 'Black Order' },
     ]
   },
   {
@@ -474,7 +474,7 @@ export const characters: MFFCharacter[] = [
         { id: '8', name: 'Marvel Studios Black Widow' },
         { id: '9', name: 'Marvel Studios Black Widow (Snow Suit)' },
         { id: '10', name: 'Golden Gate Vigilante' },
-        { id: '11', name: 'Venomous', changedTags: ['Agility', 'Agent', 'Symbiote'] }
+        { id: '11', name: 'Venomous', changedTags: ['Agility', 'Agent', 'Symbiote'] },
     ]
   },
   {
@@ -490,7 +490,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: '70s Classic' },
         { id: '2', name: 'Avengers' },
-        { id: '3', name: 'Vampire Slayer' }
+        { id: '3', name: 'Vampire Slayer' },
     ]
   },
   {
@@ -505,7 +505,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Moon Temple Defenders' }
+        { id: '1', name: 'Moon Temple Defenders' },
     ]
   },
   {
@@ -519,7 +519,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Ultimates' },
-        { id: '1', name: 'Classic' }
+        { id: '1', name: 'Classic' },
     ]
   },
   {
@@ -536,7 +536,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Secret Wars: 1872' },
         { id: '2', name: 'Dark Avengers', changedType: 'Speed', changedTags: ['Dark Avengers', 'Weapons Master'] },
-        { id: '3', name: 'Wastelanders', changedType: 'Speed' }
+        { id: '3', name: 'Wastelanders', changedType: 'Speed' },
     ]
   },
   {
@@ -554,7 +554,7 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Cable & Deadpool' },
         { id: '3', name: 'Summer Days' },
         { id: '4', name: 'X of Swords' },
-        { id: '5', name: 'Heart of Darkness' }
+        { id: '5', name: 'Heart of Darkness' },
     ]
   },
   {
@@ -581,7 +581,7 @@ export const characters: MFFCharacter[] = [
         { id: '12', name: 'Enter the Phoenix', changedTags: ['Leadership', 'Command', 'Phoenix Force'] },
         { id: '13', name: 'Back to Basics' },
         { id: '14', name: 'What If... Zombies?!', changedSide: 'Villain', changedTags: ['Leadership', 'Command', 'Zombie'] },
-        { id: '15', name: 'Galactic Talon' }
+        { id: '15', name: 'Galactic Talon' },
     ]
   },
   {
@@ -601,7 +601,7 @@ export const characters: MFFCharacter[] = [
         { id: '4', name: 'Marvel Studios Avengers: Endgame' },
         { id: '5', name: 'The Last Avenger', changedSide: 'Villain' },
         { id: '6', name: 'Marvel Studios The Marvels' },
-        { id: '7', name: 'Marvel Animations Marvel Zombies', changedSide: 'Villain', changedTags: ['Zombie', 'Leadership', 'Energy Projection'] }
+        { id: '7', name: 'Marvel Animations Marvel Zombies', changedSide: 'Villain', changedTags: ['Zombie', 'Leadership', 'Energy Projection'] },
     ]
   },
   {
@@ -617,7 +617,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'All-New, All-Different' },
         { id: '1', name: 'Absolute Carnage' },
         { id: '2', name: 'Fallen Soul' },
-        { id: '3', name: 'Superior Carnage' }
+        { id: '3', name: 'Superior Carnage' },
     ]
   },
   {
@@ -630,7 +630,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Mind', 'Mind Resist', 'Evil'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Deadpool & Wolverine' }
+        { id: '' , name: 'Marvel Studios Deadpool & Wolverine' },
     ]
   },
   {
@@ -644,7 +644,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Ant-Man and the Wasp: Quantumania' }
+        { id: '' , name: 'Ant-Man and the Wasp: Quantumania' },
     ]
   },
   {
@@ -658,7 +658,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]   
   },
   {
@@ -675,7 +675,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'X-Force' },
         { id: '2', name: 'Phoenix Five', changedSide: 'Villain', changedTags: ['Strong', 'Leadership', 'Phoenix Force'] },
-        { id: '3', name: 'Hellfire Gala' }
+        { id: '3', name: 'Hellfire Gala' },
     ]
   },
   {
@@ -691,7 +691,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Infinity' },
         { id: '1', name: 'Marvel Studios Avengers: Infinity War' },
-        { id: '2', name: 'Dark Obsidian Armor' }
+        { id: '2', name: 'Dark Obsidian Armor' },
     ]
   },
   {
@@ -707,7 +707,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Lifestyle Series 1' },
         { id: '2', name: 'Light Sirius Armor' },
-        { id: '3', name: 'B-Girl Crew' }
+        { id: '3', name: 'B-Girl Crew' },
     ]
   },
   {
@@ -723,7 +723,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Marvel Studios Captain America: Civil War' },
         { id: '1', name: 'Modern' },
-        { id: '2', name: 'Secret Empire' }
+        { id: '2', name: 'Secret Empire' },
     ]
   },
   {
@@ -740,7 +740,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'All-New, All-Different' },
         { id: '1', name: 'Royal Suit' },
         { id: '2', name: 'Fantastic Four', changedTags: ['Command', 'Energy Projection', 'Fantastic Four'] },
-        { id: '3', name: 'Spring Lady' }
+        { id: '3', name: 'Spring Lady' },
     ]
   },
   {
@@ -758,7 +758,7 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Marvel NOW!' },
         { id: '3', name: 'Phoenix Five', changedSide: 'Villain', changedTags: ['Energy Projection', 'Command', 'Phoenix Force'] },
         { id: '4', name: 'Modern' },
-        { id: '5', name: 'Marvel Animations X-Men 97' }
+        { id: '5', name: 'Marvel Animations X-Men 97' },
     ]
   },
   {
@@ -774,7 +774,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Marvel Studios Agents of S.H.I.E.L.D.' },
         { id: '1', name: 'Modern', changedTags: ['Command', 'Agent'] },
-        { id: '2', name: 'Marvel Studios Agents of S.H.I.E.L.D. (Quake)' }
+        { id: '2', name: 'Marvel Studios Agents of S.H.I.E.L.D. (Quake)' },
     ]
   },
   {
@@ -788,7 +788,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Dark Wolverine' }
+        { id: '1', name: 'Dark Wolverine' },
     ]
   },
   {
@@ -805,7 +805,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Devil of Hells Kitchen' },
         { id: '2', name: 'All-New, All-Different' },
         { id: '3', name: 'Fall from Grace' },
-        { id: '4', name: 'Marvel Televisions Daredevil: Born Again' }
+        { id: '4', name: 'Marvel Televisions Daredevil: Born Again' },
     ]
   },
   {
@@ -818,7 +818,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Leaderhip', 'Fast Movement'],
     maxTier: 2,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -833,7 +833,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'X-Song' }
+        { id: '1', name: 'X-Song' },
     ]
   },
   {
@@ -854,7 +854,7 @@ export const characters: MFFCharacter[] = [
         { id: '5', name: '30th Anniversary White Version' },
         { id: '6', name: 'April Pools' },
         { id: '7', name: 'Marvel Studios Deadpool & Wolverine (Nicepool)' },
-        { id: '8', name: 'Marvel Studios Deadpool & Wolverine' }
+        { id: '8', name: 'Marvel Studios Deadpool & Wolverine' },
     ]
   },
   {
@@ -868,7 +868,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 2,
     uniforms: [
         { id: '' , name: 'Marvel Studios Agents of S.H.I.E.L.D.' },
-        { id: '1', name: 'Modern', changedType: 'Blast' }
+        { id: '1', name: 'Modern', changedType: 'Blast' },
     ]
   },
   {
@@ -884,7 +884,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'Prometheus', changedTags: ['Energy Projection', 'Machine'] },
-        { id: '2', name: 'The Mighty Thor', changedTags: ['Energy Projection', 'Machine'] }
+        { id: '2', name: 'The Mighty Thor', changedTags: ['Energy Projection', 'Machine'] },
     ]
   },
   {
@@ -899,7 +899,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: '3099' },
-        { id: '2', name: 'God Emperor' }
+        { id: '2', name: 'God Emperor' },
     ]
   },
   {
@@ -917,7 +917,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Superior Spider-Man', changedSide: 'Hero', changedTags: ['Machine', 'Spider-Sense', 'Agility'] },
         { id: '2', name: 'Superior Octopus', changedType: 'Speed', changedTags: ['Machine', 'Agility', 'Sinister Six'] },
         { id: '3', name: 'Spider-Man: No Way Home' },
-        { id: '4', name: 'Ends of the Earth' }
+        { id: '4', name: 'Ends of the Earth' },
     ]
   },
   {
@@ -936,7 +936,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Space Suit' },
         { id: '4', name: 'Marvel Studios Doctor Strange 2' },
         { id: '5', name: 'Death of Doctor Strange' },
-        { id: '6', name: 'What If... Zombies?!', changedSide: 'Villain', changedTags: ['Magic', 'Fast Movement', 'Zombie'] }
+        { id: '6', name: 'What If... Zombies?!', changedSide: 'Villain', changedTags: ['Magic', 'Fast Movement', 'Zombie'] },
     ]
   },
   {
@@ -952,7 +952,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Strange Academy' },
-        { id: '2', name: 'Savage Avengers' }
+        { id: '2', name: 'Savage Avengers' },
     ]
   },
   {
@@ -968,7 +968,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'X-Force' },
         { id: '1', name: 'Marvel NOW!' },
-        { id: '2', name: 'Krakoa X-Force' }
+        { id: '2', name: 'Krakoa X-Force' },
     ]
   },
   {
@@ -982,7 +982,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Classic' },
-        { id: '1', name: 'Damnation' }
+        { id: '1', name: 'Damnation' },
     ]
   },
   {
@@ -999,7 +999,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Guardians of the Galaxy' },
         { id: '1', name: 'All-New, All-Different' },
         { id: '2', name: 'Classic' },
-        { id: '3', name: 'Annihilation' }
+        { id: '3', name: 'Annihilation' },
     ]
   },
   {
@@ -1015,7 +1015,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Infinity' },
         { id: '1', name: 'Marvel Studios Avengers: Infinity War' },
         { id: '2', name: 'Dark Obsidian Armor', changedType: 'Blast' },
-        { id: '3', name: 'Generals Hand', changedType: 'Blast' }
+        { id: '3', name: 'Generals Hand', changedType: 'Blast' },
     ]
   },
   {
@@ -1031,7 +1031,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Enter the Phoenix' },
         { id: '1', name: 'Marvel Studios Hawkeye', changedType: 'Speed', changedTags: ['Agility'] },
-        { id: '2', name: 'Marvel Studios Echo', changedType: 'Speed', changedTags: ['Agility'] }
+        { id: '2', name: 'Marvel Studios Echo', changedType: 'Speed', changedTags: ['Agility'] },
     ]
   },
   {
@@ -1046,7 +1046,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Spider-Man: No Way Home' }
+        { id: '1', name: 'Spider-Man: No Way Home' },
     ]
   },
   {
@@ -1062,7 +1062,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'Marvel Studios Daredevil' },
         { id: '2', name: 'Woman Without Fear' },
-        { id: '3', name: 'Elektra' }
+        { id: '3', name: 'Elektra' },
     ]
   },
   {
@@ -1078,7 +1078,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Secret Wars: Marvel Zombies' },
-        { id: '2', name: 'Monsters Unleashed! (MFF Variant)' }
+        { id: '2', name: 'Monsters Unleashed! (MFF Variant)' },
     ]
   },
   {
@@ -1095,7 +1095,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Marvel NOW!' },
         { id: '2', name: 'Phoenix Five', changedSide: 'Villain', changedTags: ['Mind Resist', 'Durability', 'Phoenix Force'] },
         { id: '3', name: 'Hellfire Gala' },
-        { id: '4', name: 'Summer Queen' }
+        { id: '4', name: 'Summer Queen' },
     ]
   },
   {
@@ -1110,7 +1110,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Summer Days' },
-        { id: '2', name: 'War of the Realms' }
+        { id: '2', name: 'War of the Realms' },
     ]
   },
   {
@@ -1124,7 +1124,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1143,7 +1143,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Marvel Legacy' },
         { id: '4', name: 'Marvel Studios The Falcon and the Winter Soldier', changedTags: ['Fast Movement', 'Leadership', 'Command'] },
         { id: '5', name: 'What If... Zombies?!', changedSide: 'Villain', changedTags: ['Fast Movement', 'Leadership', 'Zombie'] },
-        { id: '6', name: 'Marvel Studios Captain America: Brave New World', changedTags: ['Fast Movement', 'Leadership', 'Command'] }
+        { id: '6', name: 'Marvel Studios Captain America: Brave New World', changedTags: ['Fast Movement', 'Leadership', 'Command'] },
     ]
   },
   {
@@ -1157,7 +1157,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1171,7 +1171,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'X-Force' }
+        { id: '' , name: 'X-Force' },
     ]
   },
   {
@@ -1185,7 +1185,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1198,7 +1198,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Power Cosmic', 'Evil'],
     maxTier: 4,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1214,7 +1214,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Excalibur' },
-        { id: '2', name: 'X-Men Year-End Party' }
+        { id: '2', name: 'X-Men Year-End Party' },
     ]
   },
   {
@@ -1233,7 +1233,7 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Guardians of the Galaxy 2' },
         { id: '3', name: 'Requiem', changedSide: 'Villain' },
         { id: '4', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Agility', 'Weapons Master', 'Guardians of the Galaxy'] },
-        { id: '5', name: 'Wastelanders', changedTags: ['Agility', 'Weapons Master', 'Guardians of the Galaxy'] }
+        { id: '5', name: 'Wastelanders', changedTags: ['Agility', 'Weapons Master', 'Guardians of the Galaxy'] },
     ]
   },
   {
@@ -1248,7 +1248,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel Studios Ant-Man and the Wasp', changedGender: 'Female' },
-        { id: '2', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedGender: 'Female', changedTags: ['Weapons Master', 'Machine', 'Thunderbolts'] }
+        { id: '2', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedGender: 'Female', changedTags: ['Weapons Master', 'Machine', 'Thunderbolts'] },
     ]
   },
   {
@@ -1262,7 +1262,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Infinity Warps' }
+        { id: '' , name: 'Infinity Warps' },
     ]
   },
   {
@@ -1280,7 +1280,7 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Inhumans: Attilan Rising' },
         { id: '3', name: 'King of Hell' },
         { id: '4', name: 'Rage Returned' },
-        { id: '5', name: 'Savage Avengers' }
+        { id: '5', name: 'Savage Avengers' },
     ]
   },
   {
@@ -1296,7 +1296,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Modern (Goliath)' },
-        { id: '2', name: 'Ultron Pym', changedSide: 'Villain' }
+        { id: '2', name: 'Ultron Pym', changedSide: 'Villain' },
     ]
   },
   {
@@ -1311,7 +1311,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios Eternals' }
+        { id: '1', name: 'Marvel Studios Eternals' },
     ]
   },
   {
@@ -1325,7 +1325,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 4,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Thanos: The Infinity Revelation' }
+        { id: '1', name: 'Thanos: The Infinity Revelation' },
     ]
   },
   {
@@ -1339,7 +1339,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Classic' }
+        { id: '' , name: 'Classic' },
     ]
   },
   {
@@ -1353,7 +1353,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'War of Kings' }
+        { id: '' , name: 'War of Kings' },
     ]
   },
   {
@@ -1367,7 +1367,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1381,7 +1381,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 4,
     uniforms: [
         { id: '' , name: 'Marvel Studios Thor: Love and Thunder' },
-        { id: '1', name: 'The God Butcher', changedTags: ['Healing', 'Evil', 'Symbiote'] }
+        { id: '1', name: 'The God Butcher', changedTags: ['Healing', 'Evil', 'Symbiote'] },
     ]
   },
   {
@@ -1399,7 +1399,7 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Dark Avengers', changedType: 'Blast', changedTags: ['Dark Avengers', 'Machine', 'Energy Projection'] },
         { id: '3', name: 'Spider-Man: No Way Home' },
         { id: '4', name: 'Red Goblin', changedTags: ['Flame', 'Fast Movement', 'Sinister Six'] },
-        { id: '5', name: 'Gold Goblin', changedSide: 'Hero' }
+        { id: '5', name: 'Gold Goblin', changedSide: 'Hero' },
     ]
   },
   {
@@ -1418,7 +1418,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Marvel Studios Avengers: Infinity War' },
         { id: '4', name: 'Snowflake Festival', changedType: 'Speed' },
         { id: '5', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Healing', 'Guardians of the Galaxy'] },
-        { id: '6', name: 'Planet X Palm', changedTags: ['Healing', 'Guardians of the Galaxy'] }
+        { id: '6', name: 'Planet X Palm', changedTags: ['Healing', 'Guardians of the Galaxy'] },
     ]
   },
   {
@@ -1435,7 +1435,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Gwen Poole' },
         { id: '2', name: 'Holiday Party' },
         { id: '3', name: 'April Pools' },
-        { id: '4', name: 'Dark Gwenpool', changedSide: 'Villain' }
+        { id: '4', name: 'Dark Gwenpool', changedSide: 'Villain' },
     ]
   },
   {
@@ -1448,7 +1448,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Hellfire', 'Evil', 'Olympus'],
     maxTier: 4,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1461,7 +1461,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Energy Projection'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1480,7 +1480,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Classic' },
         { id: '4', name: 'Marvel Studios Avengers: Endgame' },
         { id: '5', name: 'Marvel Studios Hawkeye (Hero Suit)' },
-        { id: '6', name: 'Wastelanders' }
+        { id: '6', name: 'Wastelanders' },
     ]
   },
   {
@@ -1495,7 +1495,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Marvel Studios Thor: Ragnarok' },
-        { id: '1', name: 'Asgard Invasion', changedTags: ['Strong', 'Leaderhip'] }
+        { id: '1', name: 'Asgard Invasion', changedTags: ['Strong', 'Leaderhip'] },
     ]
   },
   {
@@ -1511,7 +1511,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel Studios Thor: Ragnarok' },
         { id: '2', name: 'Asgard Invasion' },
-        { id: '3', name: 'Marvel Studios What If...?' }
+        { id: '3', name: 'Marvel Studios What If...?' },
     ]
   },
   {
@@ -1525,7 +1525,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'All-New, All-Different' }
+        { id: '' , name: 'All-New, All-Different' },
     ]
   },
   {
@@ -1540,7 +1540,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'TVA' }
+        { id: '1', name: 'TVA' },
     ]
   },
   {
@@ -1553,7 +1553,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Strong', 'Leaderhip', 'Olympus'],
     maxTier: 4,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1566,7 +1566,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Strong'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1580,7 +1580,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1602,7 +1602,7 @@ export const characters: MFFCharacter[] = [
         { id: '6', name: 'Immortal Hulk', changedSide: 'Villain' },
         { id: '7', name: 'Fear Itself', changedSide: 'Villain' },
         { id: '8', name: 'Titan', changedSide: 'Villain' },
-        { id: '9', name: 'Marvel Studios Spider-Man: Brand New Day' }
+        { id: '9', name: 'Marvel Studios Spider-Man: Brand New Day' },
     ]
   },
   {
@@ -1620,7 +1620,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Heavy Duty Armor' },
         { id: '2', name: 'Marvel Studios Avengers: Infinity War' },
         { id: '3', name: '3099' },
-        { id: '4', name: 'Celestial Hulkbuster' }
+        { id: '4', name: 'Celestial Hulkbuster' },
     ]
   },
   {
@@ -1634,7 +1634,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'New Avengers' }
+        { id: '' , name: 'New Avengers' },
     ]
   },
   {
@@ -1652,7 +1652,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Future Foundation' },
         { id: '2', name: 'Classic' },
         { id: '3', name: 'The Fall of the Fantastic Four' },
-        { id: '4', name: 'Marvel Studios The Fantastic Four: First Steps' }
+        { id: '4', name: 'Marvel Studios The Fantastic Four: First Steps' },
     ]
   },
   {
@@ -1666,7 +1666,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Spider-Man: Far From Home' }
+        { id: '' , name: 'Spider-Man: Far From Home' },
     ]
   },
   {
@@ -1681,7 +1681,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'All-New, All-Different' },
         { id: '1', name: 'Classic' },
-        { id: '2', name: 'Enter the Phoenix', changedTags: ['Leaderhip', 'Eternals', 'Phoenix Force'] }
+        { id: '2', name: 'Enter the Phoenix', changedTags: ['Leaderhip', 'Eternals', 'Phoenix Force'] },
     ]
   },
   {
@@ -1696,7 +1696,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'X-Men Blue' },
-        { id: '2', name: 'Krakoan Summer' }
+        { id: '2', name: 'Krakoan Summer' },
     ]
   },
   {
@@ -1710,7 +1710,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios Eternals' }
+        { id: '1', name: 'Marvel Studios Eternals' },
     ]
   },
   {
@@ -1724,7 +1724,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -1739,7 +1739,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'All-New, All-Different' },
-        { id: '1', name: 'Modern' }
+        { id: '1', name: 'Modern' },
     ]
   },
   {
@@ -1757,7 +1757,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Future Foundation' },
         { id: '2', name: 'Classic' },
         { id: '3', name: 'The Fall of the Fantastic Four' },
-        { id: '4', name: 'Marvel Studios The Fantastic Four: First Steps' }
+        { id: '4', name: 'Marvel Studios The Fantastic Four: First Steps' },
     ]
   },
   {
@@ -1775,7 +1775,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'New Avengers' },
         { id: '2', name: 'All-New, All-Different' },
         { id: '3', name: 'Marvel Studios Iron Fist' },
-        { id: '4', name: 'The Living Weapon' }
+        { id: '4', name: 'The Living Weapon' },
     ]
   },
   {
@@ -1789,7 +1789,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Infinity Warps' }
+        { id: '' , name: 'Infinity Warps' },
     ]
   },
   {
@@ -1805,7 +1805,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Marvel NOW!' },
         { id: '1', name: 'Black Panther: Wakanda Forever' },
-        { id: '2', name: 'Marvel Televisions Ironheart' }
+        { id: '2', name: 'Marvel Televisions Ironheart' },
     ]
   },
   {
@@ -1828,7 +1828,7 @@ export const characters: MFFCharacter[] = [
         { id: '7', name: '3099' },
         { id: '8', name: 'Superior Iron Man', changedSide: 'Villain' },
         { id: '9', name: 'Back to Basics' },
-        { id: '10', name: 'Model Nil' }
+        { id: '10', name: 'Model Nil' },
     ]
   },
   {
@@ -1842,7 +1842,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'All-New, All-Different' },
-        { id: '1', name: 'Marvel Studios Thor: Love and Thunder' }
+        { id: '1', name: 'Marvel Studios Thor: Love and Thunder' },
     ]
   },
   {
@@ -1859,7 +1859,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'X-Men Red' },
         { id: '2', name: 'Marvel Girl', changedType: 'Universal' },
         { id: '3', name: 'Dark Phoenix', changedType: 'Universal', changedSide: 'Villain' },
-        { id: '4', name: 'Summer Flare Phoenix', changedType: 'Universal' }
+        { id: '4', name: 'Summer Flare Phoenix', changedType: 'Universal' },
     ]
   },
   {
@@ -1872,7 +1872,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Agility', 'Healing'],
     maxTier: 4,
     uniforms: [
-        { id: '' , name: 'Marvel Rivals' }
+        { id: '' , name: 'Marvel Rivals' },
     ]
   },
   {
@@ -1887,7 +1887,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Jewel' }
+        { id: '1', name: 'Jewel' },
     ]
   },
   {
@@ -1900,7 +1900,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Fast Movement', 'Leadership'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Captain America: Brave New World' }
+        { id: '' , name: 'Marvel Studios Captain America: Brave New World' },
     ]
   },
   {
@@ -1915,7 +1915,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Classic' },
-        { id: '1', name: 'Marvel Animations X-Men 97' }
+        { id: '1', name: 'Marvel Animations X-Men 97' },
     ]
   },
   {
@@ -1931,7 +1931,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Brotherhood of Mutants' },
         { id: '1', name: 'Fear Itself' },
-        { id: '2', name: 'Savage Avengers' }
+        { id: '2', name: 'Savage Avengers' },
     ]
   },
   {
@@ -1945,7 +1945,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Doctor Strange' }
+        { id: '' , name: 'Marvel Studios Doctor Strange' },
     ]
   },
   {
@@ -1959,7 +1959,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Marvel Studios What If...?' }
+        { id: '' , name: 'Marvel Studios What If...?' },
     ]
   },
   {
@@ -1977,7 +1977,7 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Inhumans: Attilan Rising' },
         { id: '3', name: 'Marvel Studios Ms. Marvel', changedType: 'Speed', changedSpecies: 'Human', changedTags: ['Strong', 'Leadership'] },
         { id: '4', name: 'Marvel Studios The Marvels', changedType: 'Speed', changedSpecies: 'Human', changedTags: ['Strong', 'Leadership'] },
-        { id: '5', name: 'Marvel Animations Marvel Zombies', changedType: 'Speed', changedTags: ['Strong', 'Leadership'] }
+        { id: '5', name: 'Marvel Animations Marvel Zombies', changedType: 'Speed', changedTags: ['Strong', 'Leadership'] },
     ]
   },
   {
@@ -1991,7 +1991,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 4,
     uniforms: [
         { id: '' , name: 'Ant-Man and the Wasp: Quantumania' },
-        { id: '1', name: 'Rama-Tut' }
+        { id: '1', name: 'Rama-Tut' },
     ]
   },
   {
@@ -2006,7 +2006,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'War of Kings' },
-        { id: '1', name: 'All-New, All-Different' }
+        { id: '1', name: 'All-New, All-Different' },
     ]
   },
   {
@@ -2022,7 +2022,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Marvel NOW!' },
         { id: '1', name: 'Marvel Studios Hawkeye' },
-        { id: '2', name: 'Young Avengers', changedTags: ['Agility', 'Agent', 'Young Avengers'] }
+        { id: '2', name: 'Young Avengers', changedTags: ['Agility', 'Agent', 'Young Avengers'] },
     ]
   },
   {
@@ -2036,7 +2036,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Shang-Chi' }
+        { id: '' , name: 'Marvel Studios Shang-Chi' },
     ]
   },
   {
@@ -2051,7 +2051,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Monsters Unleashed! (MFF Variant)' },
-        { id: '1', name: 'Monsters Unleashed! (MFF Variant 2)' }
+        { id: '1', name: 'Monsters Unleashed! (MFF Variant 2)' },
     ]
   },
   {
@@ -2066,7 +2066,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Uncanny X-Men' }
+        { id: '1', name: 'Uncanny X-Men' },
     ]
   },
   {
@@ -2081,7 +2081,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Classic' },
-        { id: '1', name: 'Marvel Studios Black Panther' }
+        { id: '1', name: 'Marvel Studios Black Panther' },
     ]
   },
   {
@@ -2096,7 +2096,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios Eternals', changedType: 'Blast' }
+        { id: '1', name: 'Marvel Studios Eternals', changedType: 'Blast' },
     ]
   },
   {
@@ -2112,7 +2112,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Secret Wars: Armor Wars', changedType: 'Blast', changedTags: ['Strong', 'Command', 'Machine'] },
         { id: '2', name: 'Winter Criminal' },
-        { id: '3', name: 'Marvel Televisions Daredevil: Born Again' }
+        { id: '3', name: 'Marvel Televisions Daredevil: Born Again' },
     ]
   },
   {
@@ -2126,7 +2126,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Red Queen' }
+        { id: '1', name: 'Red Queen' },
     ]
   },
   {
@@ -2140,7 +2140,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 4,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Ancient History' }
+        { id: '1', name: 'Ancient History' },
     ]
   },
   {
@@ -2154,7 +2154,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Captain Marvel' }
+        { id: '' , name: 'Marvel Studios Captain Marvel' },
     ]
   },
   {
@@ -2169,7 +2169,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Interdimensional Hunter' }
+        { id: '1', name: 'Interdimensional Hunter' },
     ]
   },
   {
@@ -2184,7 +2184,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Marvel Studios Agent of S.H.I.E.L.D.' },
-        { id: '1', name: 'Modern' }
+        { id: '1', name: 'Modern' },
     ]
   },
   {
@@ -2197,7 +2197,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Mind Resist', 'Evil'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -2211,7 +2211,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Agent of S.H.I.E.L.D.' }
+        { id: '' , name: 'Marvel Studios Agent of S.H.I.E.L.D.' },
     ]
   },
   {
@@ -2225,7 +2225,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Classic' }
+        { id: '' , name: 'Classic' },
     ]
   },
   {
@@ -2246,7 +2246,7 @@ export const characters: MFFCharacter[] = [
         { id: '5', name: 'Marvel Studios Loki (TVA Suit)' },
         { id: '6', name: 'Marvel Studios Loki (President Loki)' },
         { id: '7', name: 'Marvel Studios Loki' },
-        { id: '8', name: 'Young Avengers', changedSide: 'Hero', changedTags: ['Mind', 'Chill', 'Young Avengers'] }
+        { id: '8', name: 'Young Avengers', changedSide: 'Hero', changedTags: ['Mind', 'Chill', 'Young Avengers'] },
     ]
   },
   {
@@ -2263,7 +2263,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'All-New, All-Different' }, 
         { id: '2', name: 'Marvel Studios Luke Cage' },
-        { id: '3', name: 'Uptown Suit' }
+        { id: '3', name: 'Uptown Suit' },
     ]
   },
   {
@@ -2281,7 +2281,7 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Lifestyle Series 1' },
         { id: '3', name: 'Light Sirius Armor' },
         { id: '4', name: 'Summer Lilac' },
-        { id: '5', name: 'Mirae 2099' }
+        { id: '5', name: 'Mirae 2099' },
     ]
   },
   {
@@ -2295,7 +2295,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 4,
     uniforms: [
         { id: '' , name: 'Goblin Queen' },
-        { id: '1', name: 'Winter Queen', changedTags: ['Chill', 'Mind Resist'] }
+        { id: '1', name: 'Winter Queen', changedTags: ['Chill', 'Mind Resist'] },
     ]
   },
   {
@@ -2311,7 +2311,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Phoenix Five', changedSide: 'Villain', changedTags: ['Magic', 'Mind Resist', 'Phoenix Force'] },
         { id: '2', name: 'Krakoan Winter' },
-        { id: '3', name: 'Marvel Rivals' }
+        { id: '3', name: 'Marvel Rivals' },
     ]
   },
   {
@@ -2328,7 +2328,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Marvel NOW!' },
         { id: '2', name: 'House of X' },
         { id: '3', name: 'Krakoan Winter' },
-        { id: '4', name: 'Marvel Animations X-Men 97', changedSide: 'Hero' }
+        { id: '4', name: 'Marvel Animations X-Men 97', changedSide: 'Hero' },
     ]
   },
   {
@@ -2343,7 +2343,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios Eternals' }
+        { id: '1', name: 'Marvel Studios Eternals' },
     ]
   },
   {
@@ -2359,7 +2359,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Thor: The Dark World' },
         { id: '1', name: 'All-New, All-Different' },
-        { id: '2', name: 'War of the Realms', changedTags: ['Evil', 'Symbiote'] }
+        { id: '2', name: 'War of the Realms', changedTags: ['Evil', 'Symbiote'] },
     ]
   },
   {
@@ -2373,7 +2373,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -2388,7 +2388,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Guardians of the Galaxy 2' },
-        { id: '1', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Mind', 'Healing', 'Guardians of the Galaxy'] }
+        { id: '1', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Mind', 'Healing', 'Guardians of the Galaxy'] },
     ]    
   },
   {
@@ -2401,7 +2401,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Fast Movement', 'Young Avengers'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Young Avengers' }
+        { id: '' , name: 'Young Avengers' },
     ]
   },
   {
@@ -2415,7 +2415,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'War of Kings' }
+        { id: '' , name: 'War of Kings' },
     ]
   },
   {
@@ -2429,7 +2429,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Black Panther: Wakanda Forever' }
+        { id: '' , name: 'Black Panther: Wakanda Forever' },
     ]
   },
   {
@@ -2446,7 +2446,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'All-New, All-Different' },
         { id: '1', name: 'Monsters Unleashed! (MFF Variant)' },
         { id: '2', name: 'Inhumans vs X-Men' },
-        { id: '3', name: 'Ancient Curse' }
+        { id: '3', name: 'Ancient Curse' },
     ]
   },
   {
@@ -2460,7 +2460,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 4,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Master of Hell', changedType: 'Universal' }
+        { id: '1', name: 'Master of Hell', changedType: 'Universal' },
     ]
   },
   {
@@ -2478,7 +2478,7 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Absolute Carnage', changedType: 'Combat', changedSide: 'Villain', changedTags: ['Spider-Sense', 'Symbiote', 'Evil'] },
         { id: '3', name: 'Anniversary Special' },
         { id: '4', name: 'Spider-Man: Across the Spider-Verse' },
-        { id: '5', name: 'Ancient Curse', changedSide: 'Villain' }
+        { id: '5', name: 'Ancient Curse', changedSide: 'Villain' },
     ]
   },
   {
@@ -2493,7 +2493,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios Captain Marvel' }
+        { id: '1', name: 'Marvel Studios Captain Marvel' },
     ]
   },
   {
@@ -2510,7 +2510,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Future Foundation' },
         { id: '2', name: 'The Maker', changedSide: 'Villain', changedTags: ['Durability', 'Evil', 'Fantastic Four'] },
         { id: '3', name: 'The Fall of the Fantastic Four' },
-        { id: '4', name: 'Marvel Studios The Fantastic Four: First Steps' }
+        { id: '4', name: 'Marvel Studios The Fantastic Four: First Steps' },
     ]
   },
   {
@@ -2525,7 +2525,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Hellfire Gala' }
+        { id: '1', name: 'Hellfire Gala' },
     ]
   },
   {
@@ -2539,7 +2539,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'All-New, All-Different' }
+        { id: '' , name: 'All-New, All-Different' },
     ]
   },
   {
@@ -2555,7 +2555,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Heroic Age' },
         { id: '1', name: 'Marvel Studios Agents of S.H.I.E.L.D.' },
-        { id: '2', name: 'All-New, All-Different' }
+        { id: '2', name: 'All-New, All-Different' },
     ]
   },
   {
@@ -2571,7 +2571,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'SPIDOC' },
         { id: '2', name: 'CAPDOC' },
-        { id: '3', name: 'Ant-Man and the Wasp: Quantumania' }
+        { id: '3', name: 'Ant-Man and the Wasp: Quantumania' },
     ]
   },
   {
@@ -2584,7 +2584,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Fast Movement', 'Energy Projection'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -2598,7 +2598,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Spider-Man: Far From Home' }
+        { id: '' , name: 'Spider-Man: Far From Home' },
     ]
   },
   {
@@ -2613,7 +2613,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Marvel NOW!' },
-        { id: '1', name: 'Monsters Unleashed! (MFF Variant)' }
+        { id: '1', name: 'Monsters Unleashed! (MFF Variant)' },
     ]
   },
   {
@@ -2631,7 +2631,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Armored' },
         { id: '2', name: 'Mr. Knight' },
         { id: '3', name: 'Marvel Studios Moon Knight' },
-        { id: '4', name: 'Blood Moon Knight', changedType: 'Speed' }
+        { id: '4', name: 'Blood Moon Knight', changedType: 'Speed' },
     ]
   },
   {
@@ -2645,7 +2645,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Dark Avengers' }
+        { id: '' , name: 'Dark Avengers' },
     ]
   },
   {
@@ -2659,7 +2659,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -2687,7 +2687,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Weapons Master', 'Agility'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Marvel Animations X-Men 97' }
+        { id: '' , name: 'Marvel Animations X-Men 97' },
     ]
   },
   {
@@ -2703,7 +2703,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'Spider-Man: Far From Home' },
-        { id: '2', name: 'Summer Mystery' }
+        { id: '2', name: 'Summer Mystery' },
     ]
   },
   {
@@ -2718,7 +2718,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Hellfire Gala' }
+        { id: '1', name: 'Hellfire Gala' },
     ]
   },
   {
@@ -2732,7 +2732,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -2747,7 +2747,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'Phoenix Five', changedSide: 'Villain', changedTags: ['Strong', 'Durability', 'Phoenix Force'] },
-        { id: '2', name: 'Black Panther: Wakanda Forever', changedSide: 'Villain' }
+        { id: '2', name: 'Black Panther: Wakanda Forever', changedSide: 'Villain' },
     ]
   },
   {
@@ -2765,7 +2765,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Classic' },
         { id: '2', name: 'Marvel Studios Avengers: Endgame', changedSide: 'Hero' },
         { id: '3', name: 'Team Suit', changedSide: 'Hero' },
-        { id: '4', name: 'Marvel Studios What If...?', changedSide: 'Hero', changedTags: ['Weapons Master', 'Machine'] }
+        { id: '4', name: 'Marvel Studios What If...?', changedSide: 'Hero', changedTags: ['Weapons Master', 'Machine'] },
     ]
   },
   {
@@ -2779,7 +2779,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -2795,7 +2795,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel Studios Captain Marvel' },
         { id: '2', name: 'Marvel Studios The Marvels' },
-        { id: '3', name: 'Secret Avengers' }
+        { id: '3', name: 'Secret Avengers' },
     ]
   },
   {
@@ -2811,7 +2811,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'X-Force' },
-        { id: '2', name: 'Classic' }
+        { id: '2', name: 'Classic' },
     ]
   },
   {
@@ -2826,7 +2826,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Cosmic Invasion' }
+        { id: '1', name: 'Marvel Cosmic Invasion' },
     ]
   },
   {
@@ -2842,7 +2842,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'All-Father' },
         { id: '2', name: 'Avengers 1,000,000 BC' },
-        { id: '3', name: 'Lord of Asgard' }
+        { id: '3', name: 'Lord of Asgard' },
     ]
   },
   {
@@ -2855,7 +2855,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Agility', 'Weapons Master'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'What If... Zombies?!' }
+        { id: '' , name: 'What If... Zombies?!' },
     ]
   },
   {
@@ -2868,7 +2868,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Healing', 'Evil', 'Strong'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -2883,7 +2883,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Marvel Studios Agents of S.H.I.E.L.D.' },
         { id: '1', name: 'A.O.S. Season 3' },
-        { id: '2', name: 'Winter Ops' }
+        { id: '2', name: 'Winter Ops' },
     ]
   },
   {
@@ -2898,7 +2898,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Cosmic Invasion' }
+        { id: '1', name: 'Marvel Cosmic Invasion' },
     ]
   },
   {
@@ -2912,7 +2912,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 4,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Uncanny X-Men', changedSide: 'Villain' }
+        { id: '1', name: 'Uncanny X-Men', changedSide: 'Villain' },
     ]
   },
   {
@@ -2927,7 +2927,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Classic' },
-        { id: '2', name: 'Quiet Council' }
+        { id: '2', name: 'Quiet Council' },
     ]
   },
   {
@@ -2942,7 +2942,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Infinity' },
         { id: '1', name: 'Marvel Studios Avengers: Infinity War' },
-        { id: '2', name: 'Dark Obsidian Armor' }
+        { id: '2', name: 'Dark Obsidian Armor' },
     ]
   },
   {
@@ -2959,7 +2959,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'X-Force' },
         { id: '2', name: 'Disassembled' },
         { id: '3', name: 'Hellfire Gala' },
-        { id: '4', name: 'Summer Vacation' }
+        { id: '4', name: 'Summer Vacation' },
     ]
   },
   {
@@ -2979,7 +2979,7 @@ export const characters: MFFCharacter[] = [
         { id: '4', name: 'Marvel Legacy', changedTags: ['Leaderhip', 'Weapons Master', 'Machine'] },
         { id: '5', name: 'Cosmic Ghost Rider', changedType: 'Universal', changedSide: 'Villain', changedTags: ['Power Cosmic', 'Flame'] },
         { id: '6', name: 'Fist of the Beast' },
-        { id: '7', name: 'Marvel Televisions Daredevil: Born Again' }
+        { id: '7', name: 'Marvel Televisions Daredevil: Born Again' },
     ]
   },
   {
@@ -2994,7 +2994,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'All-New, All-Different' },
-        { id: '1', name: 'Classic' }
+        { id: '1', name: 'Classic' },
     ]
   },
   {
@@ -3011,7 +3011,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Marvel Legacy' },
         { id: '2', name: 'Uncanny Avengers' },
         { id: '3', name: 'Summer Days' },
-        { id: '4', name: 'Mighty Avengers' }
+        { id: '4', name: 'Mighty Avengers' },
     ]
   },
   {
@@ -3026,7 +3026,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'X-Men: Days of Future Past' }
+        { id: '1', name: 'X-Men: Days of Future Past' },
     ]
   },
   {
@@ -3042,7 +3042,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel Studios Black Widow', changedSide: 'Hero' },
-        { id: '2', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedTags: ['Strong', 'Agility', 'Thunderbolts'] }
+        { id: '2', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedTags: ['Strong', 'Agility', 'Thunderbolts'] },
     ]
   },
   {
@@ -3059,7 +3059,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel NOW!', changedSide: 'Hero' },
         { id: '2', name: 'Symbiote of Vengeance', changedSide: 'Hero', changedTags: ['Flame', 'Gamma Radiation', 'Symbiote'] },
-        { id: '3', name: 'Marvel Studios Captain America: Brave New World', changedTags: ['Flame', 'Gamma Radiation', 'Durability'] }
+        { id: '3', name: 'Marvel Studios Captain America: Brave New World', changedTags: ['Flame', 'Gamma Radiation', 'Durability'] },
     ]
   },
   {
@@ -3073,7 +3073,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -3090,7 +3090,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Captain America: The First Avenger' },
         { id: '1', name: 'Secret Wars: Red Skull', changedType: 'Speed' },
         { id: '2', name: 'Hydra Armor', changedTags: ['Evil', 'Command', 'Cosmic Cube'] },
-        { id: '3', name: 'The Crimson Fall', changedTags: ['Evil', 'Command', 'Cosmic Cube'] }
+        { id: '3', name: 'The Crimson Fall', changedTags: ['Evil', 'Command', 'Cosmic Cube'] },
     ]
   },
   {
@@ -3106,7 +3106,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Marvel Studios Avengers: Endgame' },
         { id: '1', name: '3099' },
-        { id: '2', name: 'Invincible Iron Man' }
+        { id: '2', name: 'Invincible Iron Man' },
     ]
   },
   {
@@ -3121,7 +3121,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Classic' },
-        { id: '1', name: 'Uncanny Spider-Man' }
+        { id: '1', name: 'Uncanny Spider-Man' },
     ]
   },
   {
@@ -3136,7 +3136,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Marvel NOW!' },
-        { id: '1', name: 'Lord of Vengeance' }
+        { id: '1', name: 'Lord of Vengeance' },
     ]
   },
   {
@@ -3155,7 +3155,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Marvel Studios Avengers: Infinity War' },
         { id: '4', name: 'Marvel Studios Avengers: Endgame' },
         { id: '5', name: 'Team Suit' },
-        { id: '6', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Weapons Master', 'Guardians of the Galaxy'] }
+        { id: '6', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Weapons Master', 'Guardians of the Galaxy'] },
     ]
   },
   {
@@ -3172,7 +3172,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Age of Apocalypse' },
         { id: '2', name: 'Uncanny Avengers' },
         { id: '3', name: 'Excalibur' },
-        { id: '4', name: 'Winter Ops' }
+        { id: '4', name: 'Winter Ops' },
     ]
   },
   {
@@ -3188,7 +3188,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Guardians of the Galaxy' },
         { id: '1', name: 'Annihilation' },
         { id: '2', name: 'Marvel Studios Captain Marvel' },
-        { id: '3', name: 'Annihilators', changedSide: 'Hero' }
+        { id: '3', name: 'Annihilators', changedSide: 'Hero' },
     ]
   },
   {
@@ -3203,7 +3203,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Brotherhood of Mutants' },
         { id: '1', name: 'Uncanny Avengers' },
-        { id: '2', name: 'Ultimate' }
+        { id: '2', name: 'Ultimate' },
     ]
   },
   {
@@ -3217,7 +3217,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'All-New, All-Different' }
+        { id: '' , name: 'All-New, All-Different' },
     ]
   },
   {
@@ -3232,7 +3232,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Classic' },
-        { id: '1', name: 'Beach Fortress' }
+        { id: '1', name: 'Beach Fortress' },
     ]
   },
   {
@@ -3248,7 +3248,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel Legacy' },
-        { id: '2', name: 'Ascended One' }
+        { id: '2', name: 'Ascended One' },
     ]
   },
   {
@@ -3263,7 +3263,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Dark Web', changedSide: 'Villain' },
-        { id: '2', name: 'Gift Deliverer' }
+        { id: '2', name: 'Gift Deliverer' },
     ]
   },
   {
@@ -3283,7 +3283,7 @@ export const characters: MFFCharacter[] = [
         { id: '4', name: 'Marvel Studios WandaVision', changedType: 'Universal' },
         { id: '5', name: 'Marvel Studios Doctor Strange 2', changedType: 'Universal' },
         { id: '6', name: 'Scarlet Witch', changedType: 'Universal' },
-        { id: '7', name: 'Marvel Animations Marvel Zombies', changedType: 'Universal', changedSide: 'Villain', changedTags: ['Chaos Magic', 'Fast Movement', 'Zombie'] }
+        { id: '7', name: 'Marvel Animations Marvel Zombies', changedType: 'Universal', changedSide: 'Villain', changedTags: ['Chaos Magic', 'Fast Movement', 'Zombie'] },
     ]
   },
   {
@@ -3298,7 +3298,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios Spider-Man: Brand New Day' }
+        { id: '1', name: 'Marvel Studios Spider-Man: Brand New Day' },
     ]
   },
   {
@@ -3313,7 +3313,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Silence', changedSide: 'Hero', changedTags: ['Strong', 'Leadership', 'Symbiote'] }
+        { id: '1', name: 'Silence', changedSide: 'Hero', changedTags: ['Strong', 'Leadership', 'Symbiote'] },
     ]
   },
   {
@@ -3328,7 +3328,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Nimrod the Lesser' },
-        { id: '2', name: 'Stark Sentinels MK II' }
+        { id: '2', name: 'Stark Sentinels MK II' },
     ]
   },
   {
@@ -3343,7 +3343,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Darkness Merged' },
-        { id: '2', name: 'Marvel Studios Thunderbolts*', changedTags: ['Leadership', 'Energy Projection'] }
+        { id: '2', name: 'Marvel Studios Thunderbolts*', changedTags: ['Leadership', 'Energy Projection'] },
     ]
   },
   {
@@ -3358,7 +3358,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios Eternals' }
+        { id: '1', name: 'Marvel Studios Eternals' },
     ]
   },
   {
@@ -3373,7 +3373,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Moon Temple Defenders', changedType: 'Speed' }
+        { id: '1', name: 'Moon Temple Defenders', changedType: 'Speed' },
     ]
   },
   {
@@ -3386,7 +3386,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Power Cosmic'],
     maxTier: 4,
     uniforms: [
-        { id: '' , name: 'Marvel Studios The Fantastic Four: First Steps' }
+        { id: '' , name: 'Marvel Studios The Fantastic Four: First Steps' },
     ]
   },
   {
@@ -3401,7 +3401,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel Studios Shang-Chi' },
-        { id: '2', name: 'Marvel Animations Marvel Zombies' }
+        { id: '2', name: 'Marvel Animations Marvel Zombies' },
     ]
   },
   {
@@ -3416,7 +3416,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios Captain America: Civil War' }
+        { id: '1', name: 'Marvel Studios Captain America: Civil War' },
     ]
   },
   {
@@ -3435,7 +3435,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Star Night Armor' },
         { id: '4', name: 'Light Sirius Armor' },
         { id: '5', name: 'Poseidon Armor' },
-        { id: '6', name: 'Arctic Warrior' }
+        { id: '6', name: 'Arctic Warrior' },
     ]
   },
   {
@@ -3452,7 +3452,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'All-New' },
         { id: '2', name: 'Fantastic Four', changedTags: ['Gamma Radiation', 'Durability', 'Fantastic Four'] },
         { id: '3', name: 'Avengers' },
-        { id: '4', name: 'Marvel Studios She-Hulk: Attorney at Law' }
+        { id: '4', name: 'Marvel Studios She-Hulk: Attorney at Law' },
     ]
   },
   {
@@ -3468,7 +3468,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Marvel Legacy' },
         { id: '1', name: 'Marvel Studios Black Panther' },
         { id: '2', name: 'Black Panther: Wakanda Forever' },
-        { id: '3', name: 'Marvel Studios Black Panther: Wakanda Forever' }
+        { id: '3', name: 'Marvel Studios Black Panther: Wakanda Forever' },
     ]
   },
   {
@@ -3484,7 +3484,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Marvel Studios Agents of S.H.I.E.L.D.' },
         { id: '1', name: 'Modern' },
-        { id: '2', name: 'Asgard Invasion' }
+        { id: '2', name: 'Asgard Invasion' },
     ]
   },
   {
@@ -3500,7 +3500,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'All-New, All-Different' },
         { id: '1', name: 'Web Suit' },
-        { id: '2', name: 'Summer Days' }
+        { id: '2', name: 'Summer Days' },
     ]
   },
   {
@@ -3513,7 +3513,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Weapons Master', 'Evil'],
     maxTier: 4,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -3528,7 +3528,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Black' },
-        { id: '2', name: 'Void Knight', changedSide: 'Villain', changedTags: ['Power Cosmic', 'Symbiote', 'Annihilators'] }
+        { id: '2', name: 'Void Knight', changedSide: 'Villain', changedTags: ['Power Cosmic', 'Symbiote', 'Annihilators'] },
     ]
   },
   {
@@ -3542,7 +3542,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'All-New, All-Different' },
-        { id: '1', name: 'Rage Returned' }
+        { id: '1', name: 'Rage Returned' },
     ]
   },
   {
@@ -3555,7 +3555,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Fast Movement', 'Energy Projection'],
     maxTier: 2,
     uniforms: [
-        { id: '' , name: 'Secret Wars: A-Force' }
+        { id: '' , name: 'Secret Wars: A-Force' },
     ]
   },
   {
@@ -3571,7 +3571,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Secret Wars: A-Force' },
         { id: '1', name: 'All-New, All-Different' },
         { id: '2', name: 'Runaways' },
-        { id: '3', name: 'Princess Tsukimi' }
+        { id: '3', name: 'Princess Tsukimi' },
     ]
   },
   {
@@ -3585,7 +3585,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Thor: Ragnarok' }
+        { id: '' , name: 'Marvel Studios Thor: Ragnarok' },
     ]
   },
   {
@@ -3599,7 +3599,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -3612,7 +3612,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Symbiote', 'Healing', 'Leaderhip'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -3625,7 +3625,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Fast Movement', 'Agent'],
     maxTier: 2,
     uniforms: [
-        { id: '' , name: 'New Avengers' }
+        { id: '' , name: 'New Avengers' },
     ]
   },
   {
@@ -3640,7 +3640,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios The Marvels' }
+        { id: '1', name: 'Marvel Studios The Marvels' },
     ]
   },
   {
@@ -3657,7 +3657,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'All-New, All-Different' },
         { id: '1', name: 'Gwendolyne Stacy' },
         { id: '2', name: 'Gwenom', changedSide: 'Villain', changedTags: ['Spider-Sense', 'Agility', 'Symbiote'] },
-        { id: '3', name: 'Spider-Man: Across the Spider-Verse' }
+        { id: '3', name: 'Spider-Man: Across the Spider-Verse' },
     ]
   },
   {
@@ -3682,7 +3682,7 @@ export const characters: MFFCharacter[] = [
         { id: '9', name: 'Spider-Man: No Way Home (Black & Gold Suit)' },
         { id: '10', name: 'Back to Basics' },
         { id: '11', name: 'The Symbiote Suit', changedTags: ['Spider-Sense', 'Leadership', 'Symbiote'] },
-        { id: '12', name: 'Marvel Studios Spider-Man: Brand New Day' }
+        { id: '12', name: 'Marvel Studios Spider-Man: Brand New Day' },
     ]
   },
   {
@@ -3697,7 +3697,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'All-New, All-Different' },
-        { id: '2', name: 'Spider-Man: Across the Spider-Verse' }
+        { id: '2', name: 'Spider-Man: Across the Spider-Verse' },
     ]
   },
   {
@@ -3712,7 +3712,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Spider-Man: Across the Spider-Verse' }
+        { id: '1', name: 'Spider-Man: Across the Spider-Verse' },
     ]
   },
   {
@@ -3726,7 +3726,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Spider-Man: Across the Spider-Verse' }
+        { id: '' , name: 'Spider-Man: Across the Spider-Verse' },
     ]
   },
   {
@@ -3741,7 +3741,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'New Avengers' },
         { id: '1', name: 'Marvel NOW!' },
-        { id: '2', name: 'Nutty Titan', changedSide: 'Villain', changedTags: ['Agility', 'Evil', 'Power Cosmic'] }
+        { id: '2', name: 'Nutty Titan', changedSide: 'Villain', changedTags: ['Agility', 'Evil', 'Power Cosmic'] },
     ]
   },
   {
@@ -3760,7 +3760,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Marvel Studios Avengers: Infinity War' },
         { id: '4', name: 'Grounded' },
         { id: '5', name: 'Marvel Studios Guardians of the Galaxy 3', changedTags: ['Weapons Master', 'Command', 'Guardians of the Galaxy'] },
-        { id: '6', name: 'Wastelanders', changedTags: ['Weapons Master', 'Command', 'Guardians of the Galaxy'] }
+        { id: '6', name: 'Wastelanders', changedTags: ['Weapons Master', 'Command', 'Guardians of the Galaxy'] },
     ]
   },
   {
@@ -3777,7 +3777,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'X-Men Red' },
         { id: '2', name: 'Inhumans vs X-Men' },
         { id: '3', name: 'Krakoan Summer' },
-        { id: '4', name: 'Marvel Animations X-Men 97' }
+        { id: '4', name: 'Marvel Animations X-Men 97' },
     ]
   },
   {
@@ -3792,7 +3792,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Classic' },
-        { id: '2', name: 'The Tyrant of Spring' }
+        { id: '2', name: 'The Tyrant of Spring' },
     ]
   },
   {
@@ -3807,7 +3807,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Moon Temple Defenders' }
+        { id: '1', name: 'Moon Temple Defenders' },
     ]
   },
   {
@@ -3820,7 +3820,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Flame', 'Fast Movement'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Marvel Animations X-Men 97' }
+        { id: '' , name: 'Marvel Animations X-Men 97' },
     ]
   },
   {
@@ -3835,7 +3835,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Infinity' },
-        { id: '1', name: 'Dark Obsidian Armor' }
+        { id: '1', name: 'Dark Obsidian Armor' },
     ]
   },
   {
@@ -3850,7 +3850,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Classic' }
+        { id: '1', name: 'Classic' },
     ]
   },
   {
@@ -3863,7 +3863,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Mind', 'Chill'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Loki' }
+        { id: '' , name: 'Marvel Studios Loki' },
     ]
   },
   {
@@ -3878,7 +3878,7 @@ export const characters: MFFCharacter[] = [
     uniforms: [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel Studios Black Widow' },
-        { id: '2', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedGender: 'Female', changedTags: ['Weapons Master', 'Evil', 'Thunderbolts'] }
+        { id: '2', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedGender: 'Female', changedTags: ['Weapons Master', 'Evil', 'Thunderbolts'] },
     ]
   },
   {
@@ -3892,7 +3892,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Phoenix Force', changedTags: ['Phoenix Force', 'Durability', 'Evil'] }
+        { id: '1', name: 'Phoenix Force', changedTags: ['Phoenix Force', 'Durability', 'Evil'] },
     ]
   },
   {
@@ -3912,7 +3912,7 @@ export const characters: MFFCharacter[] = [
         { id: '4', name: 'Obsidian King' },
         { id: '5', name: 'Wise Harvester' },
         { id: '6', name: 'Thanos Wins' },
-        { id: '7', name: 'Annihilation' }
+        { id: '7', name: 'Annihilation' },
     ]
   },
   {
@@ -3925,7 +3925,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Evil', 'Fast Movement'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Marvel Televisions Ironheart' }
+        { id: '' , name: 'Marvel Televisions Ironheart' },
     ]
   },
   {
@@ -3939,7 +3939,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Marvel Studios Eternals' }
+        { id: '1', name: 'Marvel Studios Eternals' },
     ]
   },
   {
@@ -3957,7 +3957,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Future Foundation' },
         { id: '2', name: 'Classic' },
         { id: '3', name: 'The Fall of the Fantastic Four' },
-        { id: '4', name: 'Marvel Studios The Fantastic Four: First Steps' }
+        { id: '4', name: 'Marvel Studios The Fantastic Four: First Steps' },
     ]
   },
   {
@@ -3979,7 +3979,7 @@ export const characters: MFFCharacter[] = [
         { id: '6', name: 'Marvel Studios Avengers: Endgame' },
         { id: '7', name: 'Herald of Thunder', changedTags: ['Shock', 'Leaderhip', 'Power Cosmic'] },
         { id: '8', name: 'Marvel Studios Thor: Love and Thunder' },
-        { id: '9', name: 'All-Father Reborn' }
+        { id: '9', name: 'All-Father Reborn' },
     ]
   },
   {
@@ -3994,7 +3994,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Fear Itself' }
+        { id: '1', name: 'Fear Itself' },
     ]
   },
   {
@@ -4008,7 +4008,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -4022,7 +4022,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -4040,7 +4040,7 @@ export const characters: MFFCharacter[] = [
         { id: '2', name: 'Marvel Studios Avengers: Age of Ultron (Mark I)' },
         { id: '3', name: 'Marvel Studios Avengers: Age of Ultron (Mark III)' },
         { id: '4', name: 'Marvel Studios What If...?' },
-        { id: '5', name: 'All-Father Ultron' }
+        { id: '5', name: 'All-Father Ultron' },
     ]
   },
   {
@@ -4054,7 +4054,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Black Panther' }
+        { id: '' , name: 'Marvel Studios Black Panther' },
     ]
   },
   {
@@ -4067,7 +4067,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Leadership', 'Command', 'Thunderbolts'],
     maxTier: 3,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Thunderbolts*' }
+        { id: '' , name: 'Marvel Studios Thunderbolts*' },
     ]
   },
   {
@@ -4081,7 +4081,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -4098,7 +4098,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Marvel Studios Thor: Ragnarok' },
         { id: '1', name: 'Fearless Defenders' },
         { id: '2', name: 'Marvel Studios Thor: Love and Thunder' },
-        { id: '3', name: 'Asgardians of the Galaxy' }
+        { id: '3', name: 'Asgardians of the Galaxy' },
     ]
   },
   {
@@ -4117,7 +4117,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'War of the Realms', changedSide: 'Hero' },
         { id: '4', name: 'King in Black', changedSide: 'Hero' },
         { id: '5', name: 'Warstar', changedSide: 'Hero', changedTags: ['Healing', 'Symbiote', 'Weapons Master'] },
-        { id: '6', name: 'Snow Symbiote', changedSide: 'Hero' }
+        { id: '6', name: 'Snow Symbiote', changedSide: 'Hero' },
     ]
   },
   {
@@ -4131,7 +4131,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Incredible Hercules' }
+        { id: '' , name: 'Incredible Hercules' },
     ]
   },
   {
@@ -4145,7 +4145,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Emperor Guarder' }
+        { id: '1', name: 'Emperor Guarder' },
     ]
   },
   {
@@ -4158,7 +4158,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Poison', 'Evil'],
     maxTier: 2,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -4175,7 +4175,7 @@ export const characters: MFFCharacter[] = [
         { id: '1', name: 'Marvel Studios Avengers: Age of Ultron', changedType: 'Universal' },
         { id: '2', name: 'Uncanny Avengers' },
         { id: '3', name: 'Marvel Studios WandaVision', changedType: 'Universal' },
-        { id: '4', name: 'Ultimate Vision', changedType: 'Universal', changedGender: 'Female' }
+        { id: '4', name: 'Ultimate Vision', changedType: 'Universal', changedGender: 'Female' },
     ]
   },
   {
@@ -4189,7 +4189,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -4204,7 +4204,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Classic' },
-        { id: '1', name: 'Spider-Man: Homecoming' }
+        { id: '1', name: 'Spider-Man: Homecoming' },
     ]
   },
   {
@@ -4225,7 +4225,7 @@ export const characters: MFFCharacter[] = [
         { id: '5', name: 'Marvel Studios Avengers: Endgame' },
         { id: '6', name: 'Team Suit' },
         { id: '7', name: '3099' },
-        { id: '8', name: 'Invincible Iron Man' }
+        { id: '8', name: 'Invincible Iron Man' },
     ]
   },
   {
@@ -4239,7 +4239,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'X-Force' }
+        { id: '' , name: 'X-Force' },
     ]
   },
   {
@@ -4254,7 +4254,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Moon Temple Defenders' }
+        { id: '1', name: 'Moon Temple Defenders' },
     ]
   },
   {
@@ -4268,7 +4268,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'The Howling Commandos of S.H.I.E.L.D.' }
+        { id: '' , name: 'The Howling Commandos of S.H.I.E.L.D.' },
     ]
   },
   {
@@ -4285,7 +4285,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'All-New, All-Different' },
         { id: '2', name: 'Marvel Studios Ant-Man and the Wasp' },
-        { id: '3', name: 'Ant-Man and the Wasp: Quantumania' }
+        { id: '3', name: 'Ant-Man and the Wasp: Quantumania' },
     ]
   },
   {
@@ -4300,7 +4300,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Classic' }
+        { id: '1', name: 'Classic' },
     ]
   },
   {
@@ -4315,7 +4315,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Infinity Warps' },
-        { id: '1', name: 'Infected Bioweapon', changedSide: 'Villain', changedTags: ['Zombie', 'Healing', 'Chaos Magic'] }
+        { id: '1', name: 'Infected Bioweapon', changedSide: 'Villain', changedTags: ['Zombie', 'Healing', 'Chaos Magic'] },
     ]
   },
   {
@@ -4329,7 +4329,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
   },
   {
@@ -4343,7 +4343,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Marvel Studios Shang-Chi' },
-        { id: '1', name: 'Marvel Studios What If...?' }
+        { id: '1', name: 'Marvel Studios What If...?' },
     ]
   },
   {
@@ -4357,7 +4357,7 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'Marvel Studios Iron Man 2' }
+        { id: '' , name: 'Marvel Studios Iron Man 2' },
     ]
   },
   {
@@ -4373,7 +4373,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Lifestyle Series 1' },
         { id: '2', name: 'Lifestyle Series 2' },
-        { id: '3', name: 'Agent F-One' }
+        { id: '3', name: 'Agent F-One' },
     ]
   },
   {
@@ -4388,7 +4388,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'New Avengers' },
-        { id: '1', name: 'Marvel Televisions Daredevil: Born Again', changedGender: 'Male' }
+        { id: '1', name: 'Marvel Televisions Daredevil: Born Again', changedGender: 'Male' },
     ]
   },
   {
@@ -4422,7 +4422,7 @@ export const characters: MFFCharacter[] = [
         { id: '3', name: 'Marvel Studios Avengers: Infinity War' },
         { id: '4', name: 'Marvel Studios The Falcon and the Winter Soldier', changedTags: ['Weapons Master', 'Leaderhip'] },
         { id: '5', name: 'Revolution', changedType: 'Combat', changedSide: 'Villain', changedTags: ['Weapons Master', 'Leaderhip'] },
-        { id: '6', name: 'Marvel Studios Thunderbolts*', changedTags: ['Weapons Master', 'Leaderhip', 'Thunderbolts'] }
+        { id: '6', name: 'Marvel Studios Thunderbolts*', changedTags: ['Weapons Master', 'Leaderhip', 'Thunderbolts'] },
     ]
   },
   {
@@ -4442,7 +4442,7 @@ export const characters: MFFCharacter[] = [
         { id: '4', name: 'House of X' },
         { id: '5', name: 'Enter the Phoenix', changedTags: ['Weapons Master', 'Healing', 'Phoenix Force'] },
         { id: '6', name: 'X Deaths of Wolverine' },
-        { id: '7', name: 'Marvel Studios Deadpool & Wolverine' }
+        { id: '7', name: 'Marvel Studios Deadpool & Wolverine' },
     ]
   },
   {
@@ -4458,7 +4458,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'All-New, All-Different' },
         { id: '1', name: 'Marvel Studios Doctor Strange' },
         { id: '2', name: 'Marvel Studios Doctor Strange 2', changedTags: ['Weapons Master', 'Magic', 'Agility'] },
-        { id: '3', name: 'What If... Zombies?!', changedSide: 'Villain', changedTags: ['Weapons Master', 'Magic', 'Zombie'] }
+        { id: '3', name: 'What If... Zombies?!', changedSide: 'Villain', changedTags: ['Weapons Master', 'Magic', 'Zombie'] },
     ]
   },
   {
@@ -4475,7 +4475,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'X-Force' },
         { id: '2', name: 'All-New Wolverine', changedType: 'Combat' },
-        { id: '3', name: 'Target X' }
+        { id: '3', name: 'Target X' },
     ]
   },
   {
@@ -4492,7 +4492,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Modern' },
         { id: '1', name: 'Marvel Studios Black Widow', changedSide: 'Hero' },
         { id: '2', name: 'Marvel Studios Black Widow (Snow Suit)', changedSide: 'Hero' },
-        { id: '3', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedTags: ['Agility', 'Agent', 'Thunderbolts'] }
+        { id: '3', name: 'Marvel Studios Thunderbolts*', changedSide: 'Hero', changedTags: ['Agility', 'Agent', 'Thunderbolts'] },
     ]
   },
   {
@@ -4507,7 +4507,7 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Marvel Studios Ant-Man' },
-        { id: '1', name: 'Marvel NOW!' }
+        { id: '1', name: 'Marvel NOW!' },
     ]
   },
   {
@@ -4523,7 +4523,7 @@ export const characters: MFFCharacter[] = [
         { id: '' , name: 'Guardians of the Galaxy' },
         { id: '1', name: 'All-New, All-Different' },
         { id: '2', name: 'Guardians of the Galaxy 2' },
-        { id: '3', name: 'Summer Vacation' }
+        { id: '3', name: 'Summer Vacation' },
     ]
   },
   {
@@ -4536,7 +4536,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Shock', 'Energy Projection', 'Olympus'],
     maxTier: 4,
     uniforms: [
-        { id: '' , name: 'Modern' }
+        { id: '' , name: 'Modern' },
     ]
-  }
+  },
 ];
