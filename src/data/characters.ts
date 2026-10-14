@@ -61,6 +61,19 @@ export const characters: MFFCharacter[] = [
     ]
   },
   {
+    id: 'agathaharkness',
+    displayName: 'Agatha Harkness',
+    baseType: 'Blast',
+    baseSide: 'Neutral',
+    baseSpecies: 'Human',
+    baseGender: 'Female',
+    baseTags: ['Magic', 'Mind'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Modern' },
+    ]
+  },
+  {
     id: 'agentvenom',
     displayName: 'Agent Venom',
     baseType: 'Combat',
@@ -2657,10 +2670,11 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Female',
     baseTags: ['Magic', 'Evil'],
-    maxTier: 3,
+    maxTier: 4,
     uniforms: [
         { id: '' , name: 'Modern' },
-        { id: '1', name: 'Fallen Soul' }
+        { id: '1', name: 'Fallen Soul' },
+        { id: '2', name: 'Classic' },
     ]
   },
   {
@@ -3541,8 +3555,7 @@ export const characters: MFFCharacter[] = [
     baseTags: ['Fast Movement', 'Energy Projection'],
     maxTier: 2,
     uniforms: [
-        { id: '' , name: 'Secret Wars: A-Force' },
-        { id: 'special', name: 'Special' }
+        { id: '' , name: 'Secret Wars: A-Force' }
     ]
   },
   {
@@ -4386,10 +4399,11 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Human',
     baseGender: 'Male',
     baseTags: ['Fast Movement', 'Energy Projection'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
-        { id: '' , name: 'New Avengers' }
+        { id: '' , name: 'New Avengers' },
+        { id: '1', name: 'Young Avengers', changedTags: ['Fast Movement', 'Energy Projection', 'Magic'] },
     ]
   },
   {
