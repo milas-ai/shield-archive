@@ -655,10 +655,11 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Alien',
     baseGender: 'Female',
     baseTags: ['Magic', 'Fast Movement'],
-    maxTier: 3,
+    maxTier: 4,
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
+        { id: '1', name: 'Death of Doctor Strange' },
     ]   
   },
   {
@@ -979,10 +980,11 @@ export const characters: MFFCharacter[] = [
     baseSpecies: 'Other',
     baseGender: 'Male',
     baseTags: ['Magic', 'Evil'],
-    maxTier: 3,
+    maxTier: 4,
     uniforms: [
         { id: '' , name: 'Classic' },
         { id: '1', name: 'Damnation' },
+        { id: '2', name: 'The Living Dark Planet' },
     ]
   },
   {
