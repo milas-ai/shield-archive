@@ -75,6 +75,7 @@ export const EditCharacterModal = ({ character, onClose }: { character: MFFChara
             >
               <option value="">None</option>
               <option value="obelisk">Obelisk</option>
+              <option value="ascent">Ascent</option>
               <option value="authority">Authority</option>
               <option value="competition">Competition</option>
               <option value="conquest">Conquest</option>
