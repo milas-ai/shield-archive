@@ -859,6 +859,19 @@ export const characters: MFFCharacter[] = [
     ]
   },
   {
+    id: 'deathbird',
+    displayName: 'Deathbird',
+    baseType: 'Combat',
+    baseSide: 'Villain',
+    baseSpecies: 'Alien',
+    baseGender: 'Female',
+    baseTags: ['Fast Movement', 'Evil', 'Weapons Master'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Uncanny X-Men' },
+    ]
+  },
+  {
     id: 'deathlok',
     displayName: 'Deathlok',
     baseType: 'Combat',
@@ -2200,6 +2213,19 @@ export const characters: MFFCharacter[] = [
     maxTier: 3,
     uniforms: [
         { id: '' , name: 'Modern' },
+    ]
+  },
+  {
+    id: 'lilandra',
+    displayName: 'Lilandra',
+    baseType: 'Speed',
+    baseSide: 'Hero',
+    baseSpecies: 'Alien',
+    baseGender: 'Female',
+    baseTags: ['Durability', 'Agility'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'Majestrix Lilandra' },
     ]
   },
   {
@@ -4192,6 +4218,19 @@ export const characters: MFFCharacter[] = [
     transcendent: true,
     uniforms: [
         { id: '' , name: 'Modern' },
+    ]
+  },
+  {
+    id: 'vulcan',
+    displayName: 'Vulcan',
+    baseType: 'Blast',
+    baseSide: 'Villain',
+    baseSpecies: 'Mutant',
+    baseGender: 'Male',
+    baseTags: ['Energy Projection', 'Evil'],
+    maxTier: 4,
+    uniforms: [
+        { id: '' , name: 'War of Kings' },
     ]
   },
   {
